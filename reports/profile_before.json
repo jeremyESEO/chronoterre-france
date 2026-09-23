@@ -1,0 +1,1387 @@
+{
+  "fossils": {
+    "rows": 3699,
+    "columns": 41,
+    "fields": {
+      "accepted_name": {
+        "types": {
+          "str": 3658
+        },
+        "missing": 41,
+        "missing_rate": 0.011084,
+        "min": null,
+        "max": null,
+        "top_values": [
+          [
+            "Glycymeris",
+            61
+          ],
+          [
+            "Parvicardium",
+            61
+          ],
+          [
+            "Tympanotonos",
+            50
+          ],
+          [
+            "Tivelina",
+            43
+          ],
+          [
+            "Calyptraea",
+            38
+          ]
+        ]
+      },
+      "accepted_no": {
+        "types": {
+          "str": 3658
+        },
+        "missing": 41,
+        "missing_rate": 0.011084,
+        "min": null,
+        "max": null,
+        "top_values": [
+          [
+            "16243",
+            61
+          ],
+          [
+            "18038",
+            61
+          ],
+          [
+            "10644",
+            50
+          ],
+          [
+            "62533",
+            43
+          ],
+          [
+            "9583",
+            38
+          ]
+        ]
+      },
+      "accepted_rank": {
+        "types": {
+          "str": 3658
+        },
+        "missing": 41,
+        "missing_rate": 0.011084,
+        "min": null,
+        "max": null,
+        "top_values": [
+          [
+            "genus",
+            1715
+          ],
+          [
+            "species",
+            1648
+          ],
+          [
+            "subgenus",
+            169
+          ],
+          [
+            "family",
+            75
+          ],
+          [
+            "subspecies",
+            12
+          ]
+        ]
+      },
+      "altitude_unit": {
+        "types": {
+          "str": 80
+        },
+        "missing": 3619,
+        "missing_rate": 0.978373,
+        "min": null,
+        "max": null,
+        "top_values": [
+          [
+            "meters",
+            80
+          ]
+        ]
+      },
+      "altitude_value": {
+        "types": {
+          "str": 80
+        },
+        "missing": 3619,
+        "missing_rate": 0.978373,
+        "min": null,
+        "max": null,
+        "top_values": [
+          [
+            "180",
+            43
+          ],
+          [
+            "50",
+            37
+          ]
+        ]
+      },
+      "cc": {
+        "types": {
+          "str": 3699
+        },
+        "missing": 0,
+        "missing_rate": 0.0,
+        "min": null,
+        "max": null,
+        "top_values": [
+          [
+            "FR",
+            3699
+          ]
+        ]
+      },
+      "class": {
+        "types": {
+          "str": 3655
+        },
+        "missing": 44,
+        "missing_rate": 0.011895,
+        "min": null,
+        "max": null,
+        "top_values": [
+          [
+            "Gastropoda",
+            1922
+          ],
+          [
+            "Bivalvia",
+            1134
+          ],
+          [
+            "Mammalia",
+            177
+          ],
+          [
+            "Reptilia",
+            84
+          ],
+          [
+            "NO_CLASS_SPECIFIED",
+            41
+          ]
+        ]
+      },
+      "class_no": {
+        "types": {
+          "str": 3655
+        },
+        "missing": 44,
+        "missing_rate": 0.011895,
+        "min": null,
+        "max": null,
+        "top_values": [
+          [
+            "8304",
+            1922
+          ],
+          [
+            "16005",
+            1134
+          ],
+          [
+            "36651",
+            177
+          ],
+          [
+            "36322",
+            84
+          ],
+          [
+            "NC",
+            41
+          ]
+        ]
+      },
+      "collection_no": {
+        "types": {
+          "str": 3699
+        },
+        "missing": 0,
+        "missing_rate": 0.0,
+        "min": null,
+        "max": null,
+        "top_values": [
+          [
+            "3494",
+            344
+          ],
+          [
+            "171526",
+            166
+          ],
+          [
+            "20816",
+            157
+          ],
+          [
+            "184110",
+            151
+          ],
+          [
+            "184107",
+            147
+          ]
+        ]
+      },
+      "county": {
+        "types": {
+          "str": 403
+        },
+        "missing": 3296,
+        "missing_rate": 0.891052,
+        "min": null,
+        "max": null,
+        "top_values": [
+          [
+            "Oise",
+            76
+          ],
+          [
+            "Val d'Oise",
+            48
+          ],
+          [
+            "Hauts-de-Seine",
+            47
+          ],
+          [
+            "Aisne Departement",
+            43
+          ],
+          [
+            "Eure-et-Loir",
+            38
+          ]
+        ]
+      },
+      "difference": {
+        "types": {
+          "str": 2131
+        },
+        "missing": 1568,
+        "missing_rate": 0.423898,
+        "min": null,
+        "max": null,
+        "top_values": [
+          [
+            "species not entered",
+            1086
+          ],
+          [
+            "recombined as",
+            649
+          ],
+          [
+            "rank change, species not entered",
+            291
+          ],
+          [
+            "taxon not entered",
+            41
+          ],
+          [
+            "variant of",
+            38
+          ]
+        ]
+      },
+      "early_interval": {
+        "types": {
+          "str": 3699
+        },
+        "missing": 0,
+        "missing_rate": 0.0,
+        "min": null,
+        "max": null,
+        "top_values": [
+          [
+            "Early Oligocene",
+            1436
+          ],
+          [
+            "Lutetian",
+            1104
+          ],
+          [
+            "Bartonian",
+            563
+          ],
+          [
+            "Danian",
+            171
+          ],
+          [
+            "Oligocene",
+            79
+          ]
+        ]
+      },
+      "environment": {
+        "types": {
+          "str": 3664
+        },
+        "missing": 35,
+        "missing_rate": 0.009462,
+        "min": null,
+        "max": null,
+        "top_values": [
+          [
+            "marine indet.",
+            1795
+          ],
+          [
+            "carbonate indet.",
+            542
+          ],
+          [
+            "open shallow subtidal",
+            519
+          ],
+          [
+            "terrestrial indet.",
+            224
+          ],
+          [
+            "transition zone/lower shoreface",
+            223
+          ]
+        ]
+      },
+      "family": {
+        "types": {
+          "str": 3627
+        },
+        "missing": 72,
+        "missing_rate": 0.019465,
+        "min": null,
+        "max": null,
+        "top_values": [
+          [
+            "Lucinidae",
+            196
+          ],
+          [
+            "Veneridae",
+            178
+          ],
+          [
+            "Cerithiidae",
+            161
+          ],
+          [
+            "Naticidae",
+            135
+          ],
+          [
+            "Cardiidae",
+            118
+          ]
+        ]
+      },
+      "family_no": {
+        "types": {
+          "str": 3627
+        },
+        "missing": 72,
+        "missing_rate": 0.019465,
+        "min": null,
+        "max": null,
+        "top_values": [
+          [
+            "60971",
+            196
+          ],
+          [
+            "62779",
+            178
+          ],
+          [
+            "59620",
+            161
+          ],
+          [
+            "61317",
+            135
+          ],
+          [
+            "59532",
+            118
+          ]
+        ]
+      },
+      "flags": {
+        "types": {
+          "str": 28
+        },
+        "missing": 3671,
+        "missing_rate": 0.99243,
+        "min": null,
+        "max": null,
+        "top_values": [
+          [
+            "F",
+            28
+          ]
+        ]
+      },
+      "genus": {
+        "types": {
+          "str": 3544
+        },
+        "missing": 155,
+        "missing_rate": 0.041903,
+        "min": null,
+        "max": null,
+        "top_values": [
+          [
+            "Cerithium",
+            80
+          ],
+          [
+            "Glycymeris",
+            70
+          ],
+          [
+            "Parvicardium",
+            61
+          ],
+          [
+            "Calyptraea",
+            51
+          ],
+          [
+            "Tympanotonos",
+            50
+          ]
+        ]
+      },
+      "genus_no": {
+        "types": {
+          "str": 3544
+        },
+        "missing": 155,
+        "missing_rate": 0.041903,
+        "min": null,
+        "max": null,
+        "top_values": [
+          [
+            "16243",
+            91
+          ],
+          [
+            "9632",
+            86
+          ],
+          [
+            "18038",
+            61
+          ],
+          [
+            "9583",
+            54
+          ],
+          [
+            "10644",
+            52
+          ]
+        ]
+      },
+      "geogcomments": {
+        "types": {
+          "str": 2861
+        },
+        "missing": 838,
+        "missing_rate": 0.226548,
+        "min": null,
+        "max": null,
+        "top_values": [
+          [
+            "Up to five fossil sites were included in the historical collections from \"Grignon\", among which only the \"Falunière\" remains today.",
+            501
+          ],
+          [
+            "lat/long for the region of the Paris Basin",
+            344
+          ],
+          [
+            "in the Juine River valley; topo map IGN Dourdan 7-8 at 1/25000; Lambert coordinates: x = 582,40, y = 80, 875; in the valley of Louette, 300m west of the hamlet of Pierrefitte, along the route to d'Etampes a Saint-Hilaire; coordinates estimated for the Juine River Valley, more specific coordinates were not possible with geographic information given.",
+            284
+          ],
+          [
+            "in the Juine River valley; topo map IGN Etampes 5-6 at 1/25000, Lambert coordinates: x = 589,50; y = 85,25; along the national route RN 20, between the communities of Etrechy and Etampes; coordinates derived from the midpoint between the towns of Etrechy and Etampes.",
+            271
+          ],
+          [
+            "all sections from this reference are located in the Juine River Valley; for D'Auvers-Saint-Georges: topo map I.G.N. Etampes 5-6 a 1/25000; Lambert coordinates x = 591,825; y = 87,150; about 1 km from the village of d'Auvers-Saint-Georges, in the direction of Villeneuve-sur-Auvers; coordinates based on proximity to the town of Auvers-Saint-Georges.",
+            199
+          ]
+        ]
+      },
+      "geogscale": {
+        "types": {
+          "str": 3212
+        },
+        "missing": 487,
+        "missing_rate": 0.131657,
+        "min": null,
+        "max": null,
+        "top_values": [
+          [
+            "small collection",
+            1621
+          ],
+          [
+            "outcrop",
+            1051
+          ],
+          [
+            "local area",
+            469
+          ],
+          [
+            "hand sample",
+            71
+          ]
+        ]
+      },
+      "identified_name": {
+        "types": {
+          "str": 3699
+        },
+        "missing": 0,
+        "missing_rate": 0.0,
+        "min": null,
+        "max": null,
+        "top_values": [
+          [
+            "Glycymeris sp.",
+            33
+          ],
+          [
+            "\"Lucina\" sp.",
+            31
+          ],
+          [
+            "Pelecyora (Cordiopsis) incrassata",
+            31
+          ],
+          [
+            "Lentidium nitidum",
+            31
+          ],
+          [
+            "Rissoa turbinata",
+            31
+          ]
+        ]
+      },
+      "identified_no": {
+        "types": {
+          "str": 1160
+        },
+        "missing": 2539,
+        "missing_rate": 0.686402,
+        "min": null,
+        "max": null,
+        "top_values": [
+          [
+            "0",
+            41
+          ],
+          [
+            "66243",
+            31
+          ],
+          [
+            "189662",
+            31
+          ],
+          [
+            "189683",
+            31
+          ],
+          [
+            "114261",
+            29
+          ]
+        ]
+      },
+      "identified_rank": {
+        "types": {
+          "str": 3695
+        },
+        "missing": 4,
+        "missing_rate": 0.001081,
+        "min": null,
+        "max": null,
+        "top_values": [
+          [
+            "species",
+            3063
+          ],
+          [
+            "genus",
+            491
+          ],
+          [
+            "family",
+            75
+          ],
+          [
+            "subspecies",
+            15
+          ],
+          [
+            "subgenus",
+            15
+          ]
+        ]
+      },
+      "lat": {
+        "types": {
+          "str": 3699
+        },
+        "missing": 0,
+        "missing_rate": 0.0,
+        "min": null,
+        "max": null,
+        "top_values": [
+          [
+            "48.848000",
+            501
+          ],
+          [
+            "48.450001",
+            439
+          ],
+          [
+            "48.500000",
+            423
+          ],
+          [
+            "49.250000",
+            348
+          ],
+          [
+            "48.483334",
+            291
+          ]
+        ]
+      },
+      "late_interval": {
+        "types": {
+          "str": 13
+        },
+        "missing": 3686,
+        "missing_rate": 0.996486,
+        "min": null,
+        "max": null,
+        "top_values": [
+          [
+            "Early Eocene",
+            9
+          ],
+          [
+            "Hauterivian",
+            2
+          ],
+          [
+            "Holocene",
+            1
+          ],
+          [
+            "Serravallian",
+            1
+          ]
+        ]
+      },
+      "latlng_basis": {
+        "types": {
+          "str": 3036
+        },
+        "missing": 663,
+        "missing_rate": 0.179238,
+        "min": null,
+        "max": null,
+        "top_values": [
+          [
+            "based on political unit",
+            1627
+          ],
+          [
+            "based on nearby landmark",
+            1250
+          ],
+          [
+            "stated in text",
+            93
+          ],
+          [
+            "estimated from map",
+            66
+          ]
+        ]
+      },
+      "latlng_precision": {
+        "types": {
+          "str": 3699
+        },
+        "missing": 0,
+        "missing_rate": 0.0,
+        "min": null,
+        "max": null,
+        "top_values": [
+          [
+            "minutes",
+            2179
+          ],
+          [
+            "3",
+            771
+          ],
+          [
+            "seconds",
+            584
+          ],
+          [
+            "2",
+            87
+          ],
+          [
+            "1",
+            56
+          ]
+        ]
+      },
+      "lng": {
+        "types": {
+          "str": 3699
+        },
+        "missing": 0,
+        "missing_rate": 0.0,
+        "min": null,
+        "max": null,
+        "top_values": [
+          [
+            "1.934000",
+            501
+          ],
+          [
+            "2.200000",
+            438
+          ],
+          [
+            "2.250000",
+            404
+          ],
+          [
+            "2.500000",
+            344
+          ],
+          [
+            "2.233333",
+            304
+          ]
+        ]
+      },
+      "max_ma": {
+        "types": {
+          "int": 314,
+          "float": 3385
+        },
+        "missing": 0,
+        "missing_rate": 0.0,
+        "min": 0.129,
+        "max": 382.31,
+        "top_values": [
+          [
+            "33.9",
+            1530
+          ],
+          [
+            "48.07",
+            1104
+          ],
+          [
+            "41.03",
+            563
+          ],
+          [
+            "66",
+            171
+          ],
+          [
+            "56",
+            111
+          ]
+        ]
+      },
+      "min_ma": {
+        "types": {
+          "float": 3685,
+          "int": 14
+        },
+        "missing": 0,
+        "missing_rate": 0.0,
+        "min": 0.0,
+        "max": 375.2,
+        "top_values": [
+          [
+            "27.3",
+            1451
+          ],
+          [
+            "41.03",
+            1104
+          ],
+          [
+            "37.71",
+            563
+          ],
+          [
+            "61.66",
+            171
+          ],
+          [
+            "48.07",
+            117
+          ]
+        ]
+      },
+      "occurrence_no": {
+        "types": {
+          "str": 3699
+        },
+        "missing": 0,
+        "missing_rate": 0.0,
+        "min": null,
+        "max": null,
+        "top_values": [
+          [
+            "43111",
+            1
+          ],
+          [
+            "43112",
+            1
+          ],
+          [
+            "43113",
+            1
+          ],
+          [
+            "43114",
+            1
+          ],
+          [
+            "43115",
+            1
+          ]
+        ]
+      },
+      "order": {
+        "types": {
+          "str": 3648
+        },
+        "missing": 51,
+        "missing_rate": 0.013788,
+        "min": null,
+        "max": null,
+        "top_values": [
+          [
+            "NO_ORDER_SPECIFIED",
+            744
+          ],
+          [
+            "Sorbeoconcha",
+            538
+          ],
+          [
+            "Neogastropoda",
+            435
+          ],
+          [
+            "Venerida",
+            236
+          ],
+          [
+            "Cardiida",
+            232
+          ]
+        ]
+      },
+      "order_no": {
+        "types": {
+          "str": 3648
+        },
+        "missing": 51,
+        "missing_rate": 0.013788,
+        "min": null,
+        "max": null,
+        "top_values": [
+          [
+            "NO",
+            744
+          ],
+          [
+            "62297",
+            538
+          ],
+          [
+            "10707",
+            435
+          ],
+          [
+            "17297",
+            236
+          ],
+          [
+            "244360",
+            232
+          ]
+        ]
+      },
+      "phylum": {
+        "types": {
+          "str": 3658
+        },
+        "missing": 41,
+        "missing_rate": 0.011084,
+        "min": null,
+        "max": null,
+        "top_values": [
+          [
+            "Mollusca",
+            3090
+          ],
+          [
+            "Chordata",
+            343
+          ],
+          [
+            "Echinodermata",
+            56
+          ],
+          [
+            "Brachiopoda",
+            43
+          ],
+          [
+            "Cnidaria",
+            37
+          ]
+        ]
+      },
+      "phylum_no": {
+        "types": {
+          "str": 3658
+        },
+        "missing": 41,
+        "missing_rate": 0.011084,
+        "min": null,
+        "max": null,
+        "top_values": [
+          [
+            "7805",
+            3090
+          ],
+          [
+            "33815",
+            343
+          ],
+          [
+            "30739",
+            56
+          ],
+          [
+            "26322",
+            43
+          ],
+          [
+            "4524",
+            37
+          ]
+        ]
+      },
+      "primary_reference": {
+        "types": {
+          "str": 3699
+        },
+        "missing": 0,
+        "missing_rate": 0.0,
+        "min": null,
+        "max": null,
+        "top_values": [
+          [
+            "J. L. Gitton, P. Lozouet, and P. Maestrati. 1986. Biostratigraphie et paleoecologie des gisements types du Stampian de la region d''Etampes (Essonne). Geologie de la France 1:3-101",
+            1515
+          ],
+          [
+            "L. Morellet and J. Morellet. 1945. Faune des Sables a Nummulites Variolarius de Barisseuse, pres de Saint-Vast-les-Mello (Oise), et Remarques Paleontologiques. Societe Geologique de France-Bulletin Series 5 15:337-356",
+            344
+          ],
+          [
+            "M. T. Sanders, D. Merle, and L. Villier. 2015. The molluscs of the “Falunière” of Grignon (Middle Lutetian, Yvelines, France): quantification of lithification bias and its impact on the biodiversity assessment of the Middle Eocene of Western Europe. Geodiversitas 37(3):345-365",
+            285
+          ],
+          [
+            "M. M. Glibert. 1962. Les Mesogastropoda Fossiles du Cenozoïque étranger des Collections de L'Institute Royale des Sciences Naturelles de Belgique: Cyclophoridae à Stilifetidae. Institute Royale des Sciences Naturelles de Belgique, Memoire, 10th sériés 69:1-304",
+            161
+          ],
+          [
+            "J.-M. Pacaud, D. Merle, and J.-C. Meyer. 2000. La faune danienne de Vigny (Val-d’Oise, France): importance pour l’étude de la diversification des mollusques au début du Tertiaire. Comptes Rendus de l ’Académie des Sciences,Sciences de la Terre et des Planètes, Paris, série II a 330(12):867-873",
+            135
+          ]
+        ]
+      },
+      "record_type": {
+        "types": {
+          "str": 3699
+        },
+        "missing": 0,
+        "missing_rate": 0.0,
+        "min": null,
+        "max": null,
+        "top_values": [
+          [
+            "occ",
+            3699
+          ]
+        ]
+      },
+      "reference_no": {
+        "types": {
+          "str": 3699
+        },
+        "missing": 0,
+        "missing_rate": 0.0,
+        "min": null,
+        "max": null,
+        "top_values": [
+          [
+            "789",
+            1515
+          ],
+          [
+            "201",
+            344
+          ],
+          [
+            "58859",
+            285
+          ],
+          [
+            "58437",
+            161
+          ],
+          [
+            "6432",
+            135
+          ]
+        ]
+      },
+      "reid_no": {
+        "types": {
+          "str": 12
+        },
+        "missing": 3687,
+        "missing_rate": 0.996756,
+        "min": null,
+        "max": null,
+        "top_values": [
+          [
+            "12469",
+            1
+          ],
+          [
+            "19614",
+            1
+          ],
+          [
+            "38845",
+            1
+          ],
+          [
+            "38846",
+            1
+          ],
+          [
+            "21326",
+            1
+          ]
+        ]
+      },
+      "state": {
+        "types": {
+          "str": 2525
+        },
+        "missing": 1174,
+        "missing_rate": 0.317383,
+        "min": null,
+        "max": null,
+        "top_values": [
+          [
+            "Essonne",
+            1515
+          ],
+          [
+            "Oise",
+            345
+          ],
+          [
+            "Yvelines",
+            286
+          ],
+          [
+            "Picardie",
+            111
+          ],
+          [
+            "Île-de-France",
+            87
+          ]
+        ]
+      },
+      "subgenus_no": {
+        "types": {
+          "str": 435
+        },
+        "missing": 3264,
+        "missing_rate": 0.882401,
+        "min": null,
+        "max": null,
+        "top_values": [
+          [
+            "189659",
+            39
+          ],
+          [
+            "17508",
+            31
+          ],
+          [
+            "18517",
+            22
+          ],
+          [
+            "83509",
+            21
+          ],
+          [
+            "107622",
+            20
+          ]
+        ]
+      }
+    },
+    "exact_duplicates": 0
+  },
+  "climate_daily": {
+    "rows": 255680,
+    "columns": 6,
+    "fields": {
+      "date": {
+        "types": {
+          "str": 255680
+        },
+        "missing": 0,
+        "missing_rate": 0.0,
+        "min": null,
+        "max": null,
+        "top_values": [
+          [
+            "2030-01-01",
+            20
+          ],
+          [
+            "2030-01-02",
+            20
+          ],
+          [
+            "2030-01-03",
+            20
+          ],
+          [
+            "2030-01-04",
+            20
+          ],
+          [
+            "2030-01-05",
+            20
+          ]
+        ]
+      },
+      "precipitation_mm": {
+        "types": {
+          "float": 255680
+        },
+        "missing": 0,
+        "missing_rate": 0.0,
+        "min": 0.0,
+        "max": 77.01,
+        "top_values": [
+          [
+            "0.0",
+            102867
+          ],
+          [
+            "0.1",
+            7144
+          ],
+          [
+            "0.09",
+            6653
+          ],
+          [
+            "0.2",
+            4247
+          ],
+          [
+            "0.3",
+            3040
+          ]
+        ]
+      },
+      "series_id": {
+        "types": {
+          "str": 255680
+        },
+        "missing": 0,
+        "missing_rate": 0.0,
+        "min": null,
+        "max": null,
+        "top_values": [
+          [
+            "75056_era5_seamless",
+            10958
+          ],
+          [
+            "77186_era5_seamless",
+            10958
+          ],
+          [
+            "77284_era5_seamless",
+            10958
+          ],
+          [
+            "77288_era5_seamless",
+            10958
+          ],
+          [
+            "78640_era5_seamless",
+            10958
+          ]
+        ]
+      },
+      "tmax_c": {
+        "types": {
+          "float": 255680
+        },
+        "missing": 0,
+        "missing_rate": 0.0,
+        "min": -8.5,
+        "max": 43.3,
+        "top_values": [
+          [
+            "10.2",
+            1441
+          ],
+          [
+            "10.0",
+            1420
+          ],
+          [
+            "11.8",
+            1397
+          ],
+          [
+            "10.8",
+            1395
+          ],
+          [
+            "10.5",
+            1389
+          ]
+        ]
+      },
+      "tmean_c": {
+        "types": {
+          "float": 255680
+        },
+        "missing": 0,
+        "missing_rate": 0.0,
+        "min": -10.1,
+        "max": 35.5,
+        "top_values": [
+          [
+            "8.4",
+            1496
+          ],
+          [
+            "8.5",
+            1462
+          ],
+          [
+            "8.3",
+            1454
+          ],
+          [
+            "8.7",
+            1439
+          ],
+          [
+            "9.0",
+            1430
+          ]
+        ]
+      },
+      "tmin_c": {
+        "types": {
+          "float": 255680
+        },
+        "missing": 0,
+        "missing_rate": 0.0,
+        "min": -13.0,
+        "max": 26.8,
+        "top_values": [
+          [
+            "7.9",
+            1513
+          ],
+          [
+            "13.7",
+            1472
+          ],
+          [
+            "7.2",
+            1469
+          ],
+          [
+            "7.6",
+            1468
+          ],
+          [
+            "11.2",
+            1461
+          ]
+        ]
+      }
+    },
+    "exact_duplicates": 0
+  }
+}

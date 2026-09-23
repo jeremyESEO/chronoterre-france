@@ -1,0 +1,75 @@
+{
+  "project": "ChronoTerre Île-de-France",
+  "region_code": "11",
+  "departments": [
+    "75",
+    "77",
+    "78",
+    "91",
+    "92",
+    "93",
+    "94",
+    "95"
+  ],
+  "city_codes": [
+    "75056",
+    "78640",
+    "95127",
+    "77284",
+    "77288",
+    "77186",
+    "91228",
+    "93066",
+    "94028",
+    "92002"
+  ],
+  "bbox": {
+    "lngmin": 1.4,
+    "lngmax": 3.6,
+    "latmin": 48.1,
+    "latmax": 49.25
+  },
+  "baseline": [
+    "1991-01-01",
+    "2020-12-31"
+  ],
+  "future": [
+    "2030-01-01",
+    "2049-12-31"
+  ],
+  "models": [
+    "MRI_AGCM3_2_S",
+    "EC_Earth3P_HR"
+  ],
+  "daily_variables": [
+    "temperature_2m_mean",
+    "temperature_2m_max",
+    "temperature_2m_min",
+    "precipitation_sum"
+  ],
+  "endpoints": {
+    "pbdb": "https://paleobiodb.org/data1.2/",
+    "departments": "https://etalab-datasets.geo.data.gouv.fr/contours-administratifs/2025/geojson/departements-100m.geojson",
+    "cities": "https://geo.api.gouv.fr/communes?codeRegion=11&fields=nom,code,codeDepartement,centre&format=json",
+    "archive": "https://archive-api.open-meteo.com/v1/archive",
+    "climate": "https://climate-api.open-meteo.com/v1/climate"
+  },
+  "timeout_seconds": 180,
+  "retries": 3,
+  "request_interval_seconds": 15,
+  "excluded_collections": {
+    "170167": "Longueville, Calvados : le nom indique un département hors Île-de-France malgré les coordonnées.",
+    "195628": "Mont-Aimé, Marne, Grand Est : contradiction explicite dans geogcomments.",
+    "10239": "Mont Aimé : même localité de la Marne que col:195628 ; coordonnées régionales incohérentes.",
+    "197471": "La source dit localité inconnue et coordonnées du musée parisien, non du lieu de découverte.",
+    "184156": "La source dit que le lieu de découverte n'est pas connu ; Paris area seulement supposé.",
+    "184113": "Paris area unspecified : provenance exacte du spécimen inconnue dans la source."
+  },
+  "analogue": {
+    "temperature_scale_c": 1.0,
+    "precipitation_scale_mm": 20.0,
+    "close_distance_max": 1.0
+  },
+  "baseline_model": "era5_seamless",
+  "minimum_complete_year_fraction": 0.9
+}

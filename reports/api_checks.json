@@ -1,0 +1,72 @@
+{
+  "executed_at": "2026-09-23T10:55:20Z",
+  "checks": [
+    {
+      "endpoint": "/api/v1/health",
+      "status": 200,
+      "expected": 200,
+      "pass": true
+    },
+    {
+      "endpoint": "/api/v1/cities",
+      "status": 200,
+      "expected": 200,
+      "pass": true
+    },
+    {
+      "endpoint": "/api/v1/fossils?department=78&class=Bivalvia",
+      "status": 200,
+      "expected": 200,
+      "pass": true
+    },
+    {
+      "endpoint": "/api/v1/fossils?city=78640&radius=30&limit=5",
+      "status": 200,
+      "expected": 200,
+      "pass": true
+    },
+    {
+      "endpoint": "/api/v1/climate?city=78640",
+      "status": 200,
+      "expected": 200,
+      "pass": true
+    },
+    {
+      "endpoint": "/api/v1/analogues?city=78640&model=EC_Earth3P_HR",
+      "status": 200,
+      "expected": 200,
+      "pass": true
+    },
+    {
+      "endpoint": "/api/v1/fossils?limit=1000",
+      "status": 400,
+      "expected": 400,
+      "pass": true
+    },
+    {
+      "endpoint": "/api/v1/climate?city=inconnue",
+      "status": 400,
+      "expected": 400,
+      "pass": true
+    },
+    {
+      "endpoint": "/api/v1/inconnue",
+      "status": 404,
+      "expected": 404,
+      "pass": true
+    },
+    {
+      "endpoint": "/runtime.js",
+      "status": 200,
+      "expected": 200,
+      "pass": true
+    },
+    {
+      "endpoint": "/",
+      "status": 200,
+      "expected": 200,
+      "pass": true
+    }
+  ],
+  "passed": true
+}

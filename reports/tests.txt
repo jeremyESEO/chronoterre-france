@@ -1,0 +1,14 @@
+test_analogue_scale_and_no_close_match (test_quality.QualityTests.test_analogue_scale_and_no_close_match) ... ok
+test_haversine_same_point (test_quality.QualityTests.test_haversine_same_point) ... ok
+test_impossible_date_and_window (test_quality.QualityTests.test_impossible_date_and_window) ... ok
+test_missing_nan_and_inverted_temperatures (test_quality.QualityTests.test_missing_nan_and_inverted_temperatures) ... ok
+test_negative_rain_is_rejected (test_quality.QualityTests.test_negative_rain_is_rejected) ... ok
+test_political_coordinates_and_unknown_origin_rejected (test_quality.QualityTests.test_political_coordinates_and_unknown_origin_rejected) ... ok
+test_polygon_hole_and_multipolygon (test_quality.QualityTests.test_polygon_hole_and_multipolygon) ... ok
+test_sql_unique_and_foreign_keys (test_quality.QualityTests.test_sql_unique_and_foreign_keys) ... ok
+test_valid_leap_day (test_quality.QualityTests.test_valid_leap_day) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.007s
+
+OK

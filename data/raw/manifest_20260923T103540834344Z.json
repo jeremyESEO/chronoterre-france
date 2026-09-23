@@ -1,0 +1,621 @@
+{
+  "version": 1,
+  "created_at": "2026-09-23T10:39:41Z",
+  "configuration_sha256": "61e6c19f9007761f0bec72ffb7c80d9fcc07c18da8c24e150ae4e3c4a4c67f70",
+  "files": {
+    "departments": {
+      "key": "departments",
+      "source": "etalab",
+      "url": "https://etalab-datasets.geo.data.gouv.fr/contours-administratifs/2025/geojson/departements-100m.geojson",
+      "path": "data/raw/20260923T101505775299Z_departments.json",
+      "sha256": "10f5c6ffc2dc857b4f4fc360297f97f6f01fc3ba3eb3a326ee92b76baefed447",
+      "bytes": 2753929,
+      "fetched_at": "2026-09-23T10:15:21Z",
+      "content_type": "Content-Type: application/geo+json",
+      "metadata": {}
+    },
+    "cities": {
+      "key": "cities",
+      "source": "geoapi",
+      "url": "https://geo.api.gouv.fr/communes?codeRegion=11&fields=nom,code,codeDepartement,centre&format=json",
+      "path": "data/raw/20260923T101505775299Z_cities.json",
+      "sha256": "3e40abbc3869f4b7a1312dbf70eeb44547e613dbc40e5aad2ea0ca06a1ff2da5",
+      "bytes": 150139,
+      "fetched_at": "2026-09-23T10:15:28Z",
+      "content_type": "application/json; charset=utf-8",
+      "metadata": {}
+    },
+    "collections": {
+      "key": "collections",
+      "source": "pbdb",
+      "url": "https://paleobiodb.org/data1.2/colls/list.json?lngmin=1.4&lngmax=3.6&latmin=48.1&latmax=49.25&vocab=pbdb&limit=all&show=loc%2Cenv%2Cref%2Crem%2Cstrat",
+      "path": "data/raw/20260923T101505775299Z_collections.json",
+      "sha256": "db184f1a38d7c6caa46271c63b3df85417fecc0913914ef2a8854b2690912a88",
+      "bytes": 141346,
+      "fetched_at": "2026-09-23T10:15:35Z",
+      "content_type": "application/json; charset=utf-8",
+      "metadata": {}
+    },
+    "occurrences": {
+      "key": "occurrences",
+      "source": "pbdb",
+      "url": "https://paleobiodb.org/data1.2/occs/list.json?lngmin=1.4&lngmax=3.6&latmin=48.1&latmax=49.25&vocab=pbdb&limit=all&show=coords%2Cloc%2Cenv%2Cref%2Cclassext",
+      "path": "data/raw/20260923T101505775299Z_occurrences.json",
+      "sha256": "7fd91760cbf2ce99831d88073ca57f27a0b82ecad9012fcf404de6cd83da3330",
+      "bytes": 4087247,
+      "fetched_at": "2026-09-23T10:15:43Z",
+      "content_type": "application/json; charset=utf-8",
+      "metadata": {}
+    },
+    "75056_era5_land": {
+      "key": "75056_era5_land",
+      "source": "archive",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=48.8589&longitude=2.347&start_date=1991-01-01&end_date=2020-12-31&models=era5_land&daily=temperature_2m_mean%2Ctemperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum&timezone=GMT",
+      "path": "data/raw/20260923T101505775299Z_75056_era5_land.json",
+      "sha256": "aaedb5c679137ef85d086f6321516d14978d22b71e1a19d1dd6d0bd2895f08f1",
+      "bytes": 349832,
+      "fetched_at": "2026-09-23T10:15:50Z",
+      "content_type": "application/json; charset=utf-8",
+      "metadata": {
+        "city_code": "75056",
+        "model": "era5_land",
+        "kind": "baseline",
+        "start": "1991-01-01",
+        "end": "2020-12-31",
+        "requested_lat": 48.8589,
+        "requested_lon": 2.347
+      }
+    },
+    "75056_MRI_AGCM3_2_S": {
+      "key": "75056_MRI_AGCM3_2_S",
+      "source": "climate",
+      "url": "https://climate-api.open-meteo.com/v1/climate?latitude=48.8589&longitude=2.347&start_date=2030-01-01&end_date=2049-12-31&models=MRI_AGCM3_2_S&daily=temperature_2m_mean%2Ctemperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum&timezone=GMT",
+      "path": "data/raw/20260923T101505775299Z_75056_MRI_AGCM3_2_S.json",
+      "sha256": "68b0eff1307c9bbd44f2116bb7bbcc4f9d16101eab408a7301840f0827f46043",
+      "bytes": 233837,
+      "fetched_at": "2026-09-23T10:15:58Z",
+      "content_type": "application/json; charset=utf-8",
+      "metadata": {
+        "city_code": "75056",
+        "model": "MRI_AGCM3_2_S",
+        "kind": "future",
+        "start": "2030-01-01",
+        "end": "2049-12-31",
+        "requested_lat": 48.8589,
+        "requested_lon": 2.347
+      }
+    },
+    "75056_EC_Earth3P_HR": {
+      "key": "75056_EC_Earth3P_HR",
+      "source": "climate",
+      "url": "https://climate-api.open-meteo.com/v1/climate?latitude=48.8589&longitude=2.347&start_date=2030-01-01&end_date=2049-12-31&models=EC_Earth3P_HR&daily=temperature_2m_mean%2Ctemperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum&timezone=GMT",
+      "path": "data/raw/20260923T101505775299Z_75056_EC_Earth3P_HR.json",
+      "sha256": "15b9f69c273a2ada946326f75f446303d098dd8eb91f8f6151e3b59dab311229",
+      "bytes": 234457,
+      "fetched_at": "2026-09-23T10:16:06Z",
+      "content_type": "application/json; charset=utf-8",
+      "metadata": {
+        "city_code": "75056",
+        "model": "EC_Earth3P_HR",
+        "kind": "future",
+        "start": "2030-01-01",
+        "end": "2049-12-31",
+        "requested_lat": 48.8589,
+        "requested_lon": 2.347
+      }
+    },
+    "78640_era5_land": {
+      "key": "78640_era5_land",
+      "source": "archive",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=48.784&longitude=2.1956&start_date=1991-01-01&end_date=2020-12-31&models=era5_land&daily=temperature_2m_mean%2Ctemperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum&timezone=GMT",
+      "path": "data/raw/20260923T101505775299Z_78640_era5_land.json",
+      "sha256": "4184f967d4c74c9f5c74251103d977a12aa087339fd5f3ab429ccfc1b558091f",
+      "bytes": 348844,
+      "fetched_at": "2026-09-23T10:16:13Z",
+      "content_type": "application/json; charset=utf-8",
+      "metadata": {
+        "city_code": "78640",
+        "model": "era5_land",
+        "kind": "baseline",
+        "start": "1991-01-01",
+        "end": "2020-12-31",
+        "requested_lat": 48.784,
+        "requested_lon": 2.1956
+      }
+    },
+    "78640_MRI_AGCM3_2_S": {
+      "key": "78640_MRI_AGCM3_2_S",
+      "source": "climate",
+      "url": "https://climate-api.open-meteo.com/v1/climate?latitude=48.784&longitude=2.1956&start_date=2030-01-01&end_date=2049-12-31&models=MRI_AGCM3_2_S&daily=temperature_2m_mean%2Ctemperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum&timezone=GMT",
+      "path": "data/raw/20260923T101505775299Z_78640_MRI_AGCM3_2_S.json",
+      "sha256": "ddc0466603f8bc74c7b05441bd6b981a3f1efcc155904840445f3270a83b9eac",
+      "bytes": 233327,
+      "fetched_at": "2026-09-23T10:16:21Z",
+      "content_type": "application/json; charset=utf-8",
+      "metadata": {
+        "city_code": "78640",
+        "model": "MRI_AGCM3_2_S",
+        "kind": "future",
+        "start": "2030-01-01",
+        "end": "2049-12-31",
+        "requested_lat": 48.784,
+        "requested_lon": 2.1956
+      }
+    },
+    "78640_EC_Earth3P_HR": {
+      "key": "78640_EC_Earth3P_HR",
+      "source": "climate",
+      "url": "https://climate-api.open-meteo.com/v1/climate?latitude=48.784&longitude=2.1956&start_date=2030-01-01&end_date=2049-12-31&models=EC_Earth3P_HR&daily=temperature_2m_mean%2Ctemperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum&timezone=GMT",
+      "path": "data/raw/20260923T101505775299Z_78640_EC_Earth3P_HR.json",
+      "sha256": "d33ca299dcbfa61603df462b11995dc0ee374ae4d5804305df8f79b08035807e",
+      "bytes": 233869,
+      "fetched_at": "2026-09-23T10:16:28Z",
+      "content_type": "application/json; charset=utf-8",
+      "metadata": {
+        "city_code": "78640",
+        "model": "EC_Earth3P_HR",
+        "kind": "future",
+        "start": "2030-01-01",
+        "end": "2049-12-31",
+        "requested_lat": 48.784,
+        "requested_lon": 2.1956
+      }
+    },
+    "95127_era5_land": {
+      "key": "95127_era5_land",
+      "source": "archive",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=49.0373&longitude=2.0455&start_date=1991-01-01&end_date=2020-12-31&models=era5_land&daily=temperature_2m_mean%2Ctemperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum&timezone=GMT",
+      "path": "data/raw/20260923T101505775299Z_95127_era5_land.json",
+      "sha256": "4c8d93cc4bbde253bf4ceb15f5d7f3431d0eee4771e98d11767d5804dac9810a",
+      "bytes": 349966,
+      "fetched_at": "2026-09-23T10:16:36Z",
+      "content_type": "application/json; charset=utf-8",
+      "metadata": {
+        "city_code": "95127",
+        "model": "era5_land",
+        "kind": "baseline",
+        "start": "1991-01-01",
+        "end": "2020-12-31",
+        "requested_lat": 49.0373,
+        "requested_lon": 2.0455
+      }
+    },
+    "95127_MRI_AGCM3_2_S": {
+      "key": "95127_MRI_AGCM3_2_S",
+      "source": "climate",
+      "url": "https://climate-api.open-meteo.com/v1/climate?latitude=49.0373&longitude=2.0455&start_date=2030-01-01&end_date=2049-12-31&models=MRI_AGCM3_2_S&daily=temperature_2m_mean%2Ctemperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum&timezone=GMT",
+      "path": "data/raw/20260923T101505775299Z_95127_MRI_AGCM3_2_S.json",
+      "sha256": "c5335285b6ecd70099d99b140212a62ca4d837b3ef6f0af6a52c52244e60b14b",
+      "bytes": 233977,
+      "fetched_at": "2026-09-23T10:17:02Z",
+      "content_type": "application/json; charset=utf-8",
+      "metadata": {
+        "city_code": "95127",
+        "model": "MRI_AGCM3_2_S",
+        "kind": "future",
+        "start": "2030-01-01",
+        "end": "2049-12-31",
+        "requested_lat": 49.0373,
+        "requested_lon": 2.0455
+      }
+    },
+    "95127_EC_Earth3P_HR": {
+      "key": "95127_EC_Earth3P_HR",
+      "source": "climate",
+      "url": "https://climate-api.open-meteo.com/v1/climate?latitude=49.0373&longitude=2.0455&start_date=2030-01-01&end_date=2049-12-31&models=EC_Earth3P_HR&daily=temperature_2m_mean%2Ctemperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum&timezone=GMT",
+      "path": "data/raw/20260923T101505775299Z_95127_EC_Earth3P_HR.json",
+      "sha256": "db7123bfdbb097e7d381b36bd3e4ad25aaf85cb10a094f793a60b091aa95b1f0",
+      "bytes": 234572,
+      "fetched_at": "2026-09-23T10:17:11Z",
+      "content_type": "application/json; charset=utf-8",
+      "metadata": {
+        "city_code": "95127",
+        "model": "EC_Earth3P_HR",
+        "kind": "future",
+        "start": "2030-01-01",
+        "end": "2049-12-31",
+        "requested_lat": 49.0373,
+        "requested_lon": 2.0455
+      }
+    },
+    "77284_era5_land": {
+      "key": "77284_era5_land",
+      "source": "archive",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=48.9573&longitude=2.9035&start_date=1991-01-01&end_date=2020-12-31&models=era5_land&daily=temperature_2m_mean%2Ctemperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum&timezone=GMT",
+      "path": "data/raw/20260923T101505775299Z_77284_era5_land.json",
+      "sha256": "a33c9264df9612a60a8d0fda31bcae0d8cd11192d5951a2c662103d407da64ac",
+      "bytes": 349630,
+      "fetched_at": "2026-09-23T10:17:18Z",
+      "content_type": "application/json; charset=utf-8",
+      "metadata": {
+        "city_code": "77284",
+        "model": "era5_land",
+        "kind": "baseline",
+        "start": "1991-01-01",
+        "end": "2020-12-31",
+        "requested_lat": 48.9573,
+        "requested_lon": 2.9035
+      }
+    },
+    "77284_MRI_AGCM3_2_S": {
+      "key": "77284_MRI_AGCM3_2_S",
+      "source": "climate",
+      "url": "https://climate-api.open-meteo.com/v1/climate?latitude=48.9573&longitude=2.9035&start_date=2030-01-01&end_date=2049-12-31&models=MRI_AGCM3_2_S&daily=temperature_2m_mean%2Ctemperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum&timezone=GMT",
+      "path": "data/raw/20260923T101505775299Z_77284_MRI_AGCM3_2_S.json",
+      "sha256": "b23a8f77020b333ef5b62c077b8a3ca9f039102b9d621123b582291768c95ac9",
+      "bytes": 233734,
+      "fetched_at": "2026-09-23T10:17:26Z",
+      "content_type": "application/json; charset=utf-8",
+      "metadata": {
+        "city_code": "77284",
+        "model": "MRI_AGCM3_2_S",
+        "kind": "future",
+        "start": "2030-01-01",
+        "end": "2049-12-31",
+        "requested_lat": 48.9573,
+        "requested_lon": 2.9035
+      }
+    },
+    "77284_EC_Earth3P_HR": {
+      "key": "77284_EC_Earth3P_HR",
+      "source": "climate",
+      "url": "https://climate-api.open-meteo.com/v1/climate?latitude=48.9573&longitude=2.9035&start_date=2030-01-01&end_date=2049-12-31&models=EC_Earth3P_HR&daily=temperature_2m_mean%2Ctemperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum&timezone=GMT",
+      "path": "data/raw/20260923T101826511520Z_77284_EC_Earth3P_HR.json",
+      "sha256": "d701a74b9020da9beea993f492d3720002a81e0f67d504fb75f4b3d3ff5e6571",
+      "bytes": 234419,
+      "fetched_at": "2026-09-23T10:18:35Z",
+      "content_type": "application/json; charset=utf-8",
+      "metadata": {
+        "city_code": "77284",
+        "model": "EC_Earth3P_HR",
+        "kind": "future",
+        "start": "2030-01-01",
+        "end": "2049-12-31",
+        "requested_lat": 48.9573,
+        "requested_lon": 2.9035
+      }
+    },
+    "77288_era5_land": {
+      "key": "77288_era5_land",
+      "source": "archive",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=48.5421&longitude=2.6552&start_date=1991-01-01&end_date=2020-12-31&models=era5_land&daily=temperature_2m_mean%2Ctemperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum&timezone=GMT",
+      "path": "data/raw/20260923T101826511520Z_77288_era5_land.json",
+      "sha256": "efddf4edd6aa3f5af5613982871f428fba99c7de45cba53f8afc379189fa7185",
+      "bytes": 349847,
+      "fetched_at": "2026-09-23T10:18:58Z",
+      "content_type": "application/json; charset=utf-8",
+      "metadata": {
+        "city_code": "77288",
+        "model": "era5_land",
+        "kind": "baseline",
+        "start": "1991-01-01",
+        "end": "2020-12-31",
+        "requested_lat": 48.5421,
+        "requested_lon": 2.6552
+      }
+    },
+    "77288_MRI_AGCM3_2_S": {
+      "key": "77288_MRI_AGCM3_2_S",
+      "source": "climate",
+      "url": "https://climate-api.open-meteo.com/v1/climate?latitude=48.5421&longitude=2.6552&start_date=2030-01-01&end_date=2049-12-31&models=MRI_AGCM3_2_S&daily=temperature_2m_mean%2Ctemperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum&timezone=GMT",
+      "path": "data/raw/20260923T101826511520Z_77288_MRI_AGCM3_2_S.json",
+      "sha256": "875f48b3df1101ce134f6b6f7574b3c5c447672fc8b65f67e1bafbee7c3cbc24",
+      "bytes": 233879,
+      "fetched_at": "2026-09-23T10:19:20Z",
+      "content_type": "application/json; charset=utf-8",
+      "metadata": {
+        "city_code": "77288",
+        "model": "MRI_AGCM3_2_S",
+        "kind": "future",
+        "start": "2030-01-01",
+        "end": "2049-12-31",
+        "requested_lat": 48.5421,
+        "requested_lon": 2.6552
+      }
+    },
+    "77288_EC_Earth3P_HR": {
+      "key": "77288_EC_Earth3P_HR",
+      "source": "climate",
+      "url": "https://climate-api.open-meteo.com/v1/climate?latitude=48.5421&longitude=2.6552&start_date=2030-01-01&end_date=2049-12-31&models=EC_Earth3P_HR&daily=temperature_2m_mean%2Ctemperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum&timezone=GMT",
+      "path": "data/raw/20260923T101826511520Z_77288_EC_Earth3P_HR.json",
+      "sha256": "5df25804a33b54371dc8c7ddfc0f59ee986ed672df34e1d02fadde4c280731a0",
+      "bytes": 234524,
+      "fetched_at": "2026-09-23T10:19:43Z",
+      "content_type": "application/json; charset=utf-8",
+      "metadata": {
+        "city_code": "77288",
+        "model": "EC_Earth3P_HR",
+        "kind": "future",
+        "start": "2030-01-01",
+        "end": "2049-12-31",
+        "requested_lat": 48.5421,
+        "requested_lon": 2.6552
+      }
+    },
+    "77186_era5_land": {
+      "key": "77186_era5_land",
+      "source": "archive",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=48.4236&longitude=2.6817&start_date=1991-01-01&end_date=2020-12-31&models=era5_land&daily=temperature_2m_mean%2Ctemperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum&timezone=GMT",
+      "path": "data/raw/20260923T101826511520Z_77186_era5_land.json",
+      "sha256": "0d7d7147ab6528eb4033130d19c9b9f5fe63fb3454e2396c96820fe2cf4de64d",
+      "bytes": 349411,
+      "fetched_at": "2026-09-23T10:20:05Z",
+      "content_type": "application/json; charset=utf-8",
+      "metadata": {
+        "city_code": "77186",
+        "model": "era5_land",
+        "kind": "baseline",
+        "start": "1991-01-01",
+        "end": "2020-12-31",
+        "requested_lat": 48.4236,
+        "requested_lon": 2.6817
+      }
+    },
+    "77186_MRI_AGCM3_2_S": {
+      "key": "77186_MRI_AGCM3_2_S",
+      "source": "climate",
+      "url": "https://climate-api.open-meteo.com/v1/climate?latitude=48.4236&longitude=2.6817&start_date=2030-01-01&end_date=2049-12-31&models=MRI_AGCM3_2_S&daily=temperature_2m_mean%2Ctemperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum&timezone=GMT",
+      "path": "data/raw/20260923T101826511520Z_77186_MRI_AGCM3_2_S.json",
+      "sha256": "ce8f2e0effe98e744c26d8cc9c43959b2ccf70e7cb2a8b6e83a310756ae3776a",
+      "bytes": 233628,
+      "fetched_at": "2026-09-23T10:20:28Z",
+      "content_type": "application/json; charset=utf-8",
+      "metadata": {
+        "city_code": "77186",
+        "model": "MRI_AGCM3_2_S",
+        "kind": "future",
+        "start": "2030-01-01",
+        "end": "2049-12-31",
+        "requested_lat": 48.4236,
+        "requested_lon": 2.6817
+      }
+    },
+    "77186_EC_Earth3P_HR": {
+      "key": "77186_EC_Earth3P_HR",
+      "source": "climate",
+      "url": "https://climate-api.open-meteo.com/v1/climate?latitude=48.4236&longitude=2.6817&start_date=2030-01-01&end_date=2049-12-31&models=EC_Earth3P_HR&daily=temperature_2m_mean%2Ctemperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum&timezone=GMT",
+      "path": "data/raw/20260923T101826511520Z_77186_EC_Earth3P_HR.json",
+      "sha256": "948d8e97359c8119c39a1bce59b254a432f460da0ad0069b9936b6bfa00dbff5",
+      "bytes": 234228,
+      "fetched_at": "2026-09-23T10:20:50Z",
+      "content_type": "application/json; charset=utf-8",
+      "metadata": {
+        "city_code": "77186",
+        "model": "EC_Earth3P_HR",
+        "kind": "future",
+        "start": "2030-01-01",
+        "end": "2049-12-31",
+        "requested_lat": 48.4236,
+        "requested_lon": 2.6817
+      }
+    },
+    "91228_era5_land": {
+      "key": "91228_era5_land",
+      "source": "archive",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=48.6287&longitude=2.4313&start_date=1991-01-01&end_date=2020-12-31&models=era5_land&daily=temperature_2m_mean%2Ctemperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum&timezone=GMT",
+      "path": "data/raw/20260923T101826511520Z_91228_era5_land.json",
+      "sha256": "821508ddbb1aec6bd10b43f8593841cc65665b2b7e90e1909beddd502bc50c4b",
+      "bytes": 349731,
+      "fetched_at": "2026-09-23T10:21:12Z",
+      "content_type": "application/json; charset=utf-8",
+      "metadata": {
+        "city_code": "91228",
+        "model": "era5_land",
+        "kind": "baseline",
+        "start": "1991-01-01",
+        "end": "2020-12-31",
+        "requested_lat": 48.6287,
+        "requested_lon": 2.4313
+      }
+    },
+    "91228_MRI_AGCM3_2_S": {
+      "key": "91228_MRI_AGCM3_2_S",
+      "source": "climate",
+      "url": "https://climate-api.open-meteo.com/v1/climate?latitude=48.6287&longitude=2.4313&start_date=2030-01-01&end_date=2049-12-31&models=MRI_AGCM3_2_S&daily=temperature_2m_mean%2Ctemperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum&timezone=GMT",
+      "path": "data/raw/20260923T101826511520Z_91228_MRI_AGCM3_2_S.json",
+      "sha256": "04b01ddae310273e4202011c7bdb36c9cdda4a424b786f844dd5f7a1ea5bbb43",
+      "bytes": 233832,
+      "fetched_at": "2026-09-23T10:21:36Z",
+      "content_type": "application/json; charset=utf-8",
+      "metadata": {
+        "city_code": "91228",
+        "model": "MRI_AGCM3_2_S",
+        "kind": "future",
+        "start": "2030-01-01",
+        "end": "2049-12-31",
+        "requested_lat": 48.6287,
+        "requested_lon": 2.4313
+      }
+    },
+    "91228_EC_Earth3P_HR": {
+      "key": "91228_EC_Earth3P_HR",
+      "source": "climate",
+      "url": "https://climate-api.open-meteo.com/v1/climate?latitude=48.6287&longitude=2.4313&start_date=2030-01-01&end_date=2049-12-31&models=EC_Earth3P_HR&daily=temperature_2m_mean%2Ctemperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum&timezone=GMT",
+      "path": "data/raw/20260923T103540834344Z_91228_EC_Earth3P_HR_a1.json",
+      "sha256": "6e5e92f90dfd0ddec0c832f8e578ef80f9b9064941ae4aeb786e6b932e2c5642",
+      "bytes": 234476,
+      "fetched_at": "2026-09-23T10:35:49Z",
+      "content_type": "application/json; charset=utf-8",
+      "metadata": {
+        "city_code": "91228",
+        "model": "EC_Earth3P_HR",
+        "kind": "future",
+        "start": "2030-01-01",
+        "end": "2049-12-31",
+        "requested_lat": 48.6287,
+        "requested_lon": 2.4313
+      }
+    },
+    "93066_era5_land": {
+      "key": "93066_era5_land",
+      "source": "archive",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=48.9378&longitude=2.3657&start_date=1991-01-01&end_date=2020-12-31&models=era5_land&daily=temperature_2m_mean%2Ctemperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum&timezone=GMT",
+      "path": "data/raw/20260923T103540834344Z_93066_era5_land_a1.json",
+      "sha256": "0cb9e137b63177410217ef38394d238bd57da065f868c309fdcfdeba99b0260f",
+      "bytes": 349993,
+      "fetched_at": "2026-09-23T10:36:12Z",
+      "content_type": "application/json; charset=utf-8",
+      "metadata": {
+        "city_code": "93066",
+        "model": "era5_land",
+        "kind": "baseline",
+        "start": "1991-01-01",
+        "end": "2020-12-31",
+        "requested_lat": 48.9378,
+        "requested_lon": 2.3657
+      }
+    },
+    "93066_MRI_AGCM3_2_S": {
+      "key": "93066_MRI_AGCM3_2_S",
+      "source": "climate",
+      "url": "https://climate-api.open-meteo.com/v1/climate?latitude=48.9378&longitude=2.3657&start_date=2030-01-01&end_date=2049-12-31&models=MRI_AGCM3_2_S&daily=temperature_2m_mean%2Ctemperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum&timezone=GMT",
+      "path": "data/raw/20260923T103540834344Z_93066_MRI_AGCM3_2_S_a1.json",
+      "sha256": "ac1a5368f69bc2aa4d3bdf1f64624098ac69f4a0e70fe8c55fe0eaa78f802b35",
+      "bytes": 233919,
+      "fetched_at": "2026-09-23T10:36:34Z",
+      "content_type": "application/json; charset=utf-8",
+      "metadata": {
+        "city_code": "93066",
+        "model": "MRI_AGCM3_2_S",
+        "kind": "future",
+        "start": "2030-01-01",
+        "end": "2049-12-31",
+        "requested_lat": 48.9378,
+        "requested_lon": 2.3657
+      }
+    },
+    "93066_EC_Earth3P_HR": {
+      "key": "93066_EC_Earth3P_HR",
+      "source": "climate",
+      "url": "https://climate-api.open-meteo.com/v1/climate?latitude=48.9378&longitude=2.3657&start_date=2030-01-01&end_date=2049-12-31&models=EC_Earth3P_HR&daily=temperature_2m_mean%2Ctemperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum&timezone=GMT",
+      "path": "data/raw/20260923T103540834344Z_93066_EC_Earth3P_HR_a1.json",
+      "sha256": "8535d940b8a1e2895d986cb068eff03df5713716d8a2adaf6d6cb69bf30b81ab",
+      "bytes": 234534,
+      "fetched_at": "2026-09-23T10:36:59Z",
+      "content_type": "application/json; charset=utf-8",
+      "metadata": {
+        "city_code": "93066",
+        "model": "EC_Earth3P_HR",
+        "kind": "future",
+        "start": "2030-01-01",
+        "end": "2049-12-31",
+        "requested_lat": 48.9378,
+        "requested_lon": 2.3657
+      }
+    },
+    "94028_era5_land": {
+      "key": "94028_era5_land",
+      "source": "archive",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=48.7845&longitude=2.4523&start_date=1991-01-01&end_date=2020-12-31&models=era5_land&daily=temperature_2m_mean%2Ctemperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum&timezone=GMT",
+      "path": "data/raw/20260923T103540834344Z_94028_era5_land_a1.json",
+      "sha256": "3a43eabd04d8c9bd0beb05fb13ab4f1d73a2199a37cb3141b861432fb1e3929c",
+      "bytes": 349999,
+      "fetched_at": "2026-09-23T10:37:30Z",
+      "content_type": "application/json; charset=utf-8",
+      "metadata": {
+        "city_code": "94028",
+        "model": "era5_land",
+        "kind": "baseline",
+        "start": "1991-01-01",
+        "end": "2020-12-31",
+        "requested_lat": 48.7845,
+        "requested_lon": 2.4523
+      }
+    },
+    "94028_MRI_AGCM3_2_S": {
+      "key": "94028_MRI_AGCM3_2_S",
+      "source": "climate",
+      "url": "https://climate-api.open-meteo.com/v1/climate?latitude=48.7845&longitude=2.4523&start_date=2030-01-01&end_date=2049-12-31&models=MRI_AGCM3_2_S&daily=temperature_2m_mean%2Ctemperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum&timezone=GMT",
+      "path": "data/raw/20260923T103540834344Z_94028_MRI_AGCM3_2_S_a1.json",
+      "sha256": "4a2f134e45905f94d3cfd8122e6e070d50ca4c04b90a3a149c078c758a19cb6e",
+      "bytes": 233976,
+      "fetched_at": "2026-09-23T10:37:56Z",
+      "content_type": "application/json; charset=utf-8",
+      "metadata": {
+        "city_code": "94028",
+        "model": "MRI_AGCM3_2_S",
+        "kind": "future",
+        "start": "2030-01-01",
+        "end": "2049-12-31",
+        "requested_lat": 48.7845,
+        "requested_lon": 2.4523
+      }
+    },
+    "94028_EC_Earth3P_HR": {
+      "key": "94028_EC_Earth3P_HR",
+      "source": "climate",
+      "url": "https://climate-api.open-meteo.com/v1/climate?latitude=48.7845&longitude=2.4523&start_date=2030-01-01&end_date=2049-12-31&models=EC_Earth3P_HR&daily=temperature_2m_mean%2Ctemperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum&timezone=GMT",
+      "path": "data/raw/20260923T103540834344Z_94028_EC_Earth3P_HR_a1.json",
+      "sha256": "165d675eb97f6890594c31a569777db5e87b67964e1c782c70c42e5721af9464",
+      "bytes": 234593,
+      "fetched_at": "2026-09-23T10:38:18Z",
+      "content_type": "application/json; charset=utf-8",
+      "metadata": {
+        "city_code": "94028",
+        "model": "EC_Earth3P_HR",
+        "kind": "future",
+        "start": "2030-01-01",
+        "end": "2049-12-31",
+        "requested_lat": 48.7845,
+        "requested_lon": 2.4523
+      }
+    },
+    "92002_era5_land": {
+      "key": "92002_era5_land",
+      "source": "archive",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=48.7507&longitude=2.2976&start_date=1991-01-01&end_date=2020-12-31&models=era5_land&daily=temperature_2m_mean%2Ctemperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum&timezone=GMT",
+      "path": "data/raw/20260923T103540834344Z_92002_era5_land_a1.json",
+      "sha256": "dc456939c5460579177c716d146786737a53d71ce56aab915c81c1a7b8e11962",
+      "bytes": 349883,
+      "fetched_at": "2026-09-23T10:38:41Z",
+      "content_type": "application/json; charset=utf-8",
+      "metadata": {
+        "city_code": "92002",
+        "model": "era5_land",
+        "kind": "baseline",
+        "start": "1991-01-01",
+        "end": "2020-12-31",
+        "requested_lat": 48.7507,
+        "requested_lon": 2.2976
+      }
+    },
+    "92002_MRI_AGCM3_2_S": {
+      "key": "92002_MRI_AGCM3_2_S",
+      "source": "climate",
+      "url": "https://climate-api.open-meteo.com/v1/climate?latitude=48.7507&longitude=2.2976&start_date=2030-01-01&end_date=2049-12-31&models=MRI_AGCM3_2_S&daily=temperature_2m_mean%2Ctemperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum&timezone=GMT",
+      "path": "data/raw/20260923T103540834344Z_92002_MRI_AGCM3_2_S_a1.json",
+      "sha256": "0b0e32f592d9fb02313921d10db8a9666f2ed5a6bc438e02d915ad0e1343b72a",
+      "bytes": 233929,
+      "fetched_at": "2026-09-23T10:39:04Z",
+      "content_type": "application/json; charset=utf-8",
+      "metadata": {
+        "city_code": "92002",
+        "model": "MRI_AGCM3_2_S",
+        "kind": "future",
+        "start": "2030-01-01",
+        "end": "2049-12-31",
+        "requested_lat": 48.7507,
+        "requested_lon": 2.2976
+      }
+    },
+    "92002_EC_Earth3P_HR": {
+      "key": "92002_EC_Earth3P_HR",
+      "source": "climate",
+      "url": "https://climate-api.open-meteo.com/v1/climate?latitude=48.7507&longitude=2.2976&start_date=2030-01-01&end_date=2049-12-31&models=EC_Earth3P_HR&daily=temperature_2m_mean%2Ctemperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum&timezone=GMT",
+      "path": "data/raw/20260923T103540834344Z_92002_EC_Earth3P_HR_a1.json",
+      "sha256": "4a55bbbbdf5fc37aa078fd2c87ed405cc3eb138f6ac54a89a5f677914af4c52a",
+      "bytes": 234516,
+      "fetched_at": "2026-09-23T10:39:26Z",
+      "content_type": "application/json; charset=utf-8",
+      "metadata": {
+        "city_code": "92002",
+        "model": "EC_Earth3P_HR",
+        "kind": "future",
+        "start": "2030-01-01",
+        "end": "2049-12-31",
+        "requested_lat": 48.7507,
+        "requested_lon": 2.2976
+      }
+    }
+  }
+}

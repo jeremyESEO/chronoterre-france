@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explorez les fossiles d’Île-de-France, son climat de référence et deux projections à l’horizon 2050. Des données ouvertes, traçables et interactives.">
+  <meta name="theme-color" content="#0b1524"><title>ChronoTerre · Île-de-France</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Aller à l’exploration</a>
+  <header class="topbar">
+    <a class="brand" href="#past" aria-label="ChronoTerre accueil"><span class="brandmark" aria-hidden="true">C</span><span>Chrono<span class="light">Terre</span><small>ATLAS DU TEMPS</small></span></a>
+    <div class="region-tag">Île-de-France <span>8 départements</span></div>
+    <button class="plain" id="method-button">Comprendre les données <span aria-hidden="true">↗</span></button>
+  </header>
+  <div class="intro"><div><p class="eyebrow">UNE RÉGION. PLUSIEURS MONDES.</p><h1>Et si vous changiez d’époque ?</h1></div><div class="snapshot" id="snapshot">Chargement des données…</div></div>
+  <nav class="modes" aria-label="Époque explorée">
+    <button data-mode="past" class="active" aria-pressed="true"><span>01</span> Le passé <small>Fossiles & découvertes</small></button>
+    <button data-mode="present" aria-pressed="false"><span>02</span> Le climat de référence <small>1991–2020</small></button>
+    <button data-mode="future" aria-pressed="false"><span>03</span> Horizon 2050 <small>2030–2049</small></button>
+    <button data-mode="data" aria-pressed="false"><span>04</span> Les coulisses <small>Sources & qualité</small></button>
+  </nav>
+  <main id="main" tabindex="-1">
+    <div id="app-error" class="notice" hidden></div>
+    <div id="explorer" class="workspace">
+      <aside class="filters">
+        <p class="eyebrow">VOTRE POINT DE DÉPART</p>
+        <label for="city">Une commune francilienne</label><select id="city"></select>
+        <p class="helper">10 communes repères, des découvertes dans toute la région.</p>
+        <button id="mobile-filters" class="secondary full mobile-only" aria-expanded="false" aria-controls="past-filters">Afficher les filtres</button>
+        <div id="past-filters">
+          <div class="filter-heading"><h2>Votre exploration</h2><button id="reset" class="text-button">Réinitialiser</button></div>
+          <label for="search">Un fossile ou un lieu</label><input type="search" id="search" placeholder="Meudon, Gastropoda…" autocomplete="off">
+          <label for="department">Département</label><select id="department"><option value="">Toute l’Île-de-France</option></select>
+          <label for="taxon-class">Groupe de fossiles</label><select id="taxon-class"><option value="">Tous les groupes</option></select>
+          <div class="filter-heading"><label for="age-old">Âge des fossiles</label><strong id="age-label"></strong></div>
+          <select id="period" aria-label="Choisir une période géologique"><option value="all">Toutes les périodes</option><option value="66,145">Crétacé · 145–66 Ma</option><option value="56,66">Paléocène · 66–56 Ma</option><option value="33.9,56">Éocène · 56–33,9 Ma</option><option value="23.03,33.9">Oligocène · 33,9–23 Ma</option><option value="0,23.03">Depuis 23 Ma</option></select>
+          <div class="ranges"><label for="age-young">Âge récent <output id="young-value"></output></label><input id="age-young" type="range" min="0" max="150" value="0" step="0.1"><label for="age-old">Âge ancien <output id="old-value"></output></label><input id="age-old" type="range" min="0" max="150" value="150" step="0.1"></div>
+          <p class="helper">Ma = millions d’années. Une découverte est retenue si son intervalle d’âge recoupe votre fenêtre.</p>
+          <label class="checkbox"><input type="checkbox" id="nearby">Seulement autour de ma commune</label>
+          <label for="radius" class="split">Rayon à vol d’oiseau <output id="radius-value">30 km</output></label><input type="range" id="radius" min="5" max="100" value="30" step="5">
+          <button id="random" class="primary full">Surprenez-moi <span aria-hidden="true">↗</span></button>
+        </div>
+        <div id="climate-filters" hidden>
+          <div id="model-control"><label for="model">Modèle de projection</label><select id="model"></select><p class="helper">Deux modèles sous un forçage proche de RCP8.5. Ce ne sont pas deux scénarios d’émissions.</p></div>
+          <label for="metric">Indicateur sur la carte</label><select id="metric"><option value="mean_c">Température annuelle moyenne</option><option value="hot_days">Jours ≥ 30 °C par an</option><option value="tropical_nights">Nuits ≥ 20 °C par an</option><option value="rain_mm">Précipitations annuelles</option><option value="frost_days">Jours de gel par an</option></select>
+          <div class="side-note"><span class="eyebrow">LIRE LE FUTUR</span><p>On compare des moyennes sur plusieurs décennies. Le temps d’un jour précis en 2040 n’est pas prédit.</p></div>
+        </div>
+        <div class="mini-challenge"><p class="eyebrow">LE DÉFI CHRONOTERRE</p><p id="challenge-text">Saurez-vous lire les traces du passé ?</p><button id="quiz-open" class="secondary full">Jouer avec les données</button></div>
+      </aside>
+      <section class="exploration" aria-label="Résultats">
+        <div class="stats" id="stats" aria-live="polite"></div>
+        <div class="map-panel">
+          <div class="panel-head"><div><p class="eyebrow" id="map-kicker">CARTE DES DÉCOUVERTES</p><h2 id="map-title">Les traces du passé</h2></div><button class="icon-button" id="map-reset" title="Recentrer la carte" aria-label="Recentrer la carte">⌖</button></div>
+          <div class="map-shell"><svg id="map" viewBox="0 0 760 540" tabindex="0" role="group" aria-label="Carte interactive de l’Île-de-France. Flèches pour déplacer, plus et moins pour zoomer."></svg><div class="zoom"><button id="zoom-in" aria-label="Zoomer">+</button><button id="zoom-out" aria-label="Dézoomer">−</button></div><div class="map-hint">Glissez pour explorer · cliquez sur un point</div><div id="map-tooltip" class="map-tooltip" hidden></div></div>
+          <div class="legend" id="legend"></div><div class="map-source">Contours : Etalab / IGN · coordonnées modernes · fond de carte hors ligne</div>
+        </div>
+        <div id="past-results">
+          <div class="section-heading"><div><p class="eyebrow">CHAQUE POINT A UNE HISTOIRE</p><h2 id="list-title">Le carnet des découvertes</h2></div><button id="export-fossils" class="secondary">Exporter la sélection · CSV</button></div>
+          <p id="result-summary" class="muted" aria-live="polite"></p><div id="fossil-list" class="fossil-list"></div><button id="more" class="secondary full" hidden>Afficher 12 découvertes de plus</button>
+        </div>
+        <div id="climate-results" hidden>
+          <div class="section-heading"><div><p class="eyebrow">LE RYTHME DES SAISONS</p><h2 id="climate-title"></h2></div><button id="export-climate" class="secondary">Exporter · CSV</button></div>
+          <div class="chart-card"><div class="chart-tabs"><button data-chart="temp" class="active">Température</button><button data-chart="rain">Précipitations</button></div><svg id="climate-chart" viewBox="0 0 760 290" role="img"></svg><div class="chart-legend" id="chart-legend"></div></div>
+          <div class="table-wrap"><table id="climate-table"></table></div>
+          <section id="analogues-panel" class="analogues-panel" hidden><p class="eyebrow">LE JEU DES RESSEMBLANCES</p><h2>Un jumeau climatique… dans la région ?</h2><p class="muted">Le futur de votre commune face au climat de référence des 10 communes de l’échantillon.</p><div id="analogue-verdict" class="notice"></div><div id="analogue-list"></div><details><summary>Comment calcule-t-on la ressemblance ?</summary><p>Distance = racine de la moyenne de 24 écarts au carré : 12 températures mensuelles divisées par 1 °C, et 12 pluies mensuelles divisées par 20 mm. Plus le score est petit, plus les profils se ressemblent. « Proche » signifie un score ≤ 1 : un seuil pédagogique, pas une validation scientifique. Le résultat dépend de ces échelles et des villes candidates.</p></details></section>
+        </div>
+      </section>
+      <aside class="inspector" id="inspector" aria-live="polite"></aside>
+    </div>
+    <section id="data-view" hidden></section>
+  </main>
+  <footer><span>ChronoTerre · Projet académique ESEO</span><span>PBDB · Open-Meteo · CMIP6 · Copernicus · Etalab / IGN</span><button id="footer-method" class="text-button">Méthode & limites</button></footer>
+  <dialog id="modal"><div class="modal-head"><span class="eyebrow" id="modal-eyebrow">CHRONOTERRE</span><button id="close-modal" class="icon-button" aria-label="Fermer">×</button></div><div id="modal-content"></div></dialog>
+  <noscript>Activez JavaScript pour manipuler le dashboard. Les données restent disponibles dans les CSV du projet.</noscript>
+  <script src="runtime.js"></script><script src="data.js"></script><script src="app.js"></script>
+</body>
+</html>

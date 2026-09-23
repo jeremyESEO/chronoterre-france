@@ -1,0 +1,150 @@
+{
+  "executed_at": "2026-09-23T11:04:39Z",
+  "python_tests": {
+    "passed": 9,
+    "failed": 0,
+    "command": "python -m unittest discover -s tests -v"
+  },
+  "idempotence": {
+    "executed_at": "2026-09-23T11:02:52Z",
+    "same_input": true,
+    "first": "9d7dfeb916f44376bc12fcb935b7e266a78f38d93ae12690df21f82dda687e07",
+    "second": "9d7dfeb916f44376bc12fcb935b7e266a78f38d93ae12690df21f82dda687e07",
+    "first_counts": {
+      "bibliography": 108,
+      "city": 10,
+      "climate_day": 255670,
+      "climate_model": 3,
+      "climate_series": 30,
+      "department": 8,
+      "fossil_occurrence": 1334,
+      "fossil_site": 90,
+      "geo_interval": 12,
+      "raw_file": 34,
+      "source": 5,
+      "taxon": 893
+    },
+    "second_counts": {
+      "bibliography": 108,
+      "city": 10,
+      "climate_day": 255670,
+      "climate_model": 3,
+      "climate_series": 30,
+      "department": 8,
+      "fossil_occurrence": 1334,
+      "fossil_site": 90,
+      "geo_interval": 12,
+      "raw_file": 34,
+      "source": 5,
+      "taxon": 893
+    },
+    "passed": true
+  },
+  "sqlite_integrity_check": "ok",
+  "foreign_key_violations": 0,
+  "sql_queries_passed": 15,
+  "api_checks": {
+    "executed_at": "2026-09-23T10:55:20Z",
+    "checks": [
+      {
+        "endpoint": "/api/v1/health",
+        "status": 200,
+        "expected": 200,
+        "pass": true
+      },
+      {
+        "endpoint": "/api/v1/cities",
+        "status": 200,
+        "expected": 200,
+        "pass": true
+      },
+      {
+        "endpoint": "/api/v1/fossils?department=78&class=Bivalvia",
+        "status": 200,
+        "expected": 200,
+        "pass": true
+      },
+      {
+        "endpoint": "/api/v1/fossils?city=78640&radius=30&limit=5",
+        "status": 200,
+        "expected": 200,
+        "pass": true
+      },
+      {
+        "endpoint": "/api/v1/climate?city=78640",
+        "status": 200,
+        "expected": 200,
+        "pass": true
+      },
+      {
+        "endpoint": "/api/v1/analogues?city=78640&model=EC_Earth3P_HR",
+        "status": 200,
+        "expected": 200,
+        "pass": true
+      },
+      {
+        "endpoint": "/api/v1/fossils?limit=1000",
+        "status": 400,
+        "expected": 400,
+        "pass": true
+      },
+      {
+        "endpoint": "/api/v1/climate?city=inconnue",
+        "status": 400,
+        "expected": 400,
+        "pass": true
+      },
+      {
+        "endpoint": "/api/v1/inconnue",
+        "status": 404,
+        "expected": 404,
+        "pass": true
+      },
+      {
+        "endpoint": "/runtime.js",
+        "status": 200,
+        "expected": 200,
+        "pass": true
+      },
+      {
+        "endpoint": "/",
+        "status": 200,
+        "expected": 200,
+        "pass": true
+      }
+    ],
+    "passed": true
+  },
+  "browser_checks": {
+    "filter_department_and_class": "78 + Bivalvia = 115 occurrences, 8 collections, 41 taxa",
+    "search": "Meudon = 58 occurrences, 2 collections, 56 taxa",
+    "random_fossil": "fiche PBDB et citation affichées",
+    "reset": "retour aux 1334 occurrences",
+    "model_change": "MRI → EC-Earth : valeurs et 19/20 années à Vélizy actualisées",
+    "city_and_chart": "Paris et graphique de pluie actualisés",
+    "no_close_analogue": "Melun / EC-Earth → Créteil, D=1.01, aucun proche",
+    "quiz": "4 questions parcourues, voie correcte et incorrecte, score final 3/4",
+    "console": "aucune erreur du code applicatif observée ; messages de l’extension de navigateur exclus",
+    "webmcp": "non disponible dans le navigateur de vérification ; enregistrement prévu avec feature detection",
+    "small_screen": "règles CSS et contrôles adaptatifs revus ; pas de session mobile dédiée",
+    "export_csv": "Téléchargement réel vérifié : 12 mois pour Melun / EC-Earth, unités et 18 années retenues conservées. Le signal de téléchargement du navigateur a expiré, mais le fichier a bien été reçu et son contenu contrôlé.",
+    "nearby_and_age": "Rayon 30 km autour de Vélizy + Éocène : 980 occurrences, 50 collections, 625 taxons",
+    "map_zoom": "viewBox modifiée de 760×540 à 570×405",
+    "quality_view": "Effectifs 259379/257004/2375 et règles visibles"
+  },
+  "data_fabrication": false,
+  "synthetic_data": "Seulement la démonstration isolée et les fixtures de tests, jamais dans curated",
+  "known_limitations": [
+    "Localisations historiques approximatives",
+    "Biais documentaire PBDB",
+    "Deux modèles proches RCP8.5, fenêtres complètes parfois différentes",
+    "API Python locale ; version hébergée sur instantané"
+  ],
+  "semantic_sha256": "9d7dfeb916f44376bc12fcb935b7e266a78f38d93ae12690df21f82dda687e07",
+  "pdf_review": {
+    "pages": 13,
+    "all_pages_rendered_and_visually_reviewed": true,
+    "checked_at": "2026-09-23T11:15:04+00:00",
+    "result": "PASS"
+  }
+}

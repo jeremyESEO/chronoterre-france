@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+*.log
+.sites-runtime/
+node_modules/
+reports/*.tmp
+data/curated/*.tmp

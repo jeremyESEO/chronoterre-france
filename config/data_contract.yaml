@@ -1,0 +1,237 @@
+{
+  "version": "1.0.0",
+  "name": "ChronoTerre-IDF",
+  "format_note": "JSON, sous-ensemble valide de YAML 1.2 ; lecture sans dépendance externe.",
+  "region_code": "11",
+  "required_departments": [
+    "75",
+    "77",
+    "78",
+    "91",
+    "92",
+    "93",
+    "94",
+    "95"
+  ],
+  "datasets": {
+    "fossils": {
+      "grain": "Une occurrence PBDB identifiée, associant un taxon à une collection et une publication. Pas un spécimen individuel ni un nombre d’animaux.",
+      "business_key": [
+        "occurrence_no"
+      ],
+      "required_source_fields": [
+        "occurrence_no",
+        "collection_no",
+        "early_interval"
+      ],
+      "fields": {
+        "occurrence_no": {
+          "type": "integer",
+          "required": true,
+          "description": "Identifiant PBDB de l’occurrence, clé métier"
+        },
+        "collection_no": {
+          "type": "integer",
+          "required": true,
+          "description": "Collection PBDB ; plusieurs collections peuvent partager un lieu"
+        },
+        "identified_name": {
+          "type": "string",
+          "required": true,
+          "description": "Nom tel qu’identifié dans la publication"
+        },
+        "accepted_name": {
+          "type": "string",
+          "required": false,
+          "description": "Nom accepté PBDB, repli sur le nom identifié si absent"
+        },
+        "accepted_no": {
+          "type": "string",
+          "required": false,
+          "description": "Identifiant du taxon accepté ; repli name:<nom> si absent"
+        },
+        "class": {
+          "type": "string",
+          "required": false,
+          "description": "Classe taxonomique, non imputée si absente"
+        },
+        "lat": {
+          "type": "float",
+          "unit": "degree",
+          "description": "Latitude de la collection, WGS84"
+        },
+        "lng": {
+          "type": "float",
+          "unit": "degree",
+          "description": "Longitude de la collection, WGS84"
+        },
+        "max_ma": {
+          "type": "float",
+          "unit": "Ma",
+          "description": "Borne ancienne de l’âge"
+        },
+        "min_ma": {
+          "type": "float",
+          "unit": "Ma",
+          "description": "Borne récente de l’âge"
+        },
+        "early_interval": {
+          "type": "string",
+          "description": "Intervalle géologique source"
+        },
+        "environment": {
+          "type": "string",
+          "required": false,
+          "description": "Milieu de dépôt source, sans déduction du climat"
+        },
+        "reference_no": {
+          "type": "integer",
+          "required": true,
+          "description": "Publication bibliographique PBDB"
+        },
+        "primary_reference": {
+          "type": "string",
+          "required": true,
+          "description": "Citation complète de la publication"
+        }
+      }
+    },
+    "climate_daily": {
+      "grain": "Un jour UTC, une commune demandée, une maille renvoyée et un modèle sur une fenêtre donnée.",
+      "business_key": [
+        "series_id",
+        "date"
+      ],
+      "fields": {
+        "series_id": {
+          "type": "string",
+          "required": true,
+          "description": "Code INSEE + identifiant de modèle dans ce lot"
+        },
+        "date": {
+          "type": "date",
+          "format": "YYYY-MM-DD",
+          "required": true,
+          "description": "Jour UTC dans la période configurée"
+        },
+        "tmean_c": {
+          "type": "float",
+          "unit": "°C",
+          "required": true,
+          "description": "Température moyenne à 2 m"
+        },
+        "tmax_c": {
+          "type": "float",
+          "unit": "°C",
+          "required": true,
+          "description": "Température maximale à 2 m"
+        },
+        "tmin_c": {
+          "type": "float",
+          "unit": "°C",
+          "required": true,
+          "description": "Température minimale à 2 m"
+        },
+        "precipitation_mm": {
+          "type": "float",
+          "unit": "mm/day",
+          "required": true,
+          "description": "Cumul de précipitations du jour"
+        }
+      },
+      "source_units": {
+        "time": "iso8601",
+        "temperature_2m_mean": "°C",
+        "temperature_2m_max": "°C",
+        "temperature_2m_min": "°C",
+        "precipitation_sum": "mm"
+      }
+    },
+    "geography": {
+      "grain": "Un département du millésime 2025 ou une commune de l’API au jour de collecte.",
+      "business_key": [
+        "code"
+      ],
+      "crs": "EPSG:4326",
+      "simplification_m": 100
+    }
+  },
+  "quality_rules": [
+    {
+      "id": "Q01",
+      "condition": "Identifiants et nom de taxon obligatoires",
+      "action": "reject_and_preserve",
+      "implementation": "src/validate.py / src/pipeline.py"
+    },
+    {
+      "id": "Q02",
+      "condition": "Coordonnées WGS84 numériques finies dans leurs bornes",
+      "action": "reject_and_preserve",
+      "implementation": "src/validate.py / src/pipeline.py"
+    },
+    {
+      "id": "Q03",
+      "condition": "Point situé dans un département de la région 11",
+      "action": "reject_and_preserve",
+      "implementation": "src/validate.py / src/pipeline.py"
+    },
+    {
+      "id": "Q04",
+      "condition": "Âges numériques finis : 0 ≤ min_ma ≤ max_ma ≤ 4600",
+      "action": "reject_and_preserve",
+      "implementation": "src/validate.py / src/pipeline.py"
+    },
+    {
+      "id": "Q05",
+      "condition": "Publication identifiée et citation non vide",
+      "action": "reject_and_preserve",
+      "implementation": "src/validate.py / src/pipeline.py"
+    },
+    {
+      "id": "Q06",
+      "condition": "Exclusion des coordonnées basées seulement sur une unité politique",
+      "action": "reject_and_preserve",
+      "implementation": "src/validate.py / src/pipeline.py"
+    },
+    {
+      "id": "Q07",
+      "condition": "Absence de contradiction géographique connue ou de provenance inconnue",
+      "action": "reject_and_preserve",
+      "implementation": "src/validate.py / src/pipeline.py"
+    },
+    {
+      "id": "Q08",
+      "condition": "Températures finies : −90 ≤ min ≤ moyenne ≤ max ≤ 65 °C",
+      "action": "reject_and_preserve",
+      "implementation": "src/validate.py / src/pipeline.py"
+    },
+    {
+      "id": "Q09",
+      "condition": "Précipitation finie entre 0 et 1500 mm/j",
+      "action": "reject_and_preserve",
+      "implementation": "src/validate.py / src/pipeline.py"
+    },
+    {
+      "id": "Q10",
+      "condition": "Date ISO réelle et comprise dans la fenêtre demandée",
+      "action": "reject_and_preserve",
+      "implementation": "src/validate.py / src/pipeline.py"
+    },
+    {
+      "id": "Q11",
+      "condition": "Unicité de la clé métier dans le lot",
+      "action": "deduplicate_and_preserve",
+      "implementation": "src/validate.py / src/pipeline.py"
+    }
+  ],
+  "blocking_checks": [
+    "Raw SHA-256 inchangé",
+    "Champs de structure et unités conformes",
+    "Longueurs de tableaux et période conformes",
+    "Communes et huit départements disponibles",
+    "Contraintes SQLite et clés étrangères"
+  ],
+  "idempotence": "Reconstruction déterministe puis remplacement atomique du fichier SQLite ; contraintes UNIQUE/PK ; comparaison des empreintes sémantiques.",
+  "missing_policy": "Pas de remplacement des températures manquantes par zéro. Rejet des lignes invalides. Milieu et classification manquants conservés à NULL.",
+  "aggregation_policy": "Années et mois complets uniquement. Une synthèse est affichée si au moins 90 % des années attendues sont complètes (18/20 au futur). Les années exclues sont listées et les profils mensuels utilisent les mêmes années que les indicateurs annuels. Aucune imputation ni extrapolation."
+}

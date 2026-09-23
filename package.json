@@ -1,0 +1,9 @@
+{
+  "name": "chronoterre-idf",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Prévisualisation facultative du dashboard ; le projet académique fonctionne avec Python seul.",
+  "scripts": {"dev": "vite", "check": "node --check dist/app.js"},
+  "devDependencies": {"vite": "7.3.1"}
+}

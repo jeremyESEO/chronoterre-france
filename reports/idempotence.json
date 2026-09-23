@@ -1,0 +1,35 @@
+{
+  "executed_at": "2026-09-23T11:02:52Z",
+  "same_input": true,
+  "first": "9d7dfeb916f44376bc12fcb935b7e266a78f38d93ae12690df21f82dda687e07",
+  "second": "9d7dfeb916f44376bc12fcb935b7e266a78f38d93ae12690df21f82dda687e07",
+  "first_counts": {
+    "bibliography": 108,
+    "city": 10,
+    "climate_day": 255670,
+    "climate_model": 3,
+    "climate_series": 30,
+    "department": 8,
+    "fossil_occurrence": 1334,
+    "fossil_site": 90,
+    "geo_interval": 12,
+    "raw_file": 34,
+    "source": 5,
+    "taxon": 893
+  },
+  "second_counts": {
+    "bibliography": 108,
+    "city": 10,
+    "climate_day": 255670,
+    "climate_model": 3,
+    "climate_series": 30,
+    "department": 8,
+    "fossil_occurrence": 1334,
+    "fossil_site": 90,
+    "geo_interval": 12,
+    "raw_file": 34,
+    "source": 5,
+    "taxon": 893
+  },
+  "passed": true
+}

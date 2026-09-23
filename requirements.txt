@@ -1,0 +1,1 @@
+# Python 3.11+ ; collecte, SQLite, API et tests : bibliothèque standard uniquement.

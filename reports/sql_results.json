@@ -1,0 +1,1548 @@
+{
+  "executed_at": "2026-09-23T10:54:35Z",
+  "queries": [
+    {
+      "question": "Q01 Couverture : inclure les départements sans occurrence retenue.",
+      "rows": 8,
+      "results": [
+        {
+          "department_code": "78",
+          "name": "Yvelines",
+          "collections": 48,
+          "occurrences": 885,
+          "taxa": 521
+        },
+        {
+          "department_code": "95",
+          "name": "Val-d'Oise",
+          "collections": 24,
+          "occurrences": 295,
+          "taxa": 266
+        },
+        {
+          "department_code": "92",
+          "name": "Hauts-de-Seine",
+          "collections": 5,
+          "occurrences": 90,
+          "taxa": 86
+        },
+        {
+          "department_code": "75",
+          "name": "Paris",
+          "collections": 4,
+          "occurrences": 41,
+          "taxa": 41
+        },
+        {
+          "department_code": "91",
+          "name": "Essonne",
+          "collections": 5,
+          "occurrences": 13,
+          "taxa": 13
+        },
+        {
+          "department_code": "77",
+          "name": "Seine-et-Marne",
+          "collections": 2,
+          "occurrences": 8,
+          "taxa": 8
+        },
+        {
+          "department_code": "93",
+          "name": "Seine-Saint-Denis",
+          "collections": 1,
+          "occurrences": 1,
+          "taxa": 1
+        },
+        {
+          "department_code": "94",
+          "name": "Val-de-Marne",
+          "collections": 1,
+          "occurrences": 1,
+          "taxa": 1
+        }
+      ]
+    },
+    {
+      "question": "Q02 Collections les plus documentées : attention au biais d'effort de recherche.",
+      "rows": 10,
+      "results": [
+        {
+          "site_id": 20816,
+          "name": "Bois-des-Roches, Vigny (MNHN collection)",
+          "occurrences": 157,
+          "taxa": 154
+        },
+        {
+          "site_id": 184110,
+          "name": "Grignon (Defrance collection)",
+          "occurrences": 151,
+          "taxa": 150
+        },
+        {
+          "site_id": 184107,
+          "name": "Grignon (Lamarck collection)",
+          "occurrences": 147,
+          "taxa": 147
+        },
+        {
+          "site_id": 171526,
+          "name": "Grignon (RSNB collection)",
+          "occurrences": 166,
+          "taxa": 120
+        },
+        {
+          "site_id": 177970,
+          "name": "Falunière of Grignon Unlithified Sample 1",
+          "occurrences": 91,
+          "taxa": 80
+        },
+        {
+          "site_id": 177972,
+          "name": "Falunière of Grignon Unlithified Sample 3",
+          "occurrences": 73,
+          "taxa": 70
+        },
+        {
+          "site_id": 177971,
+          "name": "Falunière of Grignon Unlithified Sample 2",
+          "occurrences": 59,
+          "taxa": 57
+        },
+        {
+          "site_id": 68437,
+          "name": "Meudon",
+          "occurrences": 45,
+          "taxa": 44
+        },
+        {
+          "site_id": 94590,
+          "name": "Calcaire grossier, Chaussy, Val d'Oise",
+          "occurrences": 48,
+          "taxa": 41
+        },
+        {
+          "site_id": 31739,
+          "name": "Montmartre",
+          "occurrences": 37,
+          "taxa": 37
+        }
+      ]
+    },
+    {
+      "question": "Q03 Quels groupes sont documentés pendant l'Éocène (recouvrement d'intervalles) ?",
+      "rows": 16,
+      "results": [
+        {
+          "class_name": "Gastropoda",
+          "occurrences": 807,
+          "taxa": 490
+        },
+        {
+          "class_name": "Bivalvia",
+          "occurrences": 132,
+          "taxa": 57
+        },
+        {
+          "class_name": "Mammalia",
+          "occurrences": 57,
+          "taxa": 56
+        },
+        {
+          "class_name": "Non renseigné",
+          "occurrences": 36,
+          "taxa": 27
+        },
+        {
+          "class_name": "Holothuroidea",
+          "occurrences": 26,
+          "taxa": 25
+        },
+        {
+          "class_name": "Chondrichthyes",
+          "occurrences": 19,
+          "taxa": 17
+        },
+        {
+          "class_name": "Reptilia",
+          "occurrences": 17,
+          "taxa": 15
+        },
+        {
+          "class_name": "Aves",
+          "occurrences": 17,
+          "taxa": 17
+        },
+        {
+          "class_name": "Anthozoa",
+          "occurrences": 11,
+          "taxa": 9
+        },
+        {
+          "class_name": "Osteichthyes",
+          "occurrences": 10,
+          "taxa": 10
+        },
+        {
+          "class_name": "Cephalopoda",
+          "occurrences": 4,
+          "taxa": 3
+        },
+        {
+          "class_name": "Polyplacophora",
+          "occurrences": 3,
+          "taxa": 1
+        },
+        {
+          "class_name": "Ophiuroidea",
+          "occurrences": 2,
+          "taxa": 1
+        },
+        {
+          "class_name": "Amphibia",
+          "occurrences": 2,
+          "taxa": 2
+        },
+        {
+          "class_name": "Globothalamea",
+          "occurrences": 1,
+          "taxa": 1
+        },
+        {
+          "class_name": "Echinoidea",
+          "occurrences": 1,
+          "taxa": 1
+        }
+      ]
+    },
+    {
+      "question": "Q04 Sous-requête : taxons signalés dans au moins trois collections distinctes.",
+      "rows": 20,
+      "results": [
+        {
+          "accepted_name": "Sigmesalia multisulcata",
+          "collections": 10
+        },
+        {
+          "accepted_name": "Rimella fissurella",
+          "collections": 8
+        },
+        {
+          "accepted_name": "Cochlis epiglottina",
+          "collections": 7
+        },
+        {
+          "accepted_name": "Omalaxis bifrons",
+          "collections": 7
+        },
+        {
+          "accepted_name": "Clava (Semivertagus)",
+          "collections": 6
+        },
+        {
+          "accepted_name": "Caryocorbula striata",
+          "collections": 6
+        },
+        {
+          "accepted_name": "Costacallista laevigata",
+          "collections": 6
+        },
+        {
+          "accepted_name": "Rimella canalis",
+          "collections": 6
+        },
+        {
+          "accepted_name": "Cardita",
+          "collections": 6
+        },
+        {
+          "accepted_name": "Cyclostoma mumia",
+          "collections": 6
+        },
+        {
+          "accepted_name": "Loxocardium obliquum",
+          "collections": 6
+        },
+        {
+          "accepted_name": "Elliptotellina tellinella",
+          "collections": 5
+        },
+        {
+          "accepted_name": "Cubitostrea plicata",
+          "collections": 5
+        },
+        {
+          "accepted_name": "Varicorbula minuta",
+          "collections": 5
+        },
+        {
+          "accepted_name": "Seraphs",
+          "collections": 5
+        },
+        {
+          "accepted_name": "Olivancillaria",
+          "collections": 5
+        },
+        {
+          "accepted_name": "Nipteraxis",
+          "collections": 5
+        },
+        {
+          "accepted_name": "Glycymeris",
+          "collections": 5
+        },
+        {
+          "accepted_name": "Limopsis",
+          "collections": 5
+        },
+        {
+          "accepted_name": "Cardium",
+          "collections": 5
+        }
+      ]
+    },
+    {
+      "question": "Q05 Fonction de fenêtre : trois groupes les plus documentés par département.",
+      "rows": 18,
+      "results": [
+        {
+          "department_code": "75",
+          "class_name": "Aves",
+          "n": 15,
+          "rank": 1
+        },
+        {
+          "department_code": "75",
+          "class_name": "Mammalia",
+          "n": 14,
+          "rank": 2
+        },
+        {
+          "department_code": "75",
+          "class_name": "Osteichthyes",
+          "n": 5,
+          "rank": 3
+        },
+        {
+          "department_code": "77",
+          "class_name": "Gastropoda",
+          "n": 8,
+          "rank": 1
+        },
+        {
+          "department_code": "78",
+          "class_name": "Gastropoda",
+          "n": 734,
+          "rank": 1
+        },
+        {
+          "department_code": "78",
+          "class_name": "Bivalvia",
+          "n": 115,
+          "rank": 2
+        },
+        {
+          "department_code": "78",
+          "class_name": "Non renseigné",
+          "n": 15,
+          "rank": 3
+        },
+        {
+          "department_code": "91",
+          "class_name": "Chondrichthyes",
+          "n": 4,
+          "rank": 1
+        },
+        {
+          "department_code": "91",
+          "class_name": "Mammalia",
+          "n": 3,
+          "rank": 2
+        },
+        {
+          "department_code": "91",
+          "class_name": "Gastropoda",
+          "n": 2,
+          "rank": 3
+        },
+        {
+          "department_code": "92",
+          "class_name": "Mammalia",
+          "n": 39,
+          "rank": 1
+        },
+        {
+          "department_code": "92",
+          "class_name": "Non renseigné",
+          "n": 15,
+          "rank": 2
+        },
+        {
+          "department_code": "92",
+          "class_name": "Reptilia",
+          "n": 15,
+          "rank": 3
+        },
+        {
+          "department_code": "93",
+          "class_name": "Aves",
+          "n": 1,
+          "rank": 1
+        },
+        {
+          "department_code": "94",
+          "class_name": "Gastropoda",
+          "n": 1,
+          "rank": 1
+        },
+        {
+          "department_code": "95",
+          "class_name": "Gastropoda",
+          "n": 148,
+          "rank": 1
+        },
+        {
+          "department_code": "95",
+          "class_name": "Bivalvia",
+          "n": 64,
+          "rank": 2
+        },
+        {
+          "department_code": "95",
+          "class_name": "Holothuroidea",
+          "n": 26,
+          "rank": 3
+        }
+      ]
+    },
+    {
+      "question": "Q06 Les cinq publications couvrant le plus d'occurrences de cet extrait.",
+      "rows": 5,
+      "results": [
+        {
+          "reference_id": 58859,
+          "citation": "M. T. Sanders, D. Merle, and L. Villier. 2015. The molluscs of the “Falunière” of Grignon (Middle Lutetian, Yvelines, France): quantification of lithification bias and its impact on the biodiversity assessment of the Middle Eocene of Western Europe. Geodiversitas 37(3):345-365",
+          "occurrences": 285,
+          "collections": 6
+        },
+        {
+          "reference_id": 6432,
+          "citation": "J.-M. Pacaud, D. Merle, and J.-C. Meyer. 2000. La faune danienne de Vigny (Val-d’Oise, France): importance pour l’étude de la diversification des mollusques au début du Tertiaire. Comptes Rendus de l ’Académie des Sciences,Sciences de la Terre et des Planètes, Paris, série II a 330(12):867-873",
+          "occurrences": 135,
+          "collections": 1
+        },
+        {
+          "reference_id": 58437,
+          "citation": "M. M. Glibert. 1962. Les Mesogastropoda Fossiles du Cenozoïque étranger des Collections de L'Institute Royale des Sciences Naturelles de Belgique: Cyclophoridae à Stilifetidae. Institute Royale des Sciences Naturelles de Belgique, Memoire, 10th sériés 69:1-304",
+          "occurrences": 122,
+          "collections": 4
+        },
+        {
+          "reference_id": 61542,
+          "citation": "G. P. Deshayes. 1824. Description des Coquilles Fossiles des Environs de Paris, Tome Second: Mollusques",
+          "occurrences": 64,
+          "collections": 17
+        },
+        {
+          "reference_id": 58192,
+          "citation": "M. M. Glibert. 1963. Les Mesogastropoda Fossiles du Cenozoïque étranger des Collections de L'Institute Royale des Sciences Naturelles de Belgique. Institute Royale des Sciences Naturelles de Belgique, Memoire, 10th sériés 69:1-305",
+          "occurrences": 63,
+          "collections": 3
+        }
+      ]
+    },
+    {
+      "question": "Q07 Référence : moyennes d'indicateurs annuels sur les 30 années complètes.",
+      "rows": 10,
+      "results": [
+        {
+          "name": "Melun",
+          "mean_c": 11.74,
+          "hot_days": 7.77,
+          "rain_mm": 677.8,
+          "complete_years": 30
+        },
+        {
+          "name": "Créteil",
+          "mean_c": 11.82,
+          "hot_days": 7.1,
+          "rain_mm": 678.0,
+          "complete_years": 30
+        },
+        {
+          "name": "Saint-Denis",
+          "mean_c": 11.75,
+          "hot_days": 7.03,
+          "rain_mm": 670.3,
+          "complete_years": 30
+        },
+        {
+          "name": "Antony",
+          "mean_c": 11.71,
+          "hot_days": 6.67,
+          "rain_mm": 670.8,
+          "complete_years": 30
+        },
+        {
+          "name": "Évry-Courcouronnes",
+          "mean_c": 11.61,
+          "hot_days": 6.6,
+          "rain_mm": 678.0,
+          "complete_years": 30
+        },
+        {
+          "name": "Paris",
+          "mean_c": 11.63,
+          "hot_days": 6.57,
+          "rain_mm": 670.8,
+          "complete_years": 30
+        },
+        {
+          "name": "Meaux",
+          "mean_c": 11.55,
+          "hot_days": 6.47,
+          "rain_mm": 730.9,
+          "complete_years": 30
+        },
+        {
+          "name": "Fontainebleau",
+          "mean_c": 11.34,
+          "hot_days": 6.33,
+          "rain_mm": 677.8,
+          "complete_years": 30
+        },
+        {
+          "name": "Cergy",
+          "mean_c": 11.79,
+          "hot_days": 5.63,
+          "rain_mm": 671.3,
+          "complete_years": 30
+        },
+        {
+          "name": "Vélizy-Villacoublay",
+          "mean_c": 10.91,
+          "hot_days": 4.4,
+          "rain_mm": 670.8,
+          "complete_years": 30
+        }
+      ]
+    },
+    {
+      "question": "Q08 Jointure référence/futur pour chaque commune et chaque modèle.",
+      "rows": 20,
+      "results": [
+        {
+          "name": "Meaux",
+          "model_id": "EC_Earth3P_HR",
+          "baseline_c": 11.55,
+          "future_c": 12.76,
+          "delta_c": 1.2,
+          "extra_hot_days": 8.8
+        },
+        {
+          "name": "Antony",
+          "model_id": "EC_Earth3P_HR",
+          "baseline_c": 11.71,
+          "future_c": 12.9,
+          "delta_c": 1.19,
+          "extra_hot_days": 9.2
+        },
+        {
+          "name": "Saint-Denis",
+          "model_id": "EC_Earth3P_HR",
+          "baseline_c": 11.75,
+          "future_c": 12.94,
+          "delta_c": 1.19,
+          "extra_hot_days": 9.5
+        },
+        {
+          "name": "Créteil",
+          "model_id": "EC_Earth3P_HR",
+          "baseline_c": 11.82,
+          "future_c": 13.0,
+          "delta_c": 1.19,
+          "extra_hot_days": 9.4
+        },
+        {
+          "name": "Cergy",
+          "model_id": "EC_Earth3P_HR",
+          "baseline_c": 11.79,
+          "future_c": 12.98,
+          "delta_c": 1.19,
+          "extra_hot_days": 8.5
+        },
+        {
+          "name": "Fontainebleau",
+          "model_id": "EC_Earth3P_HR",
+          "baseline_c": 11.34,
+          "future_c": 12.52,
+          "delta_c": 1.18,
+          "extra_hot_days": 10.5
+        },
+        {
+          "name": "Melun",
+          "model_id": "EC_Earth3P_HR",
+          "baseline_c": 11.74,
+          "future_c": 12.91,
+          "delta_c": 1.18,
+          "extra_hot_days": 11.6
+        },
+        {
+          "name": "Vélizy-Villacoublay",
+          "model_id": "EC_Earth3P_HR",
+          "baseline_c": 10.91,
+          "future_c": 12.09,
+          "delta_c": 1.17,
+          "extra_hot_days": 6.9
+        },
+        {
+          "name": "Évry-Courcouronnes",
+          "model_id": "EC_Earth3P_HR",
+          "baseline_c": 11.61,
+          "future_c": 12.76,
+          "delta_c": 1.15,
+          "extra_hot_days": 10.5
+        },
+        {
+          "name": "Paris",
+          "model_id": "EC_Earth3P_HR",
+          "baseline_c": 11.63,
+          "future_c": 12.76,
+          "delta_c": 1.13,
+          "extra_hot_days": 9.1
+        },
+        {
+          "name": "Fontainebleau",
+          "model_id": "MRI_AGCM3_2_S",
+          "baseline_c": 11.34,
+          "future_c": 12.42,
+          "delta_c": 1.07,
+          "extra_hot_days": 14.9
+        },
+        {
+          "name": "Meaux",
+          "model_id": "MRI_AGCM3_2_S",
+          "baseline_c": 11.55,
+          "future_c": 12.62,
+          "delta_c": 1.07,
+          "extra_hot_days": 14.5
+        },
+        {
+          "name": "Melun",
+          "model_id": "MRI_AGCM3_2_S",
+          "baseline_c": 11.74,
+          "future_c": 12.81,
+          "delta_c": 1.07,
+          "extra_hot_days": 15.6
+        },
+        {
+          "name": "Paris",
+          "model_id": "MRI_AGCM3_2_S",
+          "baseline_c": 11.63,
+          "future_c": 12.68,
+          "delta_c": 1.06,
+          "extra_hot_days": 14.6
+        },
+        {
+          "name": "Vélizy-Villacoublay",
+          "model_id": "MRI_AGCM3_2_S",
+          "baseline_c": 10.91,
+          "future_c": 11.98,
+          "delta_c": 1.06,
+          "extra_hot_days": 12.7
+        },
+        {
+          "name": "Évry-Courcouronnes",
+          "model_id": "MRI_AGCM3_2_S",
+          "baseline_c": 11.61,
+          "future_c": 12.67,
+          "delta_c": 1.06,
+          "extra_hot_days": 15.7
+        },
+        {
+          "name": "Antony",
+          "model_id": "MRI_AGCM3_2_S",
+          "baseline_c": 11.71,
+          "future_c": 12.77,
+          "delta_c": 1.06,
+          "extra_hot_days": 15.4
+        },
+        {
+          "name": "Créteil",
+          "model_id": "MRI_AGCM3_2_S",
+          "baseline_c": 11.82,
+          "future_c": 12.87,
+          "delta_c": 1.06,
+          "extra_hot_days": 15.7
+        },
+        {
+          "name": "Cergy",
+          "model_id": "MRI_AGCM3_2_S",
+          "baseline_c": 11.79,
+          "future_c": 12.84,
+          "delta_c": 1.06,
+          "extra_hot_days": 14.1
+        },
+        {
+          "name": "Saint-Denis",
+          "model_id": "MRI_AGCM3_2_S",
+          "baseline_c": 11.75,
+          "future_c": 12.8,
+          "delta_c": 1.05,
+          "extra_hot_days": 14.9
+        }
+      ]
+    },
+    {
+      "question": "Q09 Variabilité entre deux modèles : ce n'est pas un intervalle de confiance.",
+      "rows": 10,
+      "results": [
+        {
+          "name": "Meaux",
+          "min_delta_c": 1.07,
+          "max_delta_c": 1.2,
+          "models": 2
+        },
+        {
+          "name": "Antony",
+          "min_delta_c": 1.06,
+          "max_delta_c": 1.19,
+          "models": 2
+        },
+        {
+          "name": "Saint-Denis",
+          "min_delta_c": 1.05,
+          "max_delta_c": 1.19,
+          "models": 2
+        },
+        {
+          "name": "Créteil",
+          "min_delta_c": 1.06,
+          "max_delta_c": 1.19,
+          "models": 2
+        },
+        {
+          "name": "Cergy",
+          "min_delta_c": 1.06,
+          "max_delta_c": 1.19,
+          "models": 2
+        },
+        {
+          "name": "Fontainebleau",
+          "min_delta_c": 1.07,
+          "max_delta_c": 1.18,
+          "models": 2
+        },
+        {
+          "name": "Melun",
+          "min_delta_c": 1.07,
+          "max_delta_c": 1.18,
+          "models": 2
+        },
+        {
+          "name": "Vélizy-Villacoublay",
+          "min_delta_c": 1.06,
+          "max_delta_c": 1.17,
+          "models": 2
+        },
+        {
+          "name": "Évry-Courcouronnes",
+          "min_delta_c": 1.06,
+          "max_delta_c": 1.15,
+          "models": 2
+        },
+        {
+          "name": "Paris",
+          "min_delta_c": 1.06,
+          "max_delta_c": 1.13,
+          "models": 2
+        }
+      ]
+    },
+    {
+      "question": "Q10 Évolution historique descriptive ; deux décennies, même réanalyse.",
+      "rows": 10,
+      "results": [
+        {
+          "name": "Fontainebleau",
+          "delta_decades_c": 0.92
+        },
+        {
+          "name": "Melun",
+          "delta_decades_c": 0.92
+        },
+        {
+          "name": "Créteil",
+          "delta_decades_c": 0.92
+        },
+        {
+          "name": "Meaux",
+          "delta_decades_c": 0.91
+        },
+        {
+          "name": "Évry-Courcouronnes",
+          "delta_decades_c": 0.91
+        },
+        {
+          "name": "Antony",
+          "delta_decades_c": 0.91
+        },
+        {
+          "name": "Saint-Denis",
+          "delta_decades_c": 0.91
+        },
+        {
+          "name": "Paris",
+          "delta_decades_c": 0.9
+        },
+        {
+          "name": "Vélizy-Villacoublay",
+          "delta_decades_c": 0.88
+        },
+        {
+          "name": "Cergy",
+          "delta_decades_c": 0.84
+        }
+      ]
+    },
+    {
+      "question": "Q11 Été à Vélizy : moyenne journalière, juin-juillet-août par année et modèle.",
+      "rows": 70,
+      "results": [
+        {
+          "model_id": "EC_Earth3P_HR",
+          "year": "2030",
+          "summer_c": 21.98,
+          "hot_summer_days": 19
+        },
+        {
+          "model_id": "EC_Earth3P_HR",
+          "year": "2031",
+          "summer_c": 19.65,
+          "hot_summer_days": 14
+        },
+        {
+          "model_id": "EC_Earth3P_HR",
+          "year": "2032",
+          "summer_c": 17.97,
+          "hot_summer_days": 5
+        },
+        {
+          "model_id": "EC_Earth3P_HR",
+          "year": "2033",
+          "summer_c": 18.12,
+          "hot_summer_days": 2
+        },
+        {
+          "model_id": "EC_Earth3P_HR",
+          "year": "2034",
+          "summer_c": 19.76,
+          "hot_summer_days": 4
+        },
+        {
+          "model_id": "EC_Earth3P_HR",
+          "year": "2035",
+          "summer_c": 19.83,
+          "hot_summer_days": 9
+        },
+        {
+          "model_id": "EC_Earth3P_HR",
+          "year": "2036",
+          "summer_c": 18.76,
+          "hot_summer_days": 2
+        },
+        {
+          "model_id": "EC_Earth3P_HR",
+          "year": "2037",
+          "summer_c": 21.98,
+          "hot_summer_days": 25
+        },
+        {
+          "model_id": "EC_Earth3P_HR",
+          "year": "2038",
+          "summer_c": 19.16,
+          "hot_summer_days": 2
+        },
+        {
+          "model_id": "EC_Earth3P_HR",
+          "year": "2039",
+          "summer_c": 17.63,
+          "hot_summer_days": 0
+        },
+        {
+          "model_id": "EC_Earth3P_HR",
+          "year": "2040",
+          "summer_c": 21.88,
+          "hot_summer_days": 26
+        },
+        {
+          "model_id": "EC_Earth3P_HR",
+          "year": "2041",
+          "summer_c": 20.35,
+          "hot_summer_days": 8
+        },
+        {
+          "model_id": "EC_Earth3P_HR",
+          "year": "2042",
+          "summer_c": 18.12,
+          "hot_summer_days": 1
+        },
+        {
+          "model_id": "EC_Earth3P_HR",
+          "year": "2043",
+          "summer_c": 19.86,
+          "hot_summer_days": 8
+        },
+        {
+          "model_id": "EC_Earth3P_HR",
+          "year": "2044",
+          "summer_c": 19.87,
+          "hot_summer_days": 3
+        },
+        {
+          "model_id": "EC_Earth3P_HR",
+          "year": "2045",
+          "summer_c": 20.01,
+          "hot_summer_days": 11
+        },
+        {
+          "model_id": "EC_Earth3P_HR",
+          "year": "2046",
+          "summer_c": 18.79,
+          "hot_summer_days": 3
+        },
+        {
+          "model_id": "EC_Earth3P_HR",
+          "year": "2047",
+          "summer_c": 20.37,
+          "hot_summer_days": 8
+        },
+        {
+          "model_id": "EC_Earth3P_HR",
+          "year": "2048",
+          "summer_c": 19.69,
+          "hot_summer_days": 14
+        },
+        {
+          "model_id": "EC_Earth3P_HR",
+          "year": "2049",
+          "summer_c": 20.18,
+          "hot_summer_days": 9
+        },
+        {
+          "model_id": "MRI_AGCM3_2_S",
+          "year": "2030",
+          "summer_c": 21.06,
+          "hot_summer_days": 20
+        },
+        {
+          "model_id": "MRI_AGCM3_2_S",
+          "year": "2031",
+          "summer_c": 19.21,
+          "hot_summer_days": 8
+        },
+        {
+          "model_id": "MRI_AGCM3_2_S",
+          "year": "2032",
+          "summer_c": 19.57,
+          "hot_summer_days": 16
+        },
+        {
+          "model_id": "MRI_AGCM3_2_S",
+          "year": "2033",
+          "summer_c": 20.11,
+          "hot_summer_days": 26
+        },
+        {
+          "model_id": "MRI_AGCM3_2_S",
+          "year": "2034",
+          "summer_c": 18.75,
+          "hot_summer_days": 11
+        },
+        {
+          "model_id": "MRI_AGCM3_2_S",
+          "year": "2035",
+          "summer_c": 19.29,
+          "hot_summer_days": 17
+        },
+        {
+          "model_id": "MRI_AGCM3_2_S",
+          "year": "2036",
+          "summer_c": 19.73,
+          "hot_summer_days": 15
+        },
+        {
+          "model_id": "MRI_AGCM3_2_S",
+          "year": "2037",
+          "summer_c": 20.93,
+          "hot_summer_days": 31
+        },
+        {
+          "model_id": "MRI_AGCM3_2_S",
+          "year": "2038",
+          "summer_c": 17.75,
+          "hot_summer_days": 0
+        },
+        {
+          "model_id": "MRI_AGCM3_2_S",
+          "year": "2039",
+          "summer_c": 22.08,
+          "hot_summer_days": 31
+        },
+        {
+          "model_id": "MRI_AGCM3_2_S",
+          "year": "2040",
+          "summer_c": 20.61,
+          "hot_summer_days": 13
+        },
+        {
+          "model_id": "MRI_AGCM3_2_S",
+          "year": "2041",
+          "summer_c": 20.72,
+          "hot_summer_days": 20
+        },
+        {
+          "model_id": "MRI_AGCM3_2_S",
+          "year": "2042",
+          "summer_c": 19.87,
+          "hot_summer_days": 16
+        },
+        {
+          "model_id": "MRI_AGCM3_2_S",
+          "year": "2043",
+          "summer_c": 18.17,
+          "hot_summer_days": 6
+        },
+        {
+          "model_id": "MRI_AGCM3_2_S",
+          "year": "2044",
+          "summer_c": 21.31,
+          "hot_summer_days": 32
+        },
+        {
+          "model_id": "MRI_AGCM3_2_S",
+          "year": "2045",
+          "summer_c": 18.98,
+          "hot_summer_days": 13
+        },
+        {
+          "model_id": "MRI_AGCM3_2_S",
+          "year": "2046",
+          "summer_c": 19.52,
+          "hot_summer_days": 9
+        },
+        {
+          "model_id": "MRI_AGCM3_2_S",
+          "year": "2047",
+          "summer_c": 19.36,
+          "hot_summer_days": 16
+        },
+        {
+          "model_id": "MRI_AGCM3_2_S",
+          "year": "2048",
+          "summer_c": 18.14,
+          "hot_summer_days": 4
+        },
+        {
+          "model_id": "MRI_AGCM3_2_S",
+          "year": "2049",
+          "summer_c": 19.64,
+          "hot_summer_days": 14
+        },
+        {
+          "model_id": "era5_seamless",
+          "year": "1991",
+          "summer_c": 16.94,
+          "hot_summer_days": 2
+        },
+        {
+          "model_id": "era5_seamless",
+          "year": "1992",
+          "summer_c": 17.79,
+          "hot_summer_days": 4
+        },
+        {
+          "model_id": "era5_seamless",
+          "year": "1993",
+          "summer_c": 16.6,
+          "hot_summer_days": 0
+        },
+        {
+          "model_id": "era5_seamless",
+          "year": "1994",
+          "summer_c": 18.53,
+          "hot_summer_days": 4
+        },
+        {
+          "model_id": "era5_seamless",
+          "year": "1995",
+          "summer_c": 18.57,
+          "hot_summer_days": 6
+        },
+        {
+          "model_id": "era5_seamless",
+          "year": "1996",
+          "summer_c": 17.36,
+          "hot_summer_days": 1
+        },
+        {
+          "model_id": "era5_seamless",
+          "year": "1997",
+          "summer_c": 18.15,
+          "hot_summer_days": 2
+        },
+        {
+          "model_id": "era5_seamless",
+          "year": "1998",
+          "summer_c": 17.21,
+          "hot_summer_days": 5
+        },
+        {
+          "model_id": "era5_seamless",
+          "year": "1999",
+          "summer_c": 17.75,
+          "hot_summer_days": 0
+        },
+        {
+          "model_id": "era5_seamless",
+          "year": "2000",
+          "summer_c": 16.8,
+          "hot_summer_days": 0
+        },
+        {
+          "model_id": "era5_seamless",
+          "year": "2001",
+          "summer_c": 17.73,
+          "hot_summer_days": 3
+        },
+        {
+          "model_id": "era5_seamless",
+          "year": "2002",
+          "summer_c": 17.21,
+          "hot_summer_days": 3
+        },
+        {
+          "model_id": "era5_seamless",
+          "year": "2003",
+          "summer_c": 20.61,
+          "hot_summer_days": 15
+        },
+        {
+          "model_id": "era5_seamless",
+          "year": "2004",
+          "summer_c": 17.97,
+          "hot_summer_days": 2
+        },
+        {
+          "model_id": "era5_seamless",
+          "year": "2005",
+          "summer_c": 18.12,
+          "hot_summer_days": 6
+        },
+        {
+          "model_id": "era5_seamless",
+          "year": "2006",
+          "summer_c": 18.89,
+          "hot_summer_days": 7
+        },
+        {
+          "model_id": "era5_seamless",
+          "year": "2007",
+          "summer_c": 16.68,
+          "hot_summer_days": 0
+        },
+        {
+          "model_id": "era5_seamless",
+          "year": "2008",
+          "summer_c": 17.47,
+          "hot_summer_days": 1
+        },
+        {
+          "model_id": "era5_seamless",
+          "year": "2009",
+          "summer_c": 18.21,
+          "hot_summer_days": 2
+        },
+        {
+          "model_id": "era5_seamless",
+          "year": "2010",
+          "summer_c": 18.23,
+          "hot_summer_days": 3
+        },
+        {
+          "model_id": "era5_seamless",
+          "year": "2011",
+          "summer_c": 16.97,
+          "hot_summer_days": 2
+        },
+        {
+          "model_id": "era5_seamless",
+          "year": "2012",
+          "summer_c": 17.56,
+          "hot_summer_days": 3
+        },
+        {
+          "model_id": "era5_seamless",
+          "year": "2013",
+          "summer_c": 18.43,
+          "hot_summer_days": 5
+        },
+        {
+          "model_id": "era5_seamless",
+          "year": "2014",
+          "summer_c": 17.12,
+          "hot_summer_days": 1
+        },
+        {
+          "model_id": "era5_seamless",
+          "year": "2015",
+          "summer_c": 19.25,
+          "hot_summer_days": 8
+        },
+        {
+          "model_id": "era5_seamless",
+          "year": "2016",
+          "summer_c": 18.33,
+          "hot_summer_days": 6
+        },
+        {
+          "model_id": "era5_seamless",
+          "year": "2017",
+          "summer_c": 19.24,
+          "hot_summer_days": 7
+        },
+        {
+          "model_id": "era5_seamless",
+          "year": "2018",
+          "summer_c": 20.16,
+          "hot_summer_days": 8
+        },
+        {
+          "model_id": "era5_seamless",
+          "year": "2019",
+          "summer_c": 19.67,
+          "hot_summer_days": 10
+        },
+        {
+          "model_id": "era5_seamless",
+          "year": "2020",
+          "summer_c": 19.09,
+          "hot_summer_days": 11
+        }
+      ]
+    },
+    {
+      "question": "Q12 Plus longue série de jours chauds à Vélizy : segmentation par fenêtre.",
+      "rows": 10,
+      "results": [
+        {
+          "series_id": "78640_MRI_AGCM3_2_S",
+          "first_day": "2033-07-18",
+          "last_day": "2033-08-05",
+          "days": 19
+        },
+        {
+          "series_id": "78640_MRI_AGCM3_2_S",
+          "first_day": "2037-07-28",
+          "last_day": "2037-08-10",
+          "days": 14
+        },
+        {
+          "series_id": "78640_MRI_AGCM3_2_S",
+          "first_day": "2035-08-13",
+          "last_day": "2035-08-24",
+          "days": 12
+        },
+        {
+          "series_id": "78640_EC_Earth3P_HR",
+          "first_day": "2040-08-12",
+          "last_day": "2040-08-22",
+          "days": 11
+        },
+        {
+          "series_id": "78640_MRI_AGCM3_2_S",
+          "first_day": "2032-06-23",
+          "last_day": "2032-07-03",
+          "days": 11
+        },
+        {
+          "series_id": "78640_MRI_AGCM3_2_S",
+          "first_day": "2039-08-14",
+          "last_day": "2039-08-24",
+          "days": 11
+        },
+        {
+          "series_id": "78640_era5_seamless",
+          "first_day": "2003-08-03",
+          "last_day": "2003-08-13",
+          "days": 11
+        },
+        {
+          "series_id": "78640_EC_Earth3P_HR",
+          "first_day": "2044-09-08",
+          "last_day": "2044-09-16",
+          "days": 9
+        },
+        {
+          "series_id": "78640_MRI_AGCM3_2_S",
+          "first_day": "2044-06-26",
+          "last_day": "2044-07-04",
+          "days": 9
+        },
+        {
+          "series_id": "78640_MRI_AGCM3_2_S",
+          "first_day": "2034-07-16",
+          "last_day": "2034-07-23",
+          "days": 8
+        }
+      ]
+    },
+    {
+      "question": "Q13 Traçabilité intégrale d'une occurrence, de la publication au fichier brut.",
+      "rows": 5,
+      "results": [
+        {
+          "occurrence_id": 46319,
+          "accepted_name": "Bayania",
+          "name": "Ezanville, Beauchamp (France)",
+          "citation": "C. Pomerol. 1958. Reouverture de deux gisements bartoniens classiques, Le Guepelle et Beauchamp (Seine-et-Oise). Cahiers des Naturalistes 14:1-2",
+          "path": "data/raw/20260923T101505775299Z_occurrences.json",
+          "sha256": "7fd91760cbf2ce99831d88073ca57f27a0b82ecad9012fcf404de6cd83da3330",
+          "fetched_at": "2026-09-23T10:15:43Z",
+          "source": "Paleobiology Database"
+        },
+        {
+          "occurrence_id": 46320,
+          "accepted_name": "Cerithium",
+          "name": "Ezanville, Beauchamp (France)",
+          "citation": "C. Pomerol. 1958. Reouverture de deux gisements bartoniens classiques, Le Guepelle et Beauchamp (Seine-et-Oise). Cahiers des Naturalistes 14:1-2",
+          "path": "data/raw/20260923T101505775299Z_occurrences.json",
+          "sha256": "7fd91760cbf2ce99831d88073ca57f27a0b82ecad9012fcf404de6cd83da3330",
+          "fetched_at": "2026-09-23T10:15:43Z",
+          "source": "Paleobiology Database"
+        },
+        {
+          "occurrence_id": 46321,
+          "accepted_name": "Callista (Callista) elegans",
+          "name": "Ezanville, Beauchamp (France)",
+          "citation": "C. Pomerol. 1958. Reouverture de deux gisements bartoniens classiques, Le Guepelle et Beauchamp (Seine-et-Oise). Cahiers des Naturalistes 14:1-2",
+          "path": "data/raw/20260923T101505775299Z_occurrences.json",
+          "sha256": "7fd91760cbf2ce99831d88073ca57f27a0b82ecad9012fcf404de6cd83da3330",
+          "fetched_at": "2026-09-23T10:15:43Z",
+          "source": "Paleobiology Database"
+        },
+        {
+          "occurrence_id": 46322,
+          "accepted_name": "Cerithium tuberculosum",
+          "name": "Beauchamp, France",
+          "citation": "C. Pomerol. 1958. Reouverture de deux gisements bartoniens classiques, Le Guepelle et Beauchamp (Seine-et-Oise). Cahiers des Naturalistes 14:1-2",
+          "path": "data/raw/20260923T101505775299Z_occurrences.json",
+          "sha256": "7fd91760cbf2ce99831d88073ca57f27a0b82ecad9012fcf404de6cd83da3330",
+          "fetched_at": "2026-09-23T10:15:43Z",
+          "source": "Paleobiology Database"
+        },
+        {
+          "occurrence_id": 46323,
+          "accepted_name": "Ancilla",
+          "name": "Beauchamp, France",
+          "citation": "C. Pomerol. 1958. Reouverture de deux gisements bartoniens classiques, Le Guepelle et Beauchamp (Seine-et-Oise). Cahiers des Naturalistes 14:1-2",
+          "path": "data/raw/20260923T101505775299Z_occurrences.json",
+          "sha256": "7fd91760cbf2ce99831d88073ca57f27a0b82ecad9012fcf404de6cd83da3330",
+          "fetched_at": "2026-09-23T10:15:43Z",
+          "source": "Paleobiology Database"
+        }
+      ]
+    },
+    {
+      "question": "Q14 Vérifier l'unicité de la clé métier climatique : résultat attendu vide.",
+      "rows": 0,
+      "results": []
+    },
+    {
+      "question": "Q15 Évaluer les points climatiques réellement distincts (éviter la fausse précision).",
+      "rows": 30,
+      "results": [
+        {
+          "model_id": "EC_Earth3P_HR",
+          "grid_latitude": 48.40001,
+          "grid_longitude": 2.699997,
+          "assigned_cities": 1
+        },
+        {
+          "model_id": "EC_Earth3P_HR",
+          "grid_latitude": 48.5,
+          "grid_longitude": 2.699997,
+          "assigned_cities": 1
+        },
+        {
+          "model_id": "EC_Earth3P_HR",
+          "grid_latitude": 48.600006,
+          "grid_longitude": 2.4000092,
+          "assigned_cities": 1
+        },
+        {
+          "model_id": "EC_Earth3P_HR",
+          "grid_latitude": 48.800003,
+          "grid_longitude": 2.199997,
+          "assigned_cities": 1
+        },
+        {
+          "model_id": "EC_Earth3P_HR",
+          "grid_latitude": 48.800003,
+          "grid_longitude": 2.300003,
+          "assigned_cities": 1
+        },
+        {
+          "model_id": "EC_Earth3P_HR",
+          "grid_latitude": 48.800003,
+          "grid_longitude": 2.5,
+          "assigned_cities": 1
+        },
+        {
+          "model_id": "EC_Earth3P_HR",
+          "grid_latitude": 48.90001,
+          "grid_longitude": 2.300003,
+          "assigned_cities": 1
+        },
+        {
+          "model_id": "EC_Earth3P_HR",
+          "grid_latitude": 48.90001,
+          "grid_longitude": 2.4000092,
+          "assigned_cities": 1
+        },
+        {
+          "model_id": "EC_Earth3P_HR",
+          "grid_latitude": 49.0,
+          "grid_longitude": 2.0,
+          "assigned_cities": 1
+        },
+        {
+          "model_id": "EC_Earth3P_HR",
+          "grid_latitude": 49.0,
+          "grid_longitude": 2.9000092,
+          "assigned_cities": 1
+        },
+        {
+          "model_id": "MRI_AGCM3_2_S",
+          "grid_latitude": 48.40001,
+          "grid_longitude": 2.699997,
+          "assigned_cities": 1
+        },
+        {
+          "model_id": "MRI_AGCM3_2_S",
+          "grid_latitude": 48.5,
+          "grid_longitude": 2.699997,
+          "assigned_cities": 1
+        },
+        {
+          "model_id": "MRI_AGCM3_2_S",
+          "grid_latitude": 48.600006,
+          "grid_longitude": 2.4000092,
+          "assigned_cities": 1
+        },
+        {
+          "model_id": "MRI_AGCM3_2_S",
+          "grid_latitude": 48.800003,
+          "grid_longitude": 2.199997,
+          "assigned_cities": 1
+        },
+        {
+          "model_id": "MRI_AGCM3_2_S",
+          "grid_latitude": 48.800003,
+          "grid_longitude": 2.300003,
+          "assigned_cities": 1
+        },
+        {
+          "model_id": "MRI_AGCM3_2_S",
+          "grid_latitude": 48.800003,
+          "grid_longitude": 2.5,
+          "assigned_cities": 1
+        },
+        {
+          "model_id": "MRI_AGCM3_2_S",
+          "grid_latitude": 48.90001,
+          "grid_longitude": 2.300003,
+          "assigned_cities": 1
+        },
+        {
+          "model_id": "MRI_AGCM3_2_S",
+          "grid_latitude": 48.90001,
+          "grid_longitude": 2.4000092,
+          "assigned_cities": 1
+        },
+        {
+          "model_id": "MRI_AGCM3_2_S",
+          "grid_latitude": 49.0,
+          "grid_longitude": 2.0,
+          "assigned_cities": 1
+        },
+        {
+          "model_id": "MRI_AGCM3_2_S",
+          "grid_latitude": 49.0,
+          "grid_longitude": 2.9000092,
+          "assigned_cities": 1
+        },
+        {
+          "model_id": "era5_seamless",
+          "grid_latitude": 48.40001,
+          "grid_longitude": 2.699997,
+          "assigned_cities": 1
+        },
+        {
+          "model_id": "era5_seamless",
+          "grid_latitude": 48.5,
+          "grid_longitude": 2.699997,
+          "assigned_cities": 1
+        },
+        {
+          "model_id": "era5_seamless",
+          "grid_latitude": 48.600006,
+          "grid_longitude": 2.4000092,
+          "assigned_cities": 1
+        },
+        {
+          "model_id": "era5_seamless",
+          "grid_latitude": 48.800003,
+          "grid_longitude": 2.199997,
+          "assigned_cities": 1
+        },
+        {
+          "model_id": "era5_seamless",
+          "grid_latitude": 48.800003,
+          "grid_longitude": 2.300003,
+          "assigned_cities": 1
+        },
+        {
+          "model_id": "era5_seamless",
+          "grid_latitude": 48.800003,
+          "grid_longitude": 2.5,
+          "assigned_cities": 1
+        },
+        {
+          "model_id": "era5_seamless",
+          "grid_latitude": 48.90001,
+          "grid_longitude": 2.300003,
+          "assigned_cities": 1
+        },
+        {
+          "model_id": "era5_seamless",
+          "grid_latitude": 48.90001,
+          "grid_longitude": 2.4000092,
+          "assigned_cities": 1
+        },
+        {
+          "model_id": "era5_seamless",
+          "grid_latitude": 49.0,
+          "grid_longitude": 2.0,
+          "assigned_cities": 1
+        },
+        {
+          "model_id": "era5_seamless",
+          "grid_latitude": 49.0,
+          "grid_longitude": 2.9000092,
+          "assigned_cities": 1
+        }
+      ]
+    }
+  ]
+}

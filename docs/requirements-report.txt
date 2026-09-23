@@ -1,0 +1,4 @@
+# Facultatif : uniquement pour régénérer le dossier PDF et les figures.
+reportlab>=4.0,<5
+matplotlib>=3.8,<4
+Pillow>=10,<13
