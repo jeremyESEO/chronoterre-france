@@ -1,14 +1,15 @@
 {
-  "at": "2026-10-10T21:11:50.252Z",
+  "at": "2026-10-10T21:35:09.052Z",
   "status": "PASS",
   "tests": [
-    "Initialisation avec vrais instantanés et mode WebGL indisponible",
+    "Initialisation avec vrais instantanés, GeoJSON servi en octet-stream et WebGL indisponible",
     "Horizon modifie valeurs ; 2076 désactivé",
     "Comparaison et priorité persistante",
     "Domaine outre-mer explicite",
     "Code postal, résultat INSEE",
     "Erreur géocodeur : recherche communale conservée",
-    "Fiche fossilifère avec illustration taxonomique et crédits"
+    "Fiche fossilifère avec illustration taxonomique et crédits",
+    "Types MIME statiques génériques acceptés ; HTML, JSON invalide et fournisseur non JSON refusés"
   ],
   "limits": "jsdom : aucun rendu graphique, réseau externe ni interaction réelle navigateur vérifiés"
 }
