@@ -1,0 +1,5 @@
+{
+  "status": "PASS",
+  "test": "Extension loaded after chrono:ready with separate script global contexts",
+  "limits": "jsdom, not browser"
+}
