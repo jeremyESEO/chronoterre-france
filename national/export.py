@@ -44,4 +44,6 @@ def export(db,report,files):
  # CSV de démonstration strictement réel, stable et reproductible.
  with (ROOT/'data/curated/france_demo_fossils.csv').open('w',newline='',encoding='utf-8') as f:
   rows=q(db,'SELECT * FROM v_fossils ORDER BY occurrence_id LIMIT 500');w=csv.DictWriter(f,fieldnames=list(rows[0]) if rows else fcols);w.writeheader();w.writerows(rows)
+ from national.home_export import run as export_home
+ export_home()
  print('Instantané Web exporté depuis SQLite',flush=True)

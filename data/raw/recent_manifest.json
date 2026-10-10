@@ -1,0 +1,74 @@
+[
+  {
+    "code": "75056",
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=48.8589&longitude=2.347&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum&models=era5_land&timezone=auto&elevation=nan",
+    "path": "data/raw/recent/75056_2026-10-10T223202.645660+0000.json",
+    "sha256": "5c5f88a6e6cc16659d1462306add66a8f8dac6dcfafc38106204bcafb5b28da6",
+    "retrieved_at": "2026-10-10T22:32:02.645816+00:00",
+    "bytes": 100142
+  },
+  {
+    "code": "17300",
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=46.162&longitude=-1.1765&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum&models=era5_land&timezone=auto&elevation=nan",
+    "path": "data/raw/recent/17300_2026-10-10T223208.930120+0000.json",
+    "sha256": "b5445197a685c47ff0207d8114287958b725539dd530ed8a7911ba793b6e84b2",
+    "retrieved_at": "2026-10-10T22:32:08.930286+00:00",
+    "bytes": 100773
+  },
+  {
+    "code": "13004",
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=43.5441&longitude=4.6513&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum&models=era5_land&timezone=auto&elevation=nan",
+    "path": "data/raw/recent/13004_2026-10-10T223214.784834+0000.json",
+    "sha256": "585184d9699d29116aea82b6eca29773e86dd1c488a8b17a56b6cb5b803e4f00",
+    "retrieved_at": "2026-10-10T22:32:14.785047+00:00",
+    "bytes": 101221
+  },
+  {
+    "code": "37261",
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=47.3943&longitude=0.6949&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum&models=era5_land&timezone=auto&elevation=nan",
+    "path": "data/raw/recent/37261_2026-10-10T223220.705642+0000.json",
+    "sha256": "f6b553d38301bf4d418714bee685881a153a24a02bbdfc7995467a5e35c98938",
+    "retrieved_at": "2026-10-10T22:32:20.705818+00:00",
+    "bytes": 100259
+  },
+  {
+    "code": "74056",
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=45.9296&longitude=6.9291&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum&models=era5_land&timezone=auto&elevation=nan",
+    "path": "data/raw/recent/74056_2026-10-10T223226.375799+0000.json",
+    "sha256": "fa12c40b97e27fc29a49657b0e78c5c48535363dff74650a13d9a29cbc069a75",
+    "retrieved_at": "2026-10-10T22:32:26.376006+00:00",
+    "bytes": 101103
+  },
+  {
+    "code": "23096",
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=46.1585&longitude=1.8705&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum&models=era5_land&timezone=auto&elevation=nan",
+    "path": "data/raw/recent/23096_2026-10-10T223231.781745+0000.json",
+    "sha256": "4d22b6c62e74c5a5a8621c4afa4ef562c52521762b4f43a5372c2cd1577915f8",
+    "retrieved_at": "2026-10-10T22:32:31.781925+00:00",
+    "bytes": 99872
+  },
+  {
+    "code": "2A004",
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=41.9228&longitude=8.7058&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum&models=era5_land&timezone=auto&elevation=nan",
+    "path": "data/raw/recent/2A004_2026-10-10T223237.436939+0000.json",
+    "sha256": "e86e662875af652ea4cbf929beff2bc786e6ac127b4895eae7e479dd4162f3f4",
+    "retrieved_at": "2026-10-10T22:32:37.437102+00:00",
+    "bytes": 102664
+  },
+  {
+    "code": "97411",
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=-20.9434&longitude=55.4444&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum&models=era5_land&timezone=auto&elevation=nan",
+    "path": "data/raw/recent/97411_2026-10-10T223243.298730+0000.json",
+    "sha256": "65cac237b187556e00d8ce557396c91f1ed7f6c84c183e55941ac922e049c259",
+    "retrieved_at": "2026-10-10T22:32:43.298932+00:00",
+    "bytes": 102671
+  },
+  {
+    "code": "31555",
+    "url": "https://archive-api.open-meteo.com/v1/archive?latitude=43.6007&longitude=1.4328&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum&models=era5_land&timezone=auto&elevation=nan",
+    "path": "data/raw/recent/31555_2026-10-10T223308.767625+0000.json",
+    "sha256": "e24838ec7f07e82875ce751baf03fba9a3e8c117f722d5cb1381adf3ae1c2fd5",
+    "retrieved_at": "2026-10-10T22:33:08.767769+00:00",
+    "bytes": 100710
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "at": "2026-10-10T22:40:24.023Z",
+  "status": "PASS",
+  "checks": [
+    "Seuils, absence de données, inversion du tri et sensibilité des bornes",
+    "34 746 communes uniques, Corse, exclusion comparative outre-mer, fidélité des valeurs source",
+    "Parcours ouvert, calcul national réel et cartes de résultats",
+    "Les plus/moins adaptés et explication détaillée",
+    "Export des valeurs, unités, préférences, période et provenance",
+    "Changement réel des résultats et métadonnées à 2100",
+    "Fiche de lieu, trajectoire et 3 653 journées réanalysées",
+    "Absence de météo récente signalée sans valeur fictive",
+    "Navigation fossiles préservée",
+    "Couche des résultats vidée dans le mode fossiles"
+  ],
+  "limits": "Node/jsdom, pas un navigateur ; rendu, WebGL, tactile et clavier réel non vérifiés"
+}

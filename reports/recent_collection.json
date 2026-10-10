@@ -1,0 +1,25 @@
+{
+  "accepted_places": 8,
+  "days": 29224,
+  "failures": [
+    {
+      "code": "2A004",
+      "error": "Temp\u00e9ratures incompl\u00e8tes ou hors bornes",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=41.9228&longitude=8.7058&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum&models=era5_land&timezone=auto&elevation=nan"
+    },
+    {
+      "code": "35238",
+      "error": "Aucune r\u00e9ponse mise en cache ; collecte externe non relanc\u00e9e",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=48.1159&longitude=-1.6884&start_date=2016-01-01&end_date=2025-12-31&daily=temperature_2m_max%2Ctemperature_2m_min%2Cprecipitation_sum&models=era5_land&timezone=auto&elevation=nan"
+    }
+  ],
+  "foreign_keys": [],
+  "checks": [
+    "units",
+    "complete 3653 dates",
+    "unique dates",
+    "numeric ranges",
+    "tmin <= tmax",
+    "complete annual denominators"
+  ]
+}

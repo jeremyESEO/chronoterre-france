@@ -1,0 +1,85 @@
+{
+  "at": "2026-10-10T22:38:06.561Z",
+  "horizon": "2050",
+  "rows": 34746,
+  "baseline_counts": [
+    10054,
+    24543,
+    149,
+    0
+  ],
+  "baseline_compute_and_sort_ms": 213.672014,
+  "cases": [
+    {
+      "name": "Priorité S1",
+      "counts": [
+        10054,
+        24543,
+        149,
+        0
+      ],
+      "common_in_first100": 100
+    },
+    {
+      "name": "Priorité S2",
+      "counts": [
+        10054,
+        24543,
+        149,
+        0
+      ],
+      "common_in_first100": 100
+    },
+    {
+      "name": "Priorité G2",
+      "counts": [
+        10054,
+        24543,
+        149,
+        0
+      ],
+      "common_in_first100": 100
+    },
+    {
+      "name": "Priorité G4",
+      "counts": [
+        10054,
+        24543,
+        149,
+        0
+      ],
+      "common_in_first100": 100
+    },
+    {
+      "name": "Priorité AG1",
+      "counts": [
+        10054,
+        24543,
+        149,
+        0
+      ],
+      "common_in_first100": 100
+    },
+    {
+      "name": "Seuils × 0.8",
+      "counts": [
+        1741,
+        29564,
+        3441,
+        0
+      ],
+      "changed_categories": 11438
+    },
+    {
+      "name": "Seuils × 1.2",
+      "counts": [
+        23608,
+        11138,
+        0,
+        0
+      ],
+      "changed_categories": 13695
+    }
+  ],
+  "interpretation": "Les catégories dépendent des seuils ; les poids départagent les dépassements dans une catégorie. Les communes dans tous les seuils sont ex aequo et présentées alphabétiquement. Le top 100 ne signifie donc pas les 100 meilleures communes de France. Mesure Node sur cet environnement, hors réseau et rendu."
+}

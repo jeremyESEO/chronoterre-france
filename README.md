@@ -81,3 +81,9 @@ Aucun service payant souscrit. Fond, géocodage et consultations publiques reste
 Voir `docs/sources_france.md`, `docs/media_registry.json` et les manifestes. Les licences des producteurs et des images prévalent sur celle du code. Ne pas attribuer l’ensemble des données à l’auteur du projet. Les images ont leurs crédits et licences propres, dont des obligations de partage à l’identique.
 
 Les deux plus grandes archives sont découpées en blocs pour la limite du dépôt. `national.restore` et `national.pipeline` les recomposent automatiquement et vérifient leur SHA-256. Le découpage ne modifie pas les octets des archives originales.
+
+## Nouveau : trouver mon lieu de vie
+
+Depuis la carte, utilisez **Trouver mon lieu de vie**, réglez les maxima climatiques et cliquez sur **Explorer les résultats**. Le tri fonctionne dans les deux sens, à horizon constant, sur 34 746 communes de métropole et Corse. Les règles, exclusions, données récentes et limites sont dans [docs/parcours_installation.md](docs/parcours_installation.md).
+
+Les index sont inclus ; aucune collecte nationale ne s'exécute dans le navigateur. La fiche **Climat à travers le temps** distingue projections et réanalyse récente : 8 lieux validés, 29 224 journées de 2016 à 2025. Données manquantes visibles. Le classement ne certifie ni un logement, ni un risque à l'adresse, ni la qualité de vie globale.
