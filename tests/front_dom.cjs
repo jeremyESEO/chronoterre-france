@@ -3,7 +3,7 @@ const fs=require('node:fs'),path=require('node:path'),assert=require('node:asser
 const {JSDOM}=require(process.env.JSDOM_PATH||'jsdom');const root=path.resolve(__dirname,'..'),events=[];
 const dom=new JSDOM(fs.readFileSync(path.join(root,'dist/index.html'),'utf8'),{url:'http://localhost/',runScripts:'outside-only'}),w=dom.window;
 w.HTMLDialogElement.prototype.showModal=function(){this.open=true;};w.HTMLDialogElement.prototype.close=function(){this.open=false;};
-w.fetch=async url=>{if(!String(url).startsWith('data/'))throw Error('Fournisseur volontairement indisponible dans ce test');const p=path.join(root,'dist',url);return{ok:fs.existsSync(p),status:fs.existsSync(p)?200:404,headers:{get:()=> String(url).endsWith('.geojson')?'application/octet-stream':'application/json'},json:async()=>JSON.parse(fs.readFileSync(p,'utf8'))};};w.AbortSignal=AbortSignal;w.AbortController=AbortController;w.console.error=(...x)=>events.push(x.join(' '));w.eval(fs.readFileSync(path.join(root,'dist/app.js'),'utf8')+'\nwindow.testAPI={selectCity,search,showSite,getJSON};');
+w.fetch=async url=>{if(!String(url).startsWith('data/'))throw Error('Fournisseur volontairement indisponible dans ce test');const p=path.join(root,'dist',url);return{ok:fs.existsSync(p),status:fs.existsSync(p)?200:404,headers:{get:()=> String(url).endsWith('.geojson')?'application/octet-stream':'application/json'},json:async()=>JSON.parse(fs.readFileSync(p,'utf8'))};};w.AbortSignal=AbortSignal;w.AbortController=AbortController;w.console.error=(...x)=>events.push(x.join(' '));w.eval(fs.readFileSync(path.join(root,'dist/app.js'),'utf8')+'\nwindow.testAPI={selectCity,search,showSite,getJSON,initMap};');
 const wait=async()=>{for(let i=0;i<100;i++){if(w.document.querySelector('h1'))return;await new Promise(r=>setTimeout(r,20));}throw Error('Initialisation sans fiche');};const text=()=>w.document.body.textContent;
 (async()=>{const results=[];await wait();assert(text().includes('La Rochelle'));results.push('Initialisation avec vrais instantanés, GeoJSON servi en octet-stream et WebGL indisponible');
 let before=w.document.querySelector('.hero-stat .number').textContent;w.document.querySelector('[data-h="2100"]').click();assert.notEqual(w.document.querySelector('.hero-stat .number').textContent,before);assert(w.document.querySelector('#plus50').disabled);results.push('Horizon modifie valeurs ; 2076 désactivé');
@@ -27,4 +27,8 @@ w.fetch=async()=>({ok:true,headers:{get:()=> 'application/json'},json:async()=>{
 await assert.rejects(()=>w.testAPI.getJSON('data/test.json',1000,true),/JSON illisibles/);
 w.fetch=savedFetch;
 results.push('Types MIME statiques génériques acceptés ; HTML, JSON invalide et fournisseur non JSON refusés');
+let mapConfig;
+w.maplibregl={Map:class{constructor(config){mapConfig=config;}addControl(){}on(){}},NavigationControl:class{},ScaleControl:class{}};
+w.testAPI.initMap();assert.equal(mapConfig.style.sources.relief.minzoom,6);assert.equal(mapConfig.style.sources.relief.maxzoom,14);
+results.push('Relief limité aux niveaux de tuiles disponibles IGN 6 à 14 (configuration)');
 assert.equal(events.length,0,events.join('\n'));fs.writeFileSync(path.join(root,'reports/front_dom.json'),JSON.stringify({at:new Date().toISOString(),status:'PASS',tests:results,limits:'jsdom : aucun rendu graphique, réseau externe ni interaction réelle navigateur vérifiés'},null,2));console.log(results.join('\n'));dom.window.close();})().catch(e=>{console.error(e);dom.window.close();process.exitCode=1;});

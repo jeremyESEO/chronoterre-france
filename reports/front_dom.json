@@ -1,5 +1,5 @@
 {
-  "at": "2026-10-10T21:35:09.052Z",
+  "at": "2026-10-10T21:37:42.538Z",
   "status": "PASS",
   "tests": [
     "Initialisation avec vrais instantanés, GeoJSON servi en octet-stream et WebGL indisponible",
@@ -9,7 +9,8 @@
     "Code postal, résultat INSEE",
     "Erreur géocodeur : recherche communale conservée",
     "Fiche fossilifère avec illustration taxonomique et crédits",
-    "Types MIME statiques génériques acceptés ; HTML, JSON invalide et fournisseur non JSON refusés"
+    "Types MIME statiques génériques acceptés ; HTML, JSON invalide et fournisseur non JSON refusés",
+    "Relief limité aux niveaux de tuiles disponibles IGN 6 à 14 (configuration)"
   ],
   "limits": "jsdom : aucun rendu graphique, réseau externe ni interaction réelle navigateur vérifiés"
 }
