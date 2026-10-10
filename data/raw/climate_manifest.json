@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "files": {
+    "climadiag": {
+      "source": "climadiag",
+      "url": "https://climadiag-commune.meteofrance.com/entities.jsonl",
+      "path": "data/raw/20260925T133023111105Z_climadiag.jsonl.gz",
+      "sha256": "35436aa9d245690dd1fe1a45203e520e129c9b2b5ece9a3e7fc4389081ecb1a2",
+      "bytes": 404250373,
+      "fetched_at": "2026-09-25T13:44:38.503615+00:00",
+      "status": 200,
+      "response_headers": {
+        "ETag": "\"18185f05-65addcb56ce80\"",
+        "Last-Modified": "Mon, 07 Sep 2026 05:21:46 GMT",
+        "Content-Length": "404250373"
+      },
+      "storage_compression": "gzip",
+      "original_path": "data/raw/20260925T133023111105Z_climadiag.jsonl",
+      "storage_sha256": "c770ff419d2574792fabe043354e91655eded5418a3b0412ff750e6b2b012c4c"
+    }
+  }
+}

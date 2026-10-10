@@ -1,0 +1,907 @@
+{
+  "version": 2,
+  "files": {
+    "urban_paris_parcelle": {
+      "source": "cadastre",
+      "url": "https://apicarto.ign.fr/api/cadastre/parcelle?geom=%7B%22type%22%3A%22Point%22%2C%22coordinates%22%3A%5B2.3518%2C48.8566%5D%7D",
+      "request_headers": {},
+      "path": "data/raw/20260925T133751474086Z_urban_paris_parcelle.raw",
+      "sha256": "ba70b67b9b8b1b869e115f088f7754007ff9f7f1365fb0c0cf92aa7cad92b5c4",
+      "bytes": 147,
+      "fetched_at": "2026-09-25T13:38:01.853426+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {
+        "ETag": "W/\"93-F931XL7rYpQNd3TzMqGvpc8vt+8\""
+      }
+    },
+    "urban_paris_document": {
+      "source": "gpu",
+      "url": "https://apicarto.ign.fr/api/gpu/document?geom=%7B%22type%22%3A%22Point%22%2C%22coordinates%22%3A%5B2.3518%2C48.8566%5D%7D",
+      "request_headers": {},
+      "path": "data/raw/20260925T133801853758Z_urban_paris_document.raw",
+      "sha256": "a4492277ee79a3ad2f7cf415d95005e009875dd268de6c14f2b9079d44592f9b",
+      "bytes": 1646,
+      "fetched_at": "2026-09-25T13:38:09.150925+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {
+        "ETag": "W/\"66e-oDUyvNQWebPtyXIOuyYa0i1y85c\""
+      }
+    },
+    "urban_paris_zone-urba": {
+      "source": "gpu",
+      "url": "https://apicarto.ign.fr/api/gpu/zone-urba?geom=%7B%22type%22%3A%22Point%22%2C%22coordinates%22%3A%5B2.3518%2C48.8566%5D%7D",
+      "request_headers": {},
+      "path": "data/raw/20260925T133809151304Z_urban_paris_zone-urba.raw",
+      "sha256": "ac032a97b8323f51c1ff9bf4672a6c5a89a3d222c8ebe70085c5cd0f3094d5bc",
+      "bytes": 5828,
+      "fetched_at": "2026-09-25T13:38:17.890901+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {
+        "ETag": "W/\"16c4-0DOWSfxeNW5KsJsHl1cpxgSz/8k\""
+      }
+    },
+    "urban_paris_prescription-surf": {
+      "source": "gpu",
+      "url": "https://apicarto.ign.fr/api/gpu/prescription-surf?geom=%7B%22type%22%3A%22Point%22%2C%22coordinates%22%3A%5B2.3518%2C48.8566%5D%7D",
+      "request_headers": {},
+      "path": "data/raw/20260925T133817891619Z_urban_paris_prescription-surf.raw",
+      "sha256": "ee07fe22590964d4ad5d690a41bdfb0141551e0008d0b43c64da01114d182da1",
+      "bytes": 176924,
+      "fetched_at": "2026-09-25T13:38:27.214710+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {
+        "ETag": "W/\"2b31c-/aQc57JhDxrKoR9fVay4+ELAW3M\""
+      }
+    },
+    "urban_paris_assiette-sup-s": {
+      "source": "gpu",
+      "url": "https://apicarto.ign.fr/api/gpu/assiette-sup-s?geom=%7B%22type%22%3A%22Point%22%2C%22coordinates%22%3A%5B2.3518%2C48.8566%5D%7D",
+      "request_headers": {},
+      "path": "data/raw/20260925T133827218064Z_urban_paris_assiette-sup-s.raw",
+      "sha256": "f70e72a77f4967b26414d2f8a9f519c30e063b0fe1207e5119d174e3101e539d",
+      "bytes": 186610,
+      "fetched_at": "2026-09-25T13:38:37.131004+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {
+        "ETag": "W/\"2d8f2-Cf4IW7Wz5CRhzoFrUdgG5hZLK80\""
+      }
+    },
+    "urban_larochelle_parcelle": {
+      "source": "cadastre",
+      "url": "https://apicarto.ign.fr/api/cadastre/parcelle?geom=%7B%22type%22%3A%22Point%22%2C%22coordinates%22%3A%5B-1.152%2C46.16%5D%7D",
+      "request_headers": {},
+      "path": "data/raw/20260925T133837134615Z_urban_larochelle_parcelle.raw",
+      "sha256": "663a332463de26bf4b246a0b1adef075a93b3b0f06f08eb3823458ae89ec98e8",
+      "bytes": 147,
+      "fetched_at": "2026-09-25T13:38:44.377902+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {
+        "ETag": "W/\"93-UvpxCPiKlRaaOoVNcDsz4kK6gRg\""
+      }
+    },
+    "urban_larochelle_document": {
+      "source": "gpu",
+      "url": "https://apicarto.ign.fr/api/gpu/document?geom=%7B%22type%22%3A%22Point%22%2C%22coordinates%22%3A%5B-1.152%2C46.16%5D%7D",
+      "request_headers": {},
+      "path": "data/raw/20260925T133844379571Z_urban_larochelle_document.raw",
+      "sha256": "a3f764805ffcf85adb39b260a55dc1aba1b32193294afce1675b28c0863e3268",
+      "bytes": 12125,
+      "fetched_at": "2026-09-25T13:38:54.008322+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {
+        "ETag": "W/\"2f5d-GkKnL9DidqSELx0TS8LJAPr5Xk4\""
+      }
+    },
+    "urban_larochelle_zone-urba": {
+      "source": "gpu",
+      "url": "https://apicarto.ign.fr/api/gpu/zone-urba?geom=%7B%22type%22%3A%22Point%22%2C%22coordinates%22%3A%5B-1.152%2C46.16%5D%7D",
+      "request_headers": {},
+      "path": "data/raw/20260925T133854009230Z_urban_larochelle_zone-urba.raw",
+      "sha256": "3e5c70f1f2e6f6f808fc339479f781b2c097d576032c9aa512971fa3515505a4",
+      "bytes": 11407,
+      "fetched_at": "2026-09-25T13:39:01.452341+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {
+        "ETag": "W/\"2c8f-0fzM0M7AJ7S+tc3VOXWm5Ttngjo\""
+      }
+    },
+    "urban_larochelle_prescription-surf": {
+      "source": "gpu",
+      "url": "https://apicarto.ign.fr/api/gpu/prescription-surf?geom=%7B%22type%22%3A%22Point%22%2C%22coordinates%22%3A%5B-1.152%2C46.16%5D%7D",
+      "request_headers": {},
+      "path": "data/raw/20260925T133901453120Z_urban_larochelle_prescription-surf.raw",
+      "sha256": "f15e3312d299df08ea41eeeb2a3f7784a447e3fcddc985710dfa8496a5948748",
+      "bytes": 170417,
+      "fetched_at": "2026-09-25T13:39:13.369026+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {
+        "ETag": "W/\"299b1-NBwHO+Ns4+KYN3D0PUCsYGYNinA\""
+      }
+    },
+    "urban_larochelle_assiette-sup-s": {
+      "source": "gpu",
+      "url": "https://apicarto.ign.fr/api/gpu/assiette-sup-s?geom=%7B%22type%22%3A%22Point%22%2C%22coordinates%22%3A%5B-1.152%2C46.16%5D%7D",
+      "request_headers": {},
+      "path": "data/raw/20260925T133913371191Z_urban_larochelle_assiette-sup-s.raw",
+      "sha256": "d1bad81d4b8e2b7ef7b4b7c0b44a43fa9b8e7199d9ac5ecd8459860610fb4162",
+      "bytes": 5567,
+      "fetched_at": "2026-09-25T13:39:19.924482+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {
+        "ETag": "W/\"15bf-ahf1sMQFmQd2yB9TftGLk+xcfSY\""
+      }
+    },
+    "urban_arles_parcelle": {
+      "source": "cadastre",
+      "url": "https://apicarto.ign.fr/api/cadastre/parcelle?geom=%7B%22type%22%3A%22Point%22%2C%22coordinates%22%3A%5B4.627%2C43.677%5D%7D",
+      "request_headers": {},
+      "path": "data/raw/20260925T133919927189Z_urban_arles_parcelle.raw",
+      "sha256": "b648b70b94a9a275f641fc292a4e5fc229ff5b34a5ee0ea9bfaf00e44f4e0012",
+      "bytes": 920,
+      "fetched_at": "2026-09-25T13:39:26.490881+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {
+        "ETag": "W/\"398-XKMgz9LdU+zilzNahq+1k+9swuY\""
+      }
+    },
+    "urban_arles_document": {
+      "source": "gpu",
+      "url": "https://apicarto.ign.fr/api/gpu/document?geom=%7B%22type%22%3A%22MultiPolygon%22%2C%22coordinates%22%3A%5B%5B%5B%5B4.62703998%2C43.67705009%5D%2C%5B4.62704552%2C43.67699646%5D%2C%5B4.6268393%2C43.67700476%5D%2C%5B4.62685038%2C43.67695402%5D%2C%5B4.6267725%2C43.67694942%5D%2C%5B4.62677796%2C43.67701945%5D%2C%5B4.62678037%2C43.67705208%5D%2C%5B4.62681286%2C43.67705646%5D%2C%5B4.6268273%2C43.67705849%5D%2C%5B4.62683303%2C43.67705922%5D%2C%5B4.62683242%2C43.67707255%5D%2C%5B4.62689835%2C43.67707561%5D%2C%5B4.62689915%2C43.67706003%5D%2C%5B4.62704046%2C43.67705377%5D%2C%5B4.62703998%2C43.67705009%5D%5D%5D%5D%7D",
+      "request_headers": {},
+      "path": "data/raw/20260925T133926491465Z_urban_arles_document.raw",
+      "sha256": "c2986329e15661b0b9b0bfde7a935649aa56cf7c6ad263f484464c836ea6a7fa",
+      "bytes": 22046,
+      "fetched_at": "2026-09-25T13:39:34.409527+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {
+        "ETag": "W/\"561e-5UrzQP9uE8OcDMm9XdW8io8nPgE\""
+      }
+    },
+    "urban_arles_zone-urba": {
+      "source": "gpu",
+      "url": "https://apicarto.ign.fr/api/gpu/zone-urba?geom=%7B%22type%22%3A%22MultiPolygon%22%2C%22coordinates%22%3A%5B%5B%5B%5B4.62703998%2C43.67705009%5D%2C%5B4.62704552%2C43.67699646%5D%2C%5B4.6268393%2C43.67700476%5D%2C%5B4.62685038%2C43.67695402%5D%2C%5B4.6267725%2C43.67694942%5D%2C%5B4.62677796%2C43.67701945%5D%2C%5B4.62678037%2C43.67705208%5D%2C%5B4.62681286%2C43.67705646%5D%2C%5B4.6268273%2C43.67705849%5D%2C%5B4.62683303%2C43.67705922%5D%2C%5B4.62683242%2C43.67707255%5D%2C%5B4.62689835%2C43.67707561%5D%2C%5B4.62689915%2C43.67706003%5D%2C%5B4.62704046%2C43.67705377%5D%2C%5B4.62703998%2C43.67705009%5D%5D%5D%5D%7D",
+      "request_headers": {},
+      "path": "data/raw/20260925T133934410455Z_urban_arles_zone-urba.raw",
+      "sha256": "181b44eaa109f24501357564682228031521d2c9468912f765a3eb187f163a51",
+      "bytes": 8211,
+      "fetched_at": "2026-09-25T13:39:44.106566+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {
+        "ETag": "W/\"2013-+ZJcPPipEkRAcf2A/jZ2wvmijws\""
+      }
+    },
+    "urban_arles_prescription-surf": {
+      "source": "gpu",
+      "url": "https://apicarto.ign.fr/api/gpu/prescription-surf?geom=%7B%22type%22%3A%22MultiPolygon%22%2C%22coordinates%22%3A%5B%5B%5B%5B4.62703998%2C43.67705009%5D%2C%5B4.62704552%2C43.67699646%5D%2C%5B4.6268393%2C43.67700476%5D%2C%5B4.62685038%2C43.67695402%5D%2C%5B4.6267725%2C43.67694942%5D%2C%5B4.62677796%2C43.67701945%5D%2C%5B4.62678037%2C43.67705208%5D%2C%5B4.62681286%2C43.67705646%5D%2C%5B4.6268273%2C43.67705849%5D%2C%5B4.62683303%2C43.67705922%5D%2C%5B4.62683242%2C43.67707255%5D%2C%5B4.62689835%2C43.67707561%5D%2C%5B4.62689915%2C43.67706003%5D%2C%5B4.62704046%2C43.67705377%5D%2C%5B4.62703998%2C43.67705009%5D%5D%5D%5D%7D",
+      "request_headers": {},
+      "path": "data/raw/20260925T133944107604Z_urban_arles_prescription-surf.raw",
+      "sha256": "2908b7d7e9cba3e7884555a38bcc6ec80989ed8edd91ec6dd5544eb4338555ae",
+      "bytes": 10608,
+      "fetched_at": "2026-09-25T13:39:52.142914+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {
+        "ETag": "W/\"2970-F88HTAb2tG+qs5MP3jK/vpSAH1U\""
+      }
+    },
+    "urban_arles_assiette-sup-s": {
+      "source": "gpu",
+      "url": "https://apicarto.ign.fr/api/gpu/assiette-sup-s?geom=%7B%22type%22%3A%22MultiPolygon%22%2C%22coordinates%22%3A%5B%5B%5B%5B4.62703998%2C43.67705009%5D%2C%5B4.62704552%2C43.67699646%5D%2C%5B4.6268393%2C43.67700476%5D%2C%5B4.62685038%2C43.67695402%5D%2C%5B4.6267725%2C43.67694942%5D%2C%5B4.62677796%2C43.67701945%5D%2C%5B4.62678037%2C43.67705208%5D%2C%5B4.62681286%2C43.67705646%5D%2C%5B4.6268273%2C43.67705849%5D%2C%5B4.62683303%2C43.67705922%5D%2C%5B4.62683242%2C43.67707255%5D%2C%5B4.62689835%2C43.67707561%5D%2C%5B4.62689915%2C43.67706003%5D%2C%5B4.62704046%2C43.67705377%5D%2C%5B4.62703998%2C43.67705009%5D%5D%5D%5D%7D",
+      "request_headers": {},
+      "path": "data/raw/20260925T133952143955Z_urban_arles_assiette-sup-s.raw",
+      "sha256": "e2e0b93cf37aab6b85bc54bf75b89b8e94a0cf4083c27c2b61734d2d8f5ada7d",
+      "bytes": 7755,
+      "fetched_at": "2026-09-25T13:40:00.189710+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {
+        "ETag": "W/\"1e4b-4n8oJT3XwgawUaySgIn/Er+LDYE\""
+      }
+    },
+    "urban_tours_parcelle": {
+      "source": "cadastre",
+      "url": "https://apicarto.ign.fr/api/cadastre/parcelle?geom=%7B%22type%22%3A%22Point%22%2C%22coordinates%22%3A%5B0.691%2C47.398%5D%7D",
+      "request_headers": {},
+      "path": "data/raw/20260925T134000190625Z_urban_tours_parcelle.raw",
+      "sha256": "ba4fbce78f462eebc42523dbfb6007a99e35987da9df0284942f8f3fc418a4bf",
+      "bytes": 147,
+      "fetched_at": "2026-09-25T13:40:07.272121+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {
+        "ETag": "W/\"93-HgqoSdgorgA/SMn1FpzIOMgXRD0\""
+      }
+    },
+    "urban_tours_document": {
+      "source": "gpu",
+      "url": "https://apicarto.ign.fr/api/gpu/document?geom=%7B%22type%22%3A%22Point%22%2C%22coordinates%22%3A%5B0.691%2C47.398%5D%7D",
+      "request_headers": {},
+      "path": "data/raw/20260925T134007272976Z_urban_tours_document.raw",
+      "sha256": "c77d2dc675f12e6df7699d367f268ee6896153700c379789554edb486b74614b",
+      "bytes": 7269,
+      "fetched_at": "2026-09-25T13:40:16.643459+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {
+        "ETag": "W/\"1c65-5ilYVJxeJC/34nXIWUj01YE9/9s\""
+      }
+    },
+    "urban_tours_zone-urba": {
+      "source": "gpu",
+      "url": "https://apicarto.ign.fr/api/gpu/zone-urba?geom=%7B%22type%22%3A%22Point%22%2C%22coordinates%22%3A%5B0.691%2C47.398%5D%7D",
+      "request_headers": {},
+      "path": "data/raw/20260925T134016644145Z_urban_tours_zone-urba.raw",
+      "sha256": "c76e63ca6e49241abc5ea0e50b596a024b6e5bfbff9cb13e4e02fe3efe7fd74c",
+      "bytes": 9744,
+      "fetched_at": "2026-09-25T13:40:25.649881+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {
+        "ETag": "W/\"2610-ZixkP6BaDkjR/KggWQy0bGpb5QM\""
+      }
+    },
+    "urban_tours_prescription-surf": {
+      "source": "gpu",
+      "url": "https://apicarto.ign.fr/api/gpu/prescription-surf?geom=%7B%22type%22%3A%22Point%22%2C%22coordinates%22%3A%5B0.691%2C47.398%5D%7D",
+      "request_headers": {},
+      "path": "data/raw/20260925T134025650710Z_urban_tours_prescription-surf.raw",
+      "sha256": "9a386ef58506728cc3ce55a5b39686306db4a733805734e584de34f65309625e",
+      "bytes": 92119,
+      "fetched_at": "2026-09-25T13:40:34.795142+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {
+        "ETag": "W/\"167d7-IyNT45BOnUXUIisDTl1iVFjT+PQ\""
+      }
+    },
+    "urban_tours_assiette-sup-s": {
+      "source": "gpu",
+      "url": "https://apicarto.ign.fr/api/gpu/assiette-sup-s?geom=%7B%22type%22%3A%22Point%22%2C%22coordinates%22%3A%5B0.691%2C47.398%5D%7D",
+      "request_headers": {},
+      "path": "data/raw/20260925T134034796634Z_urban_tours_assiette-sup-s.raw",
+      "sha256": "a50a282a94caba7da2407d5703bb2aa2f125559668137bee083bda08ac1d5e16",
+      "bytes": 1929020,
+      "fetched_at": "2026-09-25T13:41:12.610136+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {
+        "ETag": "W/\"1d6f3c-l//4VefqIOAomHE05kHSx6yA6m8\""
+      }
+    },
+    "urban_chamonix_parcelle": {
+      "source": "cadastre",
+      "url": "https://apicarto.ign.fr/api/cadastre/parcelle?geom=%7B%22type%22%3A%22Point%22%2C%22coordinates%22%3A%5B6.869%2C45.9237%5D%7D",
+      "request_headers": {},
+      "path": "data/raw/20260925T134112632503Z_urban_chamonix_parcelle.raw",
+      "sha256": "38bd136d62492a7b15f5e53de3a7952ad3f4f33955e487be6087385e3b2b0acd",
+      "bytes": 147,
+      "fetched_at": "2026-09-25T13:41:19.743376+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {
+        "ETag": "W/\"93-ukmAiHSF4TqDsLthtRta+G/fyic\""
+      }
+    },
+    "urban_chamonix_document": {
+      "source": "gpu",
+      "url": "https://apicarto.ign.fr/api/gpu/document?geom=%7B%22type%22%3A%22Point%22%2C%22coordinates%22%3A%5B6.869%2C45.9237%5D%7D",
+      "request_headers": {},
+      "path": "data/raw/20260925T134119747314Z_urban_chamonix_document.raw",
+      "sha256": "fa2fff1aca3c925a7b86c09232c36c0928aff72957293f79fd36259e69383920",
+      "bytes": 14642,
+      "fetched_at": "2026-09-25T13:41:26.691518+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {
+        "ETag": "W/\"3932-Pmqa7KSbf2cM9iQqobu8Qndc8bU\""
+      }
+    },
+    "urban_chamonix_zone-urba": {
+      "source": "gpu",
+      "url": "https://apicarto.ign.fr/api/gpu/zone-urba?geom=%7B%22type%22%3A%22Point%22%2C%22coordinates%22%3A%5B6.869%2C45.9237%5D%7D",
+      "request_headers": {},
+      "path": "data/raw/20260925T134126692305Z_urban_chamonix_zone-urba.raw",
+      "sha256": "3f2972427cee1004eb7bae255e65d39e8841e09101ba68e01f5de14f0007c30e",
+      "bytes": 18104,
+      "fetched_at": "2026-09-25T13:41:34.324886+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {
+        "ETag": "W/\"46b8-Lu2X/r401xSIK+zO/v9rjrzuDmQ\""
+      }
+    },
+    "urban_chamonix_prescription-surf": {
+      "source": "gpu",
+      "url": "https://apicarto.ign.fr/api/gpu/prescription-surf?geom=%7B%22type%22%3A%22Point%22%2C%22coordinates%22%3A%5B6.869%2C45.9237%5D%7D",
+      "request_headers": {},
+      "path": "data/raw/20260925T134134325956Z_urban_chamonix_prescription-surf.raw",
+      "sha256": "8c832a175344f4b96dac29e2d56804d35c716e20a6efd01148288b14a0a626e0",
+      "bytes": 14430,
+      "fetched_at": "2026-09-25T13:41:43.016225+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {
+        "ETag": "W/\"385e-HPsJp5zr+16m3E/Q2g0J0B+neLU\""
+      }
+    },
+    "urban_chamonix_assiette-sup-s": {
+      "source": "gpu",
+      "url": "https://apicarto.ign.fr/api/gpu/assiette-sup-s?geom=%7B%22type%22%3A%22Point%22%2C%22coordinates%22%3A%5B6.869%2C45.9237%5D%7D",
+      "request_headers": {},
+      "path": "data/raw/20260925T134143017056Z_urban_chamonix_assiette-sup-s.raw",
+      "sha256": "2cb93e85c5e11f382daba99e57c42bee4b826f58c87ece8299b375a118de015a",
+      "bytes": 14521,
+      "fetched_at": "2026-09-25T13:41:52.541099+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {
+        "ETag": "W/\"38b9-eBz8qKBcoSz6QlnPguAEIRewEpw\""
+      }
+    },
+    "urban_gueret_parcelle": {
+      "source": "cadastre",
+      "url": "https://apicarto.ign.fr/api/cadastre/parcelle?geom=%7B%22type%22%3A%22Point%22%2C%22coordinates%22%3A%5B1.871%2C46.17%5D%7D",
+      "request_headers": {},
+      "path": "data/raw/20260925T134152542320Z_urban_gueret_parcelle.raw",
+      "sha256": "fdb88203e10f6a26e2e02900a5a10644d16b06717cc31e5fc389720e28848a92",
+      "bytes": 147,
+      "fetched_at": "2026-09-25T13:42:01.058036+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {
+        "ETag": "W/\"93-8fp1EMIX4hkRwt+OBGmor5cWezg\""
+      }
+    },
+    "urban_gueret_document": {
+      "source": "gpu",
+      "url": "https://apicarto.ign.fr/api/gpu/document?geom=%7B%22type%22%3A%22Point%22%2C%22coordinates%22%3A%5B1.871%2C46.17%5D%7D",
+      "request_headers": {},
+      "path": "data/raw/20260925T134201058846Z_urban_gueret_document.raw",
+      "sha256": "da11c3fa1281638bc759d9bcc70e107ef2ea1cf93de3fd31141df649160763b2",
+      "bytes": 15512,
+      "fetched_at": "2026-09-25T13:42:09.504024+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {
+        "ETag": "W/\"3c98-IbctnRE/J6ST6baZs/myz7oNrj0\""
+      }
+    },
+    "urban_gueret_zone-urba": {
+      "source": "gpu",
+      "url": "https://apicarto.ign.fr/api/gpu/zone-urba?geom=%7B%22type%22%3A%22Point%22%2C%22coordinates%22%3A%5B1.871%2C46.17%5D%7D",
+      "request_headers": {},
+      "path": "data/raw/20260925T134209504913Z_urban_gueret_zone-urba.raw",
+      "sha256": "2424cf20d3308ab3026f20bb8b62c6a79824177c4c8aa2f167d5ff1ea6329117",
+      "bytes": 7023,
+      "fetched_at": "2026-09-25T13:42:15.996033+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {
+        "ETag": "W/\"1b6f-UP3cfp5+P3adNzl1pEn3cWxfMAg\""
+      }
+    },
+    "urban_gueret_prescription-surf": {
+      "source": "gpu",
+      "url": "https://apicarto.ign.fr/api/gpu/prescription-surf?geom=%7B%22type%22%3A%22Point%22%2C%22coordinates%22%3A%5B1.871%2C46.17%5D%7D",
+      "request_headers": {},
+      "path": "data/raw/20260925T134215997267Z_urban_gueret_prescription-surf.raw",
+      "sha256": "795f433e94d8477dc26b7234680095dd389976a020d93f4c7541ae4cfcf8b74a",
+      "bytes": 147,
+      "fetched_at": "2026-09-25T13:42:23.967096+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {
+        "ETag": "W/\"93-0KJy3BSzmw1pLd6eHF5lTsMuKfc\""
+      }
+    },
+    "urban_gueret_assiette-sup-s": {
+      "source": "gpu",
+      "url": "https://apicarto.ign.fr/api/gpu/assiette-sup-s?geom=%7B%22type%22%3A%22Point%22%2C%22coordinates%22%3A%5B1.871%2C46.17%5D%7D",
+      "request_headers": {},
+      "path": "data/raw/20260925T134223967907Z_urban_gueret_assiette-sup-s.raw",
+      "sha256": "cfff7830803a90b2aacf1731142ed953a426bc9d976ba0350c41df20b5534cbe",
+      "bytes": 9018,
+      "fetched_at": "2026-09-25T13:42:30.644797+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {
+        "ETag": "W/\"233a-6pvuTEwAItr5C3zxjt8TfKjECr4\""
+      }
+    },
+    "urban_ajaccio_parcelle": {
+      "source": "cadastre",
+      "url": "https://apicarto.ign.fr/api/cadastre/parcelle?geom=%7B%22type%22%3A%22Point%22%2C%22coordinates%22%3A%5B8.7384%2C41.9192%5D%7D",
+      "request_headers": {},
+      "path": "data/raw/20260925T134230646535Z_urban_ajaccio_parcelle.raw",
+      "sha256": "9325080419433c1c8b69e96d6b2acac4241f69cf167e6e86e84f6c9f47586ea0",
+      "bytes": 848,
+      "fetched_at": "2026-09-25T13:42:37.299744+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {
+        "ETag": "W/\"350-CtgToD0qzgDb6tn/vrYj7UCPN1c\""
+      }
+    },
+    "urban_ajaccio_document": {
+      "source": "gpu",
+      "url": "https://apicarto.ign.fr/api/gpu/document?geom=%7B%22type%22%3A%22MultiPolygon%22%2C%22coordinates%22%3A%5B%5B%5B%5B8.73820051%2C41.9192615%5D%2C%5B8.73820637%2C41.91926218%5D%2C%5B8.73822327%2C41.91927225%5D%2C%5B8.73823537%2C41.91928132%5D%2C%5B8.73835204%2C41.91935235%5D%2C%5B8.73839568%2C41.91937321%5D%2C%5B8.73849355%2C41.91942085%5D%2C%5B8.73857682%2C41.91917394%5D%2C%5B8.73858536%2C41.91914276%5D%2C%5B8.73822501%2C41.91908228%5D%2C%5B8.73811695%2C41.91921092%5D%2C%5B8.73820051%2C41.9192615%5D%5D%5D%5D%7D",
+      "request_headers": {},
+      "path": "data/raw/20260925T134237300616Z_urban_ajaccio_document.raw",
+      "sha256": "3b82592d35b707c24c5841e8a250354d2eadf33fb2b5d5756210b56a85516264",
+      "bytes": 23405,
+      "fetched_at": "2026-09-25T13:42:44.420151+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {
+        "ETag": "W/\"5b6d-3QlHxKcPU5UY6qUoccPBX6DihRI\""
+      }
+    },
+    "urban_ajaccio_zone-urba": {
+      "source": "gpu",
+      "url": "https://apicarto.ign.fr/api/gpu/zone-urba?geom=%7B%22type%22%3A%22MultiPolygon%22%2C%22coordinates%22%3A%5B%5B%5B%5B8.73820051%2C41.9192615%5D%2C%5B8.73820637%2C41.91926218%5D%2C%5B8.73822327%2C41.91927225%5D%2C%5B8.73823537%2C41.91928132%5D%2C%5B8.73835204%2C41.91935235%5D%2C%5B8.73839568%2C41.91937321%5D%2C%5B8.73849355%2C41.91942085%5D%2C%5B8.73857682%2C41.91917394%5D%2C%5B8.73858536%2C41.91914276%5D%2C%5B8.73822501%2C41.91908228%5D%2C%5B8.73811695%2C41.91921092%5D%2C%5B8.73820051%2C41.9192615%5D%5D%5D%5D%7D",
+      "request_headers": {},
+      "path": "data/raw/20260925T134244421239Z_urban_ajaccio_zone-urba.raw",
+      "sha256": "e0d0c877adb7f02315b9b7fdf9060a90c863ffe68a3085e59cb42439904e9345",
+      "bytes": 18169,
+      "fetched_at": "2026-09-25T13:42:51.299455+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {
+        "ETag": "W/\"46f9-ghq+CRQBNtkgMxlP6cvuYWmz8aU\""
+      }
+    },
+    "urban_ajaccio_prescription-surf": {
+      "source": "gpu",
+      "url": "https://apicarto.ign.fr/api/gpu/prescription-surf?geom=%7B%22type%22%3A%22MultiPolygon%22%2C%22coordinates%22%3A%5B%5B%5B%5B8.73820051%2C41.9192615%5D%2C%5B8.73820637%2C41.91926218%5D%2C%5B8.73822327%2C41.91927225%5D%2C%5B8.73823537%2C41.91928132%5D%2C%5B8.73835204%2C41.91935235%5D%2C%5B8.73839568%2C41.91937321%5D%2C%5B8.73849355%2C41.91942085%5D%2C%5B8.73857682%2C41.91917394%5D%2C%5B8.73858536%2C41.91914276%5D%2C%5B8.73822501%2C41.91908228%5D%2C%5B8.73811695%2C41.91921092%5D%2C%5B8.73820051%2C41.9192615%5D%5D%5D%5D%7D",
+      "request_headers": {},
+      "path": "data/raw/20260925T134251300596Z_urban_ajaccio_prescription-surf.raw",
+      "sha256": "1a4517544acb8491a6b5f3acec553ed0ee1b5aaf9f639e88a893c0597cd0a203",
+      "bytes": 63877,
+      "fetched_at": "2026-09-25T13:42:58.994183+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {
+        "ETag": "W/\"f985-QnpsOWZlnHPofEWS961VSA0w6vM\""
+      }
+    },
+    "urban_ajaccio_assiette-sup-s": {
+      "source": "gpu",
+      "url": "https://apicarto.ign.fr/api/gpu/assiette-sup-s?geom=%7B%22type%22%3A%22MultiPolygon%22%2C%22coordinates%22%3A%5B%5B%5B%5B8.73820051%2C41.9192615%5D%2C%5B8.73820637%2C41.91926218%5D%2C%5B8.73822327%2C41.91927225%5D%2C%5B8.73823537%2C41.91928132%5D%2C%5B8.73835204%2C41.91935235%5D%2C%5B8.73839568%2C41.91937321%5D%2C%5B8.73849355%2C41.91942085%5D%2C%5B8.73857682%2C41.91917394%5D%2C%5B8.73858536%2C41.91914276%5D%2C%5B8.73822501%2C41.91908228%5D%2C%5B8.73811695%2C41.91921092%5D%2C%5B8.73820051%2C41.9192615%5D%5D%5D%5D%7D",
+      "request_headers": {},
+      "path": "data/raw/20260925T134258995613Z_urban_ajaccio_assiette-sup-s.raw",
+      "sha256": "cc8d6fae3c5bf94b5c7212e4c7263ecc5157c596c13550548cf68a56832ee06d",
+      "bytes": 86550,
+      "fetched_at": "2026-09-25T13:43:08.381636+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {
+        "ETag": "W/\"15216-yopOn9jqELiU07hM1VDHuSOl+oY\""
+      }
+    },
+    "urban_reunion_parcelle": {
+      "source": "cadastre",
+      "url": "https://apicarto.ign.fr/api/cadastre/parcelle?geom=%7B%22type%22%3A%22Point%22%2C%22coordinates%22%3A%5B55.448%2C-20.879%5D%7D",
+      "request_headers": {},
+      "path": "data/raw/20260925T134308384284Z_urban_reunion_parcelle.raw",
+      "sha256": "91daf3ee1414584c5215064f53f167590f8ef6c33c724242a53cb31de941fd7d",
+      "bytes": 1013,
+      "fetched_at": "2026-09-25T13:43:15.500406+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {
+        "ETag": "W/\"3f5-DAFVjTAzuwv3/AfovBgpn+riF70\""
+      }
+    },
+    "urban_reunion_document": {
+      "source": "gpu",
+      "url": "https://apicarto.ign.fr/api/gpu/document?geom=%7B%22type%22%3A%22MultiPolygon%22%2C%22coordinates%22%3A%5B%5B%5B%5B55.44846618%2C-20.87943111%5D%2C%5B55.44847214%2C-20.87944923%5D%2C%5B55.44765688%2C-20.87967416%5D%2C%5B55.44746602%2C-20.87972781%5D%2C%5B55.44733918%2C-20.87976216%5D%2C%5B55.44731541%2C-20.87974586%5D%2C%5B55.44724088%2C-20.87933823%5D%2C%5B55.44736726%2C-20.87930253%5D%2C%5B55.44754809%2C-20.87925196%5D%2C%5B55.4479405%2C-20.87914233%5D%2C%5B55.44782112%2C-20.87871325%5D%2C%5B55.44814301%2C-20.87862882%5D%2C%5B55.44839312%2C-20.87856189%5D%2C%5B55.44846894%2C-20.87859113%5D%2C%5B55.44867273%2C-20.87917878%5D%2C%5B55.44840855%2C-20.8792492%5D%2C%5B55.44846618%2C-20.87943111%5D%5D%5D%5D%7D",
+      "request_headers": {},
+      "path": "data/raw/20260925T134315501787Z_urban_reunion_document.raw",
+      "sha256": "5e13f6bbac469b8dd2146c70e2a3dfb29a140401bdf1002e0b22a76f884fbdbb",
+      "bytes": 9735,
+      "fetched_at": "2026-09-25T13:43:22.683925+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {
+        "ETag": "W/\"2607-QoEbllYHs3Xmh8/kg6wRa5R/Q20\""
+      }
+    },
+    "urban_reunion_zone-urba": {
+      "source": "gpu",
+      "url": "https://apicarto.ign.fr/api/gpu/zone-urba?geom=%7B%22type%22%3A%22MultiPolygon%22%2C%22coordinates%22%3A%5B%5B%5B%5B55.44846618%2C-20.87943111%5D%2C%5B55.44847214%2C-20.87944923%5D%2C%5B55.44765688%2C-20.87967416%5D%2C%5B55.44746602%2C-20.87972781%5D%2C%5B55.44733918%2C-20.87976216%5D%2C%5B55.44731541%2C-20.87974586%5D%2C%5B55.44724088%2C-20.87933823%5D%2C%5B55.44736726%2C-20.87930253%5D%2C%5B55.44754809%2C-20.87925196%5D%2C%5B55.4479405%2C-20.87914233%5D%2C%5B55.44782112%2C-20.87871325%5D%2C%5B55.44814301%2C-20.87862882%5D%2C%5B55.44839312%2C-20.87856189%5D%2C%5B55.44846894%2C-20.87859113%5D%2C%5B55.44867273%2C-20.87917878%5D%2C%5B55.44840855%2C-20.8792492%5D%2C%5B55.44846618%2C-20.87943111%5D%5D%5D%5D%7D",
+      "request_headers": {},
+      "path": "data/raw/20260925T134322684940Z_urban_reunion_zone-urba.raw",
+      "sha256": "974972c92860c9301e28c13d629fd9d1a8a330e7743f439b066fd2ba277accae",
+      "bytes": 34364,
+      "fetched_at": "2026-09-25T13:43:30.119605+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {
+        "ETag": "W/\"863c-tctUQGURy1aLlsZYPwfqs0sde7o\""
+      }
+    },
+    "urban_reunion_prescription-surf": {
+      "source": "gpu",
+      "url": "https://apicarto.ign.fr/api/gpu/prescription-surf?geom=%7B%22type%22%3A%22MultiPolygon%22%2C%22coordinates%22%3A%5B%5B%5B%5B55.44846618%2C-20.87943111%5D%2C%5B55.44847214%2C-20.87944923%5D%2C%5B55.44765688%2C-20.87967416%5D%2C%5B55.44746602%2C-20.87972781%5D%2C%5B55.44733918%2C-20.87976216%5D%2C%5B55.44731541%2C-20.87974586%5D%2C%5B55.44724088%2C-20.87933823%5D%2C%5B55.44736726%2C-20.87930253%5D%2C%5B55.44754809%2C-20.87925196%5D%2C%5B55.4479405%2C-20.87914233%5D%2C%5B55.44782112%2C-20.87871325%5D%2C%5B55.44814301%2C-20.87862882%5D%2C%5B55.44839312%2C-20.87856189%5D%2C%5B55.44846894%2C-20.87859113%5D%2C%5B55.44867273%2C-20.87917878%5D%2C%5B55.44840855%2C-20.8792492%5D%2C%5B55.44846618%2C-20.87943111%5D%5D%5D%5D%7D",
+      "request_headers": {},
+      "path": "data/raw/20260925T134330121171Z_urban_reunion_prescription-surf.raw",
+      "sha256": "b2b4d547377685a0c326cc8a72f4a633e19c7c4abf049525ed61990f5c073e36",
+      "bytes": 22394,
+      "fetched_at": "2026-09-25T13:43:37.889326+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {
+        "ETag": "W/\"577a-9Vpmih3SnEBp/NYrPs7CqmEZglM\""
+      }
+    },
+    "urban_reunion_assiette-sup-s": {
+      "source": "gpu",
+      "url": "https://apicarto.ign.fr/api/gpu/assiette-sup-s?geom=%7B%22type%22%3A%22MultiPolygon%22%2C%22coordinates%22%3A%5B%5B%5B%5B55.44846618%2C-20.87943111%5D%2C%5B55.44847214%2C-20.87944923%5D%2C%5B55.44765688%2C-20.87967416%5D%2C%5B55.44746602%2C-20.87972781%5D%2C%5B55.44733918%2C-20.87976216%5D%2C%5B55.44731541%2C-20.87974586%5D%2C%5B55.44724088%2C-20.87933823%5D%2C%5B55.44736726%2C-20.87930253%5D%2C%5B55.44754809%2C-20.87925196%5D%2C%5B55.4479405%2C-20.87914233%5D%2C%5B55.44782112%2C-20.87871325%5D%2C%5B55.44814301%2C-20.87862882%5D%2C%5B55.44839312%2C-20.87856189%5D%2C%5B55.44846894%2C-20.87859113%5D%2C%5B55.44867273%2C-20.87917878%5D%2C%5B55.44840855%2C-20.8792492%5D%2C%5B55.44846618%2C-20.87943111%5D%5D%5D%5D%7D",
+      "request_headers": {},
+      "path": "data/raw/20260925T134337890907Z_urban_reunion_assiette-sup-s.raw",
+      "sha256": "7428d49c0bc6f56c6790baa930db540917bc84472b0a93d4f3b4326b7b97b49e",
+      "bytes": 1065279,
+      "fetched_at": "2026-09-25T13:44:18.831429+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {
+        "ETag": "W/\"10413f-JrGacX4a8sDfHcyfs+Xl5K1yTiY\""
+      }
+    },
+    "urban_rennes_parcelle": {
+      "source": "cadastre",
+      "url": "https://apicarto.ign.fr/api/cadastre/parcelle?geom=%7B%22type%22%3A%22Point%22%2C%22coordinates%22%3A%5B-1.691634%2C48.104237%5D%7D",
+      "request_headers": {},
+      "path": "data/raw/20260925T134418843629Z_urban_rennes_parcelle.raw",
+      "sha256": "d001780964379080e60452892e0f9ae42ded588c429475bd3a37cc6ff98b3a31",
+      "bytes": 147,
+      "fetched_at": "2026-09-25T13:44:27.471173+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {
+        "ETag": "W/\"93-Qp9ucUNvCTJTmDx/jvICv8Ju+So\""
+      }
+    },
+    "urban_rennes_document": {
+      "source": "gpu",
+      "url": "https://apicarto.ign.fr/api/gpu/document?geom=%7B%22type%22%3A%22Point%22%2C%22coordinates%22%3A%5B-1.691634%2C48.104237%5D%7D",
+      "request_headers": {},
+      "path": "data/raw/20260925T134427475253Z_urban_rennes_document.raw",
+      "sha256": "3a191abb85768cdf8aec0879ece005a85dc998bfbc5a79bb284f99e1a3038292",
+      "bytes": 67319,
+      "fetched_at": "2026-09-25T13:44:35.624863+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {
+        "ETag": "W/\"106f7-eLMuHNuWdATNmDvOEqvLg4ecAIw\""
+      }
+    },
+    "urban_rennes_zone-urba": {
+      "source": "gpu",
+      "url": "https://apicarto.ign.fr/api/gpu/zone-urba?geom=%7B%22type%22%3A%22Point%22%2C%22coordinates%22%3A%5B-1.691634%2C48.104237%5D%7D",
+      "request_headers": {},
+      "path": "data/raw/20260925T134435626570Z_urban_rennes_zone-urba.raw",
+      "sha256": "452de60ea348b9e642863e3e290d9d5627079c7d15ac0de59174474a2b7386e0",
+      "bytes": 1871,
+      "fetched_at": "2026-09-25T13:44:44.236886+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {
+        "ETag": "W/\"74f-9PwD6sZeZHIj1xwMzoDUzHi0NUQ\""
+      }
+    },
+    "urban_rennes_prescription-surf": {
+      "source": "gpu",
+      "url": "https://apicarto.ign.fr/api/gpu/prescription-surf?geom=%7B%22type%22%3A%22Point%22%2C%22coordinates%22%3A%5B-1.691634%2C48.104237%5D%7D",
+      "request_headers": {},
+      "path": "data/raw/20260925T134444238306Z_urban_rennes_prescription-surf.raw",
+      "sha256": "8f8ecddae26352115d5b0edbd406dda1ab132175c41679cc46a09e2e66302215",
+      "bytes": 4163566,
+      "fetched_at": "2026-09-25T13:45:09.819502+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {
+        "ETag": "W/\"3f87ee-iEnsXTACKPdxDuD+c69kVtmzcHI\""
+      }
+    },
+    "urban_rennes_assiette-sup-s": {
+      "source": "gpu",
+      "url": "https://apicarto.ign.fr/api/gpu/assiette-sup-s?geom=%7B%22type%22%3A%22Point%22%2C%22coordinates%22%3A%5B-1.691634%2C48.104237%5D%7D",
+      "request_headers": {},
+      "path": "data/raw/20260925T134509866601Z_urban_rennes_assiette-sup-s.raw",
+      "sha256": "a4ac4d19b1e0fec2734028136127e80ce756203cedfbdb25b29c044cd03c0bc4",
+      "bytes": 3911,
+      "fetched_at": "2026-09-25T13:45:16.675736+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {
+        "ETag": "W/\"f47-6F5hO5a/8ZJvDV/Edb+igjs9QHU\""
+      }
+    }
+  },
+  "attempts": [
+    {
+      "key": "urban_paris_parcelle",
+      "at": "2026-09-25T13:38:01.853469+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "urban_paris_document",
+      "at": "2026-09-25T13:38:09.150995+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "urban_paris_zone-urba",
+      "at": "2026-09-25T13:38:17.891125+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "urban_paris_prescription-surf",
+      "at": "2026-09-25T13:38:27.217447+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "urban_paris_assiette-sup-s",
+      "at": "2026-09-25T13:38:37.133568+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "urban_larochelle_parcelle",
+      "at": "2026-09-25T13:38:44.377944+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "urban_larochelle_document",
+      "at": "2026-09-25T13:38:54.008457+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "urban_larochelle_zone-urba",
+      "at": "2026-09-25T13:39:01.452558+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "urban_larochelle_prescription-surf",
+      "at": "2026-09-25T13:39:13.370580+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "urban_larochelle_assiette-sup-s",
+      "at": "2026-09-25T13:39:19.924592+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "urban_arles_parcelle",
+      "at": "2026-09-25T13:39:26.490931+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "urban_arles_document",
+      "at": "2026-09-25T13:39:34.409794+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "urban_arles_zone-urba",
+      "at": "2026-09-25T13:39:44.106675+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "urban_arles_prescription-surf",
+      "at": "2026-09-25T13:39:52.143046+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "urban_arles_assiette-sup-s",
+      "at": "2026-09-25T13:40:00.189861+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "urban_tours_parcelle",
+      "at": "2026-09-25T13:40:07.272160+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "urban_tours_document",
+      "at": "2026-09-25T13:40:16.643561+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "urban_tours_zone-urba",
+      "at": "2026-09-25T13:40:25.650019+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "urban_tours_prescription-surf",
+      "at": "2026-09-25T13:40:34.795959+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "urban_tours_assiette-sup-s",
+      "at": "2026-09-25T13:41:12.631088+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "urban_chamonix_parcelle",
+      "at": "2026-09-25T13:41:19.743416+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "urban_chamonix_document",
+      "at": "2026-09-25T13:41:26.691665+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "urban_chamonix_zone-urba",
+      "at": "2026-09-25T13:41:34.325158+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "urban_chamonix_prescription-surf",
+      "at": "2026-09-25T13:41:43.016393+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "urban_chamonix_assiette-sup-s",
+      "at": "2026-09-25T13:41:52.541291+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "urban_gueret_parcelle",
+      "at": "2026-09-25T13:42:01.058073+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "urban_gueret_document",
+      "at": "2026-09-25T13:42:09.504188+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "urban_gueret_zone-urba",
+      "at": "2026-09-25T13:42:15.996557+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "urban_gueret_prescription-surf",
+      "at": "2026-09-25T13:42:23.967140+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "urban_gueret_assiette-sup-s",
+      "at": "2026-09-25T13:42:30.644982+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "urban_ajaccio_parcelle",
+      "at": "2026-09-25T13:42:37.299798+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "urban_ajaccio_document",
+      "at": "2026-09-25T13:42:44.420453+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "urban_ajaccio_zone-urba",
+      "at": "2026-09-25T13:42:51.299689+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "urban_ajaccio_prescription-surf",
+      "at": "2026-09-25T13:42:58.994857+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "urban_ajaccio_assiette-sup-s",
+      "at": "2026-09-25T13:43:08.382555+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "urban_reunion_parcelle",
+      "at": "2026-09-25T13:43:15.500466+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "urban_reunion_document",
+      "at": "2026-09-25T13:43:22.684061+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "urban_reunion_zone-urba",
+      "at": "2026-09-25T13:43:30.120108+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "urban_reunion_prescription-surf",
+      "at": "2026-09-25T13:43:37.889552+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "urban_reunion_assiette-sup-s",
+      "at": "2026-09-25T13:44:18.841986+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "urban_rennes_parcelle",
+      "at": "2026-09-25T13:44:27.471215+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "urban_rennes_document",
+      "at": "2026-09-25T13:44:35.625612+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "urban_rennes_zone-urba",
+      "at": "2026-09-25T13:44:44.236948+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "urban_rennes_prescription-surf",
+      "at": "2026-09-25T13:45:09.864985+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "urban_rennes_assiette-sup-s",
+      "at": "2026-09-25T13:45:16.675884+00:00",
+      "status": 200,
+      "attempt": 1
+    }
+  ]
+}

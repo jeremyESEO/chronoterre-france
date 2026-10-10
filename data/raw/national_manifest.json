@@ -1,0 +1,195 @@
+{
+  "version": 2,
+  "files": {
+    "communes": {
+      "source": "geoapi",
+      "url": "https://geo.api.gouv.fr/communes?fields=nom,code,codeDepartement,codeRegion,codesPostaux,centre,population&format=json",
+      "request_headers": {},
+      "path": "data/raw/20260925T132827735519Z_communes.raw",
+      "sha256": "ffcfb5e00285792369184b161aaff6dbafc9251aa9924f1ba9d61453542baafa",
+      "bytes": 6235656,
+      "fetched_at": "2026-09-25T13:28:35.333494+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {
+        "ETag": "W/\"5f2608-EXmjz8DiEszALpLRudDfCAnYHwU\""
+      }
+    },
+    "departments": {
+      "source": "etalab",
+      "url": "https://etalab-datasets.geo.data.gouv.fr/contours-administratifs/2025/geojson/departements-100m.geojson",
+      "request_headers": {},
+      "path": "data/raw/20260925T132835474058Z_departments.raw",
+      "sha256": "10f5c6ffc2dc857b4f4fc360297f97f6f01fc3ba3eb3a326ee92b76baefed447",
+      "bytes": 2753929,
+      "fetched_at": "2026-09-25T13:28:49.125462+00:00",
+      "content_type": "Content-Type: application/geo+json",
+      "status": 200,
+      "response_headers": {
+        "ETag": "\"ef4870e1df0710f240f3fd25e7fa0cee\"",
+        "Last-Modified": "Mon, 04 May 2026 10:08:11 GMT"
+      }
+    },
+    "pbdb_colls_0": {
+      "source": "pbdb",
+      "url": "https://paleobiodb.org/data1.2/colls/list.json?cc=FR&vocab=pbdb&show=loc%2Cenv%2Cref%2Crem%2Cstrat&limit=10000&offset=0",
+      "request_headers": {},
+      "path": "data/raw/20260925T133052854714Z_pbdb_colls_0.raw",
+      "sha256": "e013ffb89e40110df0bf6371746a0251538ffa479b2b0f709370e88634a29acc",
+      "bytes": 5623889,
+      "fetched_at": "2026-09-25T13:31:00.380679+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {}
+    },
+    "pbdb_occs_0": {
+      "source": "pbdb",
+      "url": "https://paleobiodb.org/data1.2/occs/list.json?cc=FR&vocab=pbdb&show=coords%2Cloc%2Cenv%2Cref%2Cclassext&limit=10000&offset=0",
+      "request_headers": {},
+      "path": "data/raw/20260925T133100422275Z_pbdb_occs_0.raw",
+      "sha256": "4d495ee9a095cfad55f5faab8c4225aa05f40aa20f7d2c2acea6ccaa67735976",
+      "bytes": 9955954,
+      "fetched_at": "2026-09-25T13:31:09.555095+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {}
+    },
+    "pbdb_occs_10000": {
+      "source": "pbdb",
+      "url": "https://paleobiodb.org/data1.2/occs/list.json?cc=FR&vocab=pbdb&show=coords%2Cloc%2Cenv%2Cref%2Cclassext&limit=10000&offset=10000",
+      "request_headers": {},
+      "path": "data/raw/20260925T133110670552Z_pbdb_occs_10000.raw",
+      "sha256": "71391a4f793f5c95460f0af3dd2fe5a18eb451518b9f366e4e9fa5384e5fca65",
+      "bytes": 10672390,
+      "fetched_at": "2026-09-25T13:31:22.079615+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {}
+    },
+    "pbdb_occs_20000": {
+      "source": "pbdb",
+      "url": "https://paleobiodb.org/data1.2/occs/list.json?cc=FR&vocab=pbdb&show=coords%2Cloc%2Cenv%2Cref%2Cclassext&limit=10000&offset=20000",
+      "request_headers": {},
+      "path": "data/raw/20260925T133123202868Z_pbdb_occs_20000.raw",
+      "sha256": "744e320eddc0d518962f5509640f952610dfba5c397cfccc4336a24b23c6d235",
+      "bytes": 10226166,
+      "fetched_at": "2026-09-25T13:31:32.443542+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {}
+    },
+    "pbdb_occs_30000": {
+      "source": "pbdb",
+      "url": "https://paleobiodb.org/data1.2/occs/list.json?cc=FR&vocab=pbdb&show=coords%2Cloc%2Cenv%2Cref%2Cclassext&limit=10000&offset=30000",
+      "request_headers": {},
+      "path": "data/raw/20260925T133133554184Z_pbdb_occs_30000.raw",
+      "sha256": "a60db6b2f042c48f98af6bbf3745bf4489cf1a7d14ceb263350560042a57b1a6",
+      "bytes": 10033015,
+      "fetched_at": "2026-09-25T13:31:43.467416+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {}
+    },
+    "pbdb_occs_40000": {
+      "source": "pbdb",
+      "url": "https://paleobiodb.org/data1.2/occs/list.json?cc=FR&vocab=pbdb&show=coords%2Cloc%2Cenv%2Cref%2Cclassext&limit=10000&offset=40000",
+      "request_headers": {},
+      "path": "data/raw/20260925T133144560364Z_pbdb_occs_40000.raw",
+      "sha256": "aa9ce2a52a15892cba012b9af0e1208256399a81df8c2b74e0221bc7b6a2673d",
+      "bytes": 10296024,
+      "fetched_at": "2026-09-25T13:31:55.954266+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {}
+    },
+    "pbdb_occs_50000": {
+      "source": "pbdb",
+      "url": "https://paleobiodb.org/data1.2/occs/list.json?cc=FR&vocab=pbdb&show=coords%2Cloc%2Cenv%2Cref%2Cclassext&limit=10000&offset=50000",
+      "request_headers": {},
+      "path": "data/raw/20260925T133157047341Z_pbdb_occs_50000.raw",
+      "sha256": "5d5b3c94c287741259b2cd31f3b73a2a8b56c4c411b19e9f891c7ccf12ae84cd",
+      "bytes": 3970425,
+      "fetched_at": "2026-09-25T13:32:04.964900+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {}
+    }
+  },
+  "attempts": [
+    {
+      "key": "communes",
+      "at": "2026-09-25T13:28:35.462800+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "departments",
+      "at": "2026-09-25T13:28:49.162447+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "pbdb_colls_0",
+      "at": "2026-09-25T13:28:55.150657+00:00",
+      "status": "error",
+      "detail": "HTTP Error 400: Bad Request",
+      "attempt": 1
+    },
+    {
+      "key": "pbdb_colls_0",
+      "at": "2026-09-25T13:29:03.505979+00:00",
+      "status": "error",
+      "detail": "HTTP Error 400: Bad Request",
+      "attempt": 2
+    },
+    {
+      "key": "pbdb_colls_0",
+      "at": "2026-09-25T13:29:12.410086+00:00",
+      "status": "error",
+      "detail": "HTTP Error 400: Bad Request",
+      "attempt": 3
+    },
+    {
+      "key": "pbdb_colls_0",
+      "at": "2026-09-25T13:31:00.421264+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "pbdb_occs_0",
+      "at": "2026-09-25T13:31:09.661491+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "pbdb_occs_10000",
+      "at": "2026-09-25T13:31:22.190796+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "pbdb_occs_20000",
+      "at": "2026-09-25T13:31:32.541729+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "pbdb_occs_30000",
+      "at": "2026-09-25T13:31:43.548122+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "pbdb_occs_40000",
+      "at": "2026-09-25T13:31:56.033307+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "pbdb_occs_50000",
+      "at": "2026-09-25T13:32:04.990303+00:00",
+      "status": 200,
+      "attempt": 1
+    }
+  ]
+}

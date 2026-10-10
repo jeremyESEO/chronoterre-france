@@ -1,0 +1,6 @@
+{
+"elapsed_time":0.961,
+"records": [
+{"occurrence_no":"16874","record_type":"occ","collection_no":"1323","identified_name":"Endocostea borilensis","identified_rank":"species","difference":"rank change, species not entered","accepted_name":"Inoceramus (Endocostea)","accepted_rank":"subgenus","accepted_no":"16628","early_interval":"Maastrichtian","max_ma":72.2,"min_ma":66,"reference_no":"40"}
+]
+}

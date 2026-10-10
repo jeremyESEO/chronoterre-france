@@ -1,0 +1,78 @@
+{
+  "at": "2026-10-10T21:12:55.885066+00:00",
+  "method": "HTTP boucle locale, 5 lectures consécutives par commune ; pas de navigateur, pas de temps de rendu ou de tuiles IGN",
+  "results": [
+    {
+      "code": "75056",
+      "repetitions": 5,
+      "median_ms": 2.34,
+      "max_ms": 5.94,
+      "bytes": 13250,
+      "status": 200
+    },
+    {
+      "code": "17300",
+      "repetitions": 5,
+      "median_ms": 1.37,
+      "max_ms": 2.61,
+      "bytes": 13688,
+      "status": 200
+    },
+    {
+      "code": "13004",
+      "repetitions": 5,
+      "median_ms": 2.08,
+      "max_ms": 2.82,
+      "bytes": 13683,
+      "status": 200
+    },
+    {
+      "code": "37261",
+      "repetitions": 5,
+      "median_ms": 2.14,
+      "max_ms": 2.83,
+      "bytes": 13251,
+      "status": 200
+    },
+    {
+      "code": "74056",
+      "repetitions": 5,
+      "median_ms": 2.04,
+      "max_ms": 2.81,
+      "bytes": 13243,
+      "status": 200
+    },
+    {
+      "code": "23096",
+      "repetitions": 5,
+      "median_ms": 2.02,
+      "max_ms": 2.52,
+      "bytes": 13257,
+      "status": 200
+    },
+    {
+      "code": "2A004",
+      "repetitions": 5,
+      "median_ms": 1.96,
+      "max_ms": 3.13,
+      "bytes": 13684,
+      "status": 200
+    },
+    {
+      "code": "97411",
+      "repetitions": 5,
+      "median_ms": 1.83,
+      "max_ms": 2.17,
+      "bytes": 6466,
+      "status": 200
+    },
+    {
+      "code": "31555",
+      "repetitions": 5,
+      "median_ms": 2.3,
+      "max_ms": 4.52,
+      "bytes": 13251,
+      "status": 200
+    }
+  ]
+}

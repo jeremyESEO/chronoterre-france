@@ -1,0 +1,304 @@
+{
+  "project": "ChronoTerre France",
+  "retrieved_date": "2026-09-25",
+  "status": "selected_and_visually_inspected",
+  "scope": "Illustrations documentées de taxons ; aucune image ne prouve une découverte au point de la carte.",
+  "selection_count": {
+    "fossil": 4,
+    "organism": 1
+  },
+  "matching_policy": {
+    "same_taxon": "Taxon explicitement identifié par la fiche source.",
+    "same_genus": "Espèce illustrée dans le genre demandé ; ne déduit pas une identification plus précise du fossile local.",
+    "local_specimen": "Non utilisé : pas de preuve reliant les clichés aux occurrences PBDB locales."
+  },
+  "assets": [
+    {
+      "id": "gryphaea-arcuata-fossil",
+      "taxon": "Gryphaea arcuata",
+      "depicted_taxon": "Gryphaea arcuata",
+      "category": "fossil",
+      "match_level": "same_taxon",
+      "is_local_specimen": false,
+      "locality_claim": "taxon_illustration_only",
+      "local_path": "dist/media/gryphaea-arcuata-fossil.jpg",
+      "filename": "gryphaea-arcuata-fossil.jpg",
+      "source_provider": "Wikimedia Commons",
+      "source_page_title": "File:Gryphaea arcuata Lamarck, 1801 (France) 5.JPG",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Gryphaea_arcuata_Lamarck,_1801_(France)_5.JPG",
+      "source_asset_url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Gryphaea_arcuata_Lamarck%2C_1801_%28France%29_5.JPG",
+      "downloaded_asset_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Gryphaea_arcuata_Lamarck%2C_1801_%28France%29_5.JPG/1280px-Gryphaea_arcuata_Lamarck%2C_1801_%28France%29_5.JPG",
+      "source_original_sha1": "1cc07998f7d0b6bb61b807054748c50d186354f2",
+      "downloaded_file_sha256": "7cf109b8d9e5b72a949d497447cc397d509065ee8e5fd73878237c32ac40b736",
+      "bytes": 390669,
+      "width": 1280,
+      "height": 803,
+      "author": "Parent Géry",
+      "author_metadata_html": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Parent_G%C3%A9ry&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Parent Géry (page does not exist)\">Parent Géry</a>",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source_attribution_required": true,
+      "credit_fr": "Parent Géry / Wikimedia Commons — CC BY-SA 3.0",
+      "changes_fr": "Vignette de 1 280 pixels fournie par Wikimedia Commons ; aucune autre modification.",
+      "caption_fr": "Coquilles fossiles de Gryphaea arcuata provenant de France. Illustration du taxon.",
+      "specimen_origin": {
+        "country": "France",
+        "region": null,
+        "locality": null,
+        "collection": null,
+        "detail": "La fiche Commons indique seulement France ; aucun site précis documenté."
+      },
+      "association_proof": {
+        "basis": "La description de la fiche Commons et le champ depicts identifient explicitement Gryphaea arcuata.",
+        "source": "https://commons.wikimedia.org/wiki/File:Gryphaea_arcuata_Lamarck,_1801_(France)_5.JPG",
+        "source_taxon_label": "Gryphaea arcuata Lamarck, 1801"
+      },
+      "scientific_and_display_notes": [
+        "Deux coquilles arquées bien visibles dans une matrice rocheuse, sur fond sombre.",
+        "Sélection après comparaison visuelle des vues 1, 2 et 5 ; la vue 5 montre clairement la courbure des valves.",
+        "L’origine France ne permet aucune association à un point PBDB précis."
+      ],
+      "visual_inspection": {
+        "performed": true,
+        "method": "view_image",
+        "accepted": true,
+        "date": "2026-09-25"
+      }
+    },
+    {
+      "id": "otodus-megalodon-fossil",
+      "taxon": "Otodus megalodon",
+      "depicted_taxon": "Otodus megalodon",
+      "category": "fossil",
+      "match_level": "same_taxon",
+      "is_local_specimen": false,
+      "locality_claim": "taxon_illustration_only",
+      "local_path": "dist/media/otodus-megalodon-fossil.jpg",
+      "filename": "otodus-megalodon-fossil.jpg",
+      "source_provider": "Wikimedia Commons",
+      "source_page_title": "File:Megalodon Tooth.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Megalodon_Tooth.jpg",
+      "source_asset_url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Megalodon_Tooth.jpg",
+      "downloaded_asset_url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Megalodon_Tooth.jpg",
+      "source_original_sha1": "a6af92d604bd725c5a166886c34bd2c3783c1e22",
+      "downloaded_file_sha256": "2c42d7918711cde1b3c30d0d356db89bd848753506de8765b4c649a4207b730f",
+      "bytes": 4018238,
+      "width": 6000,
+      "height": 4000,
+      "author": "Fred Cherrygarden",
+      "author_metadata_html": "<a href=\"//commons.wikimedia.org/wiki/User:Fred_Cherrygarden\" title=\"User:Fred Cherrygarden\">Fred Cherrygarden</a>",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_attribution_required": true,
+      "credit_fr": "Fred Cherrygarden / Wikimedia Commons — CC BY-SA 4.0",
+      "changes_fr": "Fichier Wikimedia Commons téléchargé sans modification.",
+      "caption_fr": "Dent fossile d’Otodus megalodon, Caroline du Sud (États-Unis). Illustration du taxon.",
+      "specimen_origin": {
+        "country": "United States",
+        "region": "South Carolina",
+        "locality": null,
+        "collection": "Cherrygarden collection",
+        "detail": "Origine et collection indiquées sur la fiche Commons ; dent de 116 mm selon cette fiche."
+      },
+      "association_proof": {
+        "basis": "La description Commons nomme explicitement la dent fossilisée Otodus megalodon et sa provenance en Caroline du Sud.",
+        "source": "https://commons.wikimedia.org/wiki/File:Megalodon_Tooth.jpg",
+        "source_taxon_label": "Otodus megalodon"
+      },
+      "scientific_and_display_notes": [
+        "Photographie détaillée d’une dent isolée sur fond blanc, sans autre espèce dans l’image.",
+        "La provenance détaillée relève de la documentation du photographe ; ce n’est pas une photo du spécimen PBDB français."
+      ],
+      "visual_inspection": {
+        "performed": true,
+        "method": "view_image",
+        "accepted": true,
+        "date": "2026-09-25"
+      }
+    },
+    {
+      "id": "mammuthus-meridionalis-fossil",
+      "taxon": "Mammuthus meridionalis",
+      "depicted_taxon": "Mammuthus meridionalis",
+      "category": "fossil",
+      "match_level": "same_taxon",
+      "is_local_specimen": false,
+      "locality_claim": "taxon_illustration_only",
+      "local_path": "dist/media/mammuthus-meridionalis-fossil.jpg",
+      "filename": "mammuthus-meridionalis-fossil.jpg",
+      "source_provider": "Wikimedia Commons",
+      "source_page_title": "File:Mammouth de Durfort - Mammuthus meridionalis - MNHN Paris 2025-08-21 - cropped.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Mammouth_de_Durfort_-_Mammuthus_meridionalis_-_MNHN_Paris_2025-08-21_-_cropped.jpg",
+      "source_asset_url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Mammouth_de_Durfort_-_Mammuthus_meridionalis_-_MNHN_Paris_2025-08-21_-_cropped.jpg",
+      "downloaded_asset_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Mammouth_de_Durfort_-_Mammuthus_meridionalis_-_MNHN_Paris_2025-08-21_-_cropped.jpg/1280px-Mammouth_de_Durfort_-_Mammuthus_meridionalis_-_MNHN_Paris_2025-08-21_-_cropped.jpg",
+      "source_original_sha1": "7f59a43fedd8390e8f2c713cc9e7691e224771a5",
+      "downloaded_file_sha256": "c1bdbda2d1f7edc40d0d07d035dedf13168d07580d118101996f678db53f6cb9",
+      "bytes": 531692,
+      "width": 1280,
+      "height": 1705,
+      "author": "Yen Zotto",
+      "author_metadata_html": "<a href=\"//commons.wikimedia.org/wiki/User:Yen_Zotto\" title=\"User:Yen Zotto\">Yen Zotto</a>",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_attribution_required": true,
+      "credit_fr": "Yen Zotto / Wikimedia Commons — CC BY-SA 4.0",
+      "changes_fr": "Vignette de 1 280 pixels fournie par Wikimedia Commons ; aucune autre modification.",
+      "caption_fr": "Squelette monté du mammouth de Durfort (Mammuthus meridionalis), exposé au MNHN à Paris.",
+      "specimen_origin": {
+        "country": "France",
+        "region": null,
+        "locality": "Durfort (aujourd’hui Durfort-et-Saint-Martin-de-Sossenac)",
+        "collection": "Muséum national d’histoire naturelle, Galerie de Paléontologie et d’Anatomie comparée, Paris",
+        "detail": "La fiche indique la découverte des os fossilisés à Durfort en 1869. Paris est le lieu d’exposition, pas le lieu de découverte."
+      },
+      "association_proof": {
+        "basis": "La légende et la description Commons identifient le mammouth de Durfort comme Mammuthus meridionalis et décrivent sa découverte.",
+        "source": "https://commons.wikimedia.org/wiki/File:Mammouth_de_Durfort_-_Mammuthus_meridionalis_-_MNHN_Paris_2025-08-21_-_cropped.jpg",
+        "source_taxon_label": "Mammuthus meridionalis"
+      },
+      "scientific_and_display_notes": [
+        "Squelette monté dans un musée ; le cliché frontal présente le crâne, les défenses et les membres.",
+        "Le montage a été restauré ; ne pas suggérer que chaque élément visible est un os original non restauré.",
+        "Le fichier Commons est lui-même un recadrage publié par son auteur.",
+        "Format vertical : préférer object-fit: contain.",
+        "Association au taxon uniquement, même si Durfort se trouve en France."
+      ],
+      "visual_inspection": {
+        "performed": true,
+        "method": "view_image",
+        "accepted": true,
+        "date": "2026-09-25"
+      }
+    },
+    {
+      "id": "lytoceras-fossil",
+      "taxon": "Lytoceras",
+      "depicted_taxon": "Lytoceras cornucopia",
+      "category": "fossil",
+      "match_level": "same_genus",
+      "is_local_specimen": false,
+      "locality_claim": "taxon_illustration_only",
+      "local_path": "dist/media/lytoceras-cornucopia-fossil.jpg",
+      "filename": "lytoceras-cornucopia-fossil.jpg",
+      "source_provider": "Wikimedia Commons",
+      "source_page_title": "File:Lytoceratidae - Lytoceras cornucopia.jpg",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Lytoceratidae_-_Lytoceras_cornucopia.jpg",
+      "source_asset_url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Lytoceratidae_-_Lytoceras_cornucopia.jpg",
+      "downloaded_asset_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Lytoceratidae_-_Lytoceras_cornucopia.jpg/1280px-Lytoceratidae_-_Lytoceras_cornucopia.jpg",
+      "source_original_sha1": "3d1e2cb18724fd6c8285c701c94a6536d4ae1c26",
+      "downloaded_file_sha256": "2d1adabdac00ea7270cf697fe675f41d65f72b02d8b7e5c206bb03a65eeb7ce5",
+      "bytes": 477692,
+      "width": 1280,
+      "height": 961,
+      "author": "Hectonichus",
+      "author_metadata_html": "<a href=\"//commons.wikimedia.org/wiki/User:Hectonichus\" title=\"User:Hectonichus\">Hectonichus</a>",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source_attribution_required": true,
+      "credit_fr": "Hectonichus / Wikimedia Commons — CC BY-SA 3.0",
+      "changes_fr": "Vignette de 1 280 pixels fournie par Wikimedia Commons ; aucune autre modification.",
+      "caption_fr": "Coquille fossile de Lytoceras cornucopia, provenant de l’Isère. Illustration du genre Lytoceras.",
+      "specimen_origin": {
+        "country": "France",
+        "region": "Isère",
+        "locality": null,
+        "collection": "Galerie de Paléontologie et d’Anatomie comparée, Paris",
+        "detail": "L’Isère est indiquée comme provenance ; Paris est le lieu d’exposition."
+      },
+      "association_proof": {
+        "basis": "La fiche Commons identifie Lytoceras cornucopia ; son genre est Lytoceras, correspondant au rang demandé. Aucune attribution de cette espèce au point PBDB n’est déduite.",
+        "source": "https://commons.wikimedia.org/wiki/File:Lytoceratidae_-_Lytoceras_cornucopia.jpg",
+        "source_taxon_label": "Lytoceras cornucopia"
+      },
+      "scientific_and_display_notes": [
+        "Photographie d’une coquille spiralée isolée, bien lisible, sur un fond textile bleu.",
+        "Correspondance au genre seulement : conserver Lytoceras cornucopia comme espèce du spécimen photographié.",
+        "Aucune localité précise au sein de l’Isère n’est fournie."
+      ],
+      "visual_inspection": {
+        "performed": true,
+        "method": "view_image",
+        "accepted": true,
+        "date": "2026-09-25"
+      }
+    },
+    {
+      "id": "otodus-megalodon-organism",
+      "taxon": "Otodus megalodon",
+      "depicted_taxon": "Otodus megalodon",
+      "category": "organism",
+      "match_level": "same_taxon",
+      "is_local_specimen": false,
+      "locality_claim": "taxon_illustration_only",
+      "local_path": "dist/media/otodus-megalodon-organism.png",
+      "filename": "otodus-megalodon-organism.png",
+      "source_provider": "Wikimedia Commons",
+      "source_page_title": "File:Otodus megalodon restoration.png",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Otodus_megalodon_restoration.png",
+      "source_asset_url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Otodus_megalodon_restoration.png",
+      "downloaded_asset_url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Otodus_megalodon_restoration.png",
+      "source_original_sha1": "a22ca65f7ee298d2d4be8bdb5fbe819ef8d1de4f",
+      "downloaded_file_sha256": "70c24bec23dcb5eccab3bed0ff80090277dfdeca758580310a3cb14f5aba4805",
+      "bytes": 593987,
+      "width": 1970,
+      "height": 1026,
+      "author": "Oliver E. Demuth",
+      "author_metadata_html": "Oliver E. Demuth",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "source_attribution_required": true,
+      "credit_fr": "Oliver E. Demuth / Wikimedia Commons — CC BY 4.0",
+      "changes_fr": "Fichier Wikimedia Commons téléchargé sans modification.",
+      "caption_fr": "Reconstitution publiée d’Otodus megalodon par Oliver E. Demuth, d’après Cooper et al. (2020).",
+      "specimen_origin": null,
+      "association_proof": {
+        "basis": "Commons identifie Otodus megalodon, cite le travail publié et nomme l’illustrateur. L’article de Scientific Reports, figure 2d, confirme le taxon et Oliver E. Demuth.",
+        "source": "https://commons.wikimedia.org/wiki/File:Otodus_megalodon_restoration.png",
+        "source_taxon_label": "Otodus megalodon",
+        "publication": {
+          "title": "Body dimensions of the extinct giant shark Otodus megalodon: a 2D reconstruction",
+          "authors": "Jack A. Cooper, Catalina Pimiento, Humberto G. Ferrón, Michael J. Benton",
+          "year": 2020,
+          "journal": "Scientific Reports",
+          "volume": "10",
+          "article_number": "14596",
+          "doi": "10.1038/s41598-020-71387-y",
+          "url": "https://www.nature.com/articles/s41598-020-71387-y",
+          "figure": "2d"
+        }
+      },
+      "scientific_and_display_notes": [
+        "Paléoart publié, jamais une photographie d’un animal vivant.",
+        "Modèle morphologique de 2020 basé sur des analogues modernes ; silhouette et couleurs demeurent des hypothèses de reconstitution.",
+        "L’article représente un individu hypothétique de 16 m ; ne pas transformer cette longueur en mesure du spécimen local.",
+        "Image à fond blanc ; le panel diffusé sur Commons ne contient pas l’échelle humaine du panneau complet de l’article.",
+        "Afficher la catégorie Organisme et un libellé visible Reconstitution."
+      ],
+      "visual_inspection": {
+        "performed": true,
+        "method": "view_image",
+        "accepted": true,
+        "date": "2026-09-25"
+      }
+    }
+  ],
+  "unavailable_taxa": [
+    {
+      "taxon": "Toxaster retusus",
+      "reason_fr": "Les résultats précis récupérés sur Commons montrent des moulages historiques, pas des photographies de fossiles originaux. Aucun n’a été retenu comme fossile.",
+      "source_example": "https://commons.wikimedia.org/wiki/File:Toxaster_retusus_FOS_2193_-_3.JPG",
+      "details_fr": "FOS-2193, collection de moulages créée par Louis Agassiz, Muséum d’histoire naturelle de Neuchâtel ; la légende utilise explicitement moulage/cast.",
+      "fallback_fr": "Conserver le texte sans image vérifiée. Ne pas prendre un oursin vivant ou une autre espèce arbitraire."
+    }
+  ],
+  "download_notes": [
+    "Les originaux de Lytoceras et du mammouth ont répondu HTTP 429. Le téléchargement des vignettes officielles de 1 280 pixels a réussi.",
+    "Les fichiers source et les liens de licence sont conservés pour chaque asset."
+  ],
+  "raw_metadata_files": [
+    "commons-imageinfo-initial.json",
+    "commons-imageinfo-gryphaea.json",
+    "gryphaea-search.json",
+    "toxaster-search.json"
+  ]
+}

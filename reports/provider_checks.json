@@ -1,0 +1,82 @@
+[
+  {
+    "key": "pbdb",
+    "url": "https://paleobiodb.org/data1.2/occs/list.json?cc=FR&limit=1&vocab=pbdb",
+    "checked_at": "2026-10-10T21:06:16Z",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "final_url": "https://paleobiodb.org/data1.2/occs/list.json?cc=FR&limit=1&vocab=pbdb",
+    "bytes": 398,
+    "seconds": 5.48
+  },
+  {
+    "key": "geo",
+    "url": "https://geo.api.gouv.fr/communes/17300",
+    "checked_at": "2026-10-10T21:06:16Z",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "final_url": "https://geo.api.gouv.fr/communes/17300",
+    "bytes": 164,
+    "seconds": 4.845
+  },
+  {
+    "key": "geocode",
+    "url": "https://data.geopf.fr/geocodage/search?q=8%20boulevard%20du%20port%20amiens&limit=1",
+    "checked_at": "2026-10-10T21:06:16Z",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "final_url": "https://data.geopf.fr/geocodage/search?q=8%20boulevard%20du%20port%20amiens&limit=1",
+    "bytes": 578,
+    "seconds": 4.907
+  },
+  {
+    "key": "gpu_documentation",
+    "url": "https://apicarto.ign.fr/api/doc/gpu.yml",
+    "checked_at": "2026-10-10T21:06:16Z",
+    "status": 200,
+    "content_type": "text/yaml; charset=utf-8",
+    "final_url": "https://apicarto.ign.fr/api/doc/gpu.yml",
+    "bytes": 21611,
+    "seconds": 4.816
+  },
+  {
+    "key": "georisques_documentation",
+    "url": "https://www.georisques.gouv.fr/doc-api",
+    "checked_at": "2026-10-10T21:06:20Z",
+    "status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "final_url": "https://www.georisques.gouv.fr/doc-api",
+    "bytes": 37639,
+    "seconds": 5.051
+  },
+  {
+    "key": "climadiag",
+    "url": "https://climadiag-commune.meteofrance.com/",
+    "checked_at": "2026-10-10T21:06:20Z",
+    "status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "final_url": "https://climadiag-commune.meteofrance.com/",
+    "bytes": 803,
+    "seconds": 3.886
+  },
+  {
+    "key": "panoramax_documentation",
+    "url": "https://docs.panoramax.fr/",
+    "checked_at": "2026-10-10T21:06:20Z",
+    "status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://docs.panoramax.fr/",
+    "bytes": 106483,
+    "seconds": 10.862
+  },
+  {
+    "key": "remonter",
+    "url": "https://remonterletemps.ign.fr/",
+    "checked_at": "2026-10-10T21:06:21Z",
+    "status": 200,
+    "content_type": "text/html",
+    "final_url": "https://remonterletemps.ign.fr/",
+    "bytes": 1029,
+    "seconds": 4.395
+  }
+]

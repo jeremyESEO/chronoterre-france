@@ -1,0 +1,30 @@
+{
+  "version": "2.0.1",
+  "reference_date": "2026-09-25",
+  "target_plus_years": 50,
+  "climate_indicators": [
+    "G1",
+    "G2",
+    "G3",
+    "G4",
+    "R1",
+    "R2",
+    "R3",
+    "R4",
+    "R5",
+    "S1",
+    "S2",
+    "S3",
+    "AG1"
+  ],
+  "excluded_pbdb_collections": {
+    "170167": "Longueville (Calvados), coordonnées contredites par le texte source",
+    "195628": "Mont Aimé (Marne), coordonnées contredites par le texte source",
+    "10239": "Mont Aimé : coordonnées incohérentes",
+    "197471": "Localité inconnue, coordonnées du musée",
+    "184156": "Origine du spécimen inconnue",
+    "184113": "Paris area unspecified, provenance inconnue"
+  },
+  "snapshot_mode": "national, découpé par département ; API SQLite locale facultative",
+  "updates": "manuelles uniquement"
+}

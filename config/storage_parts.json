@@ -1,0 +1,25 @@
+[
+  {
+    "path": "data/curated/france.sqlite.gz",
+    "sha256": "aa9c7b685d879a323eee0b67d519963ffceb9dada53c31cee3e2b08816e63019",
+    "parts": [
+      "data/curated/france.sqlite.gz.part001",
+      "data/curated/france.sqlite.gz.part002",
+      "data/curated/france.sqlite.gz.part003",
+      "data/curated/france.sqlite.gz.part004",
+      "data/curated/france.sqlite.gz.part005",
+      "data/curated/france.sqlite.gz.part006",
+      "data/curated/france.sqlite.gz.part007"
+    ]
+  },
+  {
+    "path": "data/raw/20260925T133023111105Z_climadiag.jsonl.gz",
+    "sha256": "c770ff419d2574792fabe043354e91655eded5418a3b0412ff750e6b2b012c4c",
+    "parts": [
+      "data/raw/20260925T133023111105Z_climadiag.jsonl.gz.part001",
+      "data/raw/20260925T133023111105Z_climadiag.jsonl.gz.part002",
+      "data/raw/20260925T133023111105Z_climadiag.jsonl.gz.part003",
+      "data/raw/20260925T133023111105Z_climadiag.jsonl.gz.part004"
+    ]
+  }
+]

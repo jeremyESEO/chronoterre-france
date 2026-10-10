@@ -1,0 +1,117 @@
+{
+  "dataset": "chronoterre_france",
+  "version": "2.0.1",
+  "owner": "Projet académique ESEO ChronoTerre",
+  "grains": {
+    "source": "un producteur ou diffuseur avec ses conditions",
+    "dataset_version": "une ressource collectée à une date",
+    "raw_file": "une réponse originale immuable",
+    "department": "un contour départemental simplifié millésimé",
+    "commune": "une commune du référentiel collecté, code INSEE texte",
+    "postal_code": "une association commune-code postal, plusieurs-à-plusieurs",
+    "climate_place": "une commune avec sa méthode climatique et sa référence",
+    "scenario": "une nature de projection (TRACC ou référence)",
+    "climate_model": "un ensemble de modèles publié, sans prétendre disposer des simulations individuelles",
+    "period": "un horizon publié ; bornes annuelles NULL lorsqu’elles ne sont pas fournies",
+    "indicator": "une variable, sa définition et son unité canonique",
+    "climate_value": "une commune × indicateur × horizon × saison pour le corpus Climadiag retenu",
+    "hazard": "une famille d’aléa ou de risque recensé",
+    "commune_hazard": "une commune × aléa recensé, sans intersection à l’adresse",
+    "bibliography": "une référence bibliographique PBDB",
+    "taxon": "un identifiant taxonomique accepté PBDB",
+    "geological_interval": "un intervalle d’âge et ses bornes en millions d’années",
+    "fossil_site": "une collection PBDB localisée retenue ; plusieurs collections peuvent partager un point",
+    "fossil_occurrence": "un enregistrement bibliographique de taxon dans une collection, pas un animal",
+    "media": "un fichier et sa provenance, auteur, licence et légende",
+    "taxon_media": "une association taxon-image, avec niveau de correspondance",
+    "test_place": "un lieu public choisi pour tester la couverture",
+    "parcel": "une parcelle cadastrale de l’échantillon public",
+    "urban_document": "un document identifié par le fournisseur, avec dates connues",
+    "urban_zone": "une géométrie de zonage et son règlement lié",
+    "prescription": "une prescription surfacique ou une servitude collectée",
+    "parcel_zone": "une intersection parcelle-zone réelle, relation plusieurs-à-plusieurs",
+    "hazard_zone": "une enveloppe d’aléa et son scénario dans une version source",
+    "spatial_intersection": "un lieu de test × enveloppe avec résultat booléen"
+  },
+  "crs": "EPSG:4326 ; distances géodésiques/haversine, surfaces ellipsoïdales WGS84",
+  "required_fossil_fields": [
+    "occurrence_no",
+    "collection_no",
+    "identified_name",
+    "reference_no",
+    "primary_reference",
+    "min_ma",
+    "max_ma"
+  ],
+  "quality_rules": {
+    "F01": {
+      "name": "Identifiant et taxon",
+      "condition": "Identifiants PBDB numériques positifs, nom non vide",
+      "action": "rejet"
+    },
+    "F02": {
+      "name": "Coordonnées",
+      "condition": "WGS84 fini, point dans un contour départemental français",
+      "action": "rejet"
+    },
+    "F03": {
+      "name": "Provenance",
+      "condition": "Pas de coordonnées politiques ou de contradiction déjà connue",
+      "action": "rejet"
+    },
+    "F04": {
+      "name": "Âges",
+      "condition": "0 ≤ min_ma ≤ max_ma ≤ 4600 Ma",
+      "action": "rejet"
+    },
+    "F05": {
+      "name": "Référence",
+      "condition": "Identifiant et citation présents",
+      "action": "rejet"
+    },
+    "U01": {
+      "name": "Unicité",
+      "condition": "Clé métier unique",
+      "action": "déduplication et comptage"
+    },
+    "C01": {
+      "name": "Valeur climatique",
+      "condition": "Nombre fini dans les bornes physiques de son unité",
+      "action": "rejet"
+    },
+    "C02": {
+      "name": "Fourchette",
+      "condition": "Borne basse ≤ médiane ≤ borne haute",
+      "action": "rejet"
+    },
+    "C03": {
+      "name": "Série",
+      "condition": "Indicateur connu, commune jointe par code INSEE, horizon publié",
+      "action": "rejet"
+    },
+    "G01": {
+      "name": "Géométrie",
+      "condition": "Valide et non vide, référence connue",
+      "action": "rejet"
+    },
+    "P01": {
+      "name": "Raw",
+      "condition": "SHA-256 identique aux octets collectés",
+      "action": "arrêt du pipeline"
+    },
+    "M01": {
+      "name": "Média",
+      "condition": "Auteur, licence, page source et correspondance taxonomique",
+      "action": "exclusion de la galerie"
+    }
+  },
+  "transformations": [
+    "code INSEE texte",
+    "NIVMER mètres bruts ×100 → cm",
+    "make_valid GEOS pour enveloppes invalides, journal sans modifier raw",
+    "aucune interpolation climatique",
+    "fossiles localisés sur contours départementaux 100 m"
+  ],
+  "missing_data": "NULL ou absence explicitement présentée ; jamais zéro imputé",
+  "version_policy": "nouveau schéma ou sens de variable : arrêter, examiner, incrémenter le contrat et reconstruire"
+}

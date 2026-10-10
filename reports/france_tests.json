@@ -1,0 +1,10 @@
+{
+  "executed_at": "2026-10-10T21:15:14.148008+00:00",
+  "tests": 14,
+  "failures": 0,
+  "errors": 0,
+  "seconds": 3.56,
+  "details": "test_errors (tests.test_france.FranceTests.test_errors) ... ok\ntest_foreign_keys (tests.test_france.FranceTests.test_foreign_keys) ... ok\ntest_geometry_inside_outside (tests.test_france.FranceTests.test_geometry_inside_outside) ... ok\ntest_horizons_not_interpolated (tests.test_france.FranceTests.test_horizons_not_interpolated) ... ok\ntest_invalid_isolated_record (tests.test_france.FranceTests.test_invalid_isolated_record) ... ok\ntest_media_files_and_associations (tests.test_france.FranceTests.test_media_files_and_associations) ... ok\ntest_outside_idf_corse_overseas (tests.test_france.FranceTests.test_outside_idf_corse_overseas) ... ok\ntest_pagination_bbox (tests.test_france.FranceTests.test_pagination_bbox) ... ok\ntest_parcel_multiple_zones (tests.test_france.FranceTests.test_parcel_multiple_zones) ... ok\ntest_provider_failure_without_fake_data (tests.test_france.FranceTests.test_provider_failure_without_fake_data) ... ok\ntest_real_demo (tests.test_france.FranceTests.test_real_demo) ... ok\ntest_replay (tests.test_france.FranceTests.test_replay) ... ok\ntest_sea_conversion (tests.test_france.FranceTests.test_sea_conversion) ... ok\ntest_search_postal (tests.test_france.FranceTests.test_search_postal) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 3.560s\n\nOK\n",
+  "browser": "Non réalisé : contrôle navigateur indisponible dans la session de reprise.",
+  "mobile": "CSS responsive présent ; vérification visuelle et clavier non réalisée."
+}

@@ -1,0 +1,21 @@
+{
+  "v1_archive_sha256": "1092aaa914acbe7dc7b012ea741ef8e930ec3669608323e70585af9d27f26713",
+  "v1_counts": {
+    "source": 5,
+    "raw_file": 34,
+    "department": 8,
+    "city": 10,
+    "bibliography": 108,
+    "taxon": 893,
+    "geo_interval": 12,
+    "fossil_site": 90,
+    "fossil_occurrence": 1334,
+    "climate_model": 3,
+    "climate_series": 30,
+    "climate_day": 255670
+  },
+  "v1_integrity": "ok",
+  "strategy": "V1 intacte ; nouvelle base france.sqlite issue des sources nationales, pas de mélange ERA5/DRIAS",
+  "rollback": "Extraire v1/ChronoTerre_IDF_original.zip dans un autre dossier ; utiliser son README. Pour le site, redéployer la version Sites 1.",
+  "archive_check": null
+}

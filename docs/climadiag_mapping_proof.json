@@ -1,0 +1,12 @@
+{
+  "inspected_at": "2026-09-25",
+  "metadata_url": "https://climadiag-commune.meteofrance.com/assets/data-jCATuDqX.js",
+  "application_url": "https://climadiag-commune.meteofrance.com/assets/index-DGtbTeK5.js",
+  "metadata_sha256": "3765a9132f1cdc71eb19f8d2374d3ef6744c391edeae0a27115c708ab2d48b3d",
+  "application_sha256": "0849cb54a9a1d9b3347f86a678930525d9d0342b5d3d2de4afcdd510d16cea28",
+  "mapping": {
+    "R3": "valueForScale utilise Math.round(100*e), titre en cm ; ChronoTerre conserve la précision utile avant affichage",
+    "mean": "médiane publiée selon le texte de méthode Climadiag",
+    "reference": "1976–2005 métropole ; 1991–2020 outre-mer ; 1995–2014 niveau marin"
+  }
+}

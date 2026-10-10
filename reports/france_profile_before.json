@@ -1,0 +1,2074 @@
+{
+  "communes": {
+    "rows": 34969,
+    "columns": 7,
+    "duplicate_business_keys": 0,
+    "fields": {
+      "nom": {
+        "types": {
+          "str": 34969
+        },
+        "missing": 0,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "Sainte-Colombe",
+            12
+          ],
+          [
+            "Saint-Sauveur",
+            11
+          ],
+          [
+            "Saint-Aubin",
+            10
+          ],
+          [
+            "Beaulieu",
+            10
+          ],
+          [
+            "Saint-Marcel",
+            9
+          ]
+        ]
+      },
+      "code": {
+        "types": {
+          "str": 34969
+        },
+        "missing": 0,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "01001",
+            1
+          ],
+          [
+            "01002",
+            1
+          ],
+          [
+            "01004",
+            1
+          ],
+          [
+            "01005",
+            1
+          ],
+          [
+            "01006",
+            1
+          ]
+        ]
+      },
+      "codeDepartement": {
+        "types": {
+          "str": 34969
+        },
+        "missing": 0,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "62",
+            887
+          ],
+          [
+            "02",
+            797
+          ],
+          [
+            "80",
+            771
+          ],
+          [
+            "57",
+            725
+          ],
+          [
+            "76",
+            707
+          ]
+        ]
+      },
+      "codeRegion": {
+        "types": {
+          "str": 34969
+        },
+        "missing": 0,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "44",
+            5115
+          ],
+          [
+            "76",
+            4446
+          ],
+          [
+            "75",
+            4293
+          ],
+          [
+            "84",
+            4025
+          ],
+          [
+            "32",
+            3782
+          ]
+        ]
+      },
+      "codesPostaux": {
+        "types": {
+          "list": 34969
+        },
+        "missing": 0,
+        "min": null,
+        "max": null,
+        "modalities": []
+      },
+      "centre": {
+        "types": {
+          "dict": 34969
+        },
+        "missing": 0,
+        "min": null,
+        "max": null,
+        "modalities": []
+      },
+      "population": {
+        "types": {
+          "int": 34963
+        },
+        "missing": 6,
+        "min": 0,
+        "max": 2103778,
+        "modalities": []
+      }
+    }
+  },
+  "fossils": {
+    "rows": 53885,
+    "columns": 41,
+    "duplicate_business_keys": 0,
+    "fields": {
+      "occurrence_no": {
+        "types": {
+          "str": 53885
+        },
+        "missing": 0,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "16874",
+            1
+          ],
+          [
+            "16875",
+            1
+          ],
+          [
+            "16876",
+            1
+          ],
+          [
+            "16877",
+            1
+          ],
+          [
+            "16878",
+            1
+          ]
+        ]
+      },
+      "record_type": {
+        "types": {
+          "str": 53885
+        },
+        "missing": 0,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "occ",
+            53885
+          ]
+        ]
+      },
+      "collection_no": {
+        "types": {
+          "str": 53885
+        },
+        "missing": 0,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "78567",
+            362
+          ],
+          [
+            "3494",
+            344
+          ],
+          [
+            "74861",
+            315
+          ],
+          [
+            "123850",
+            209
+          ],
+          [
+            "38681",
+            187
+          ]
+        ]
+      },
+      "identified_name": {
+        "types": {
+          "str": 53885
+        },
+        "missing": 0,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "Neolissoceras grasianum",
+            269
+          ],
+          [
+            "Lytoceras sp.",
+            207
+          ],
+          [
+            "Olcostephanus sp.",
+            193
+          ],
+          [
+            "Phyllopachyceras winkleri",
+            174
+          ],
+          [
+            "Bochianites neocomiensis",
+            164
+          ]
+        ]
+      },
+      "identified_rank": {
+        "types": {
+          "str": 53706
+        },
+        "missing": 179,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "species",
+            40882
+          ],
+          [
+            "genus",
+            9094
+          ],
+          [
+            "family",
+            1183
+          ],
+          [
+            "unranked clade",
+            428
+          ],
+          [
+            "class",
+            373
+          ]
+        ]
+      },
+      "difference": {
+        "types": {
+          "str": 19127
+        },
+        "missing": 34758,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "species not entered",
+            11032
+          ],
+          [
+            "recombined as",
+            5250
+          ],
+          [
+            "rank change, species not entered",
+            1049
+          ],
+          [
+            "taxon not entered",
+            855
+          ],
+          [
+            "variant of",
+            398
+          ]
+        ]
+      },
+      "accepted_name": {
+        "types": {
+          "str": 53030
+        },
+        "missing": 855,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "Neolissoceras grasianum",
+            270
+          ],
+          [
+            "Lytoceras",
+            221
+          ],
+          [
+            "Olcostephanus",
+            202
+          ],
+          [
+            "Phyllopachyceras winkleri",
+            174
+          ],
+          [
+            "Bochianites neocomiensis",
+            164
+          ]
+        ]
+      },
+      "accepted_rank": {
+        "types": {
+          "str": 53030
+        },
+        "missing": 855,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "species",
+            28747
+          ],
+          [
+            "genus",
+            19854
+          ],
+          [
+            "family",
+            1316
+          ],
+          [
+            "subgenus",
+            933
+          ],
+          [
+            "unranked clade",
+            482
+          ]
+        ]
+      },
+      "accepted_no": {
+        "types": {
+          "str": 53030
+        },
+        "missing": 855,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "131145",
+            270
+          ],
+          [
+            "15143",
+            221
+          ],
+          [
+            "15281",
+            202
+          ],
+          [
+            "386166",
+            174
+          ],
+          [
+            "129963",
+            164
+          ]
+        ]
+      },
+      "early_interval": {
+        "types": {
+          "str": 53885
+        },
+        "missing": 0,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "Lutetian",
+            2124
+          ],
+          [
+            "Early Oligocene",
+            2015
+          ],
+          [
+            "Middle Oxfordian",
+            1785
+          ],
+          [
+            "Late Valanginian",
+            1638
+          ],
+          [
+            "Early Hauterivian",
+            1527
+          ]
+        ]
+      },
+      "max_ma": {
+        "types": {
+          "float": 49136,
+          "int": 4749
+        },
+        "missing": 0,
+        "min": 0.0117,
+        "max": 529,
+        "modalities": []
+      },
+      "min_ma": {
+        "types": {
+          "int": 3001,
+          "float": 50884
+        },
+        "missing": 0,
+        "min": 0,
+        "max": 521,
+        "modalities": []
+      },
+      "reference_no": {
+        "types": {
+          "str": 53885
+        },
+        "missing": 0,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "68770",
+            2554
+          ],
+          [
+            "789",
+            1783
+          ],
+          [
+            "15196",
+            1512
+          ],
+          [
+            "47284",
+            984
+          ],
+          [
+            "41",
+            909
+          ]
+        ]
+      },
+      "lng": {
+        "types": {
+          "str": 53885
+        },
+        "missing": 0,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "5.450000",
+            1803
+          ],
+          [
+            "1.766667",
+            638
+          ],
+          [
+            "6.550000",
+            616
+          ],
+          [
+            "5.454000",
+            586
+          ],
+          [
+            "-0.066667",
+            570
+          ]
+        ]
+      },
+      "lat": {
+        "types": {
+          "str": 53885
+        },
+        "missing": 0,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "44.470001",
+            1626
+          ],
+          [
+            "46.000000",
+            837
+          ],
+          [
+            "49.299999",
+            648
+          ],
+          [
+            "50.833332",
+            638
+          ],
+          [
+            "43.939999",
+            616
+          ]
+        ]
+      },
+      "cc": {
+        "types": {
+          "str": 53885
+        },
+        "missing": 0,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "FR",
+            53885
+          ]
+        ]
+      },
+      "latlng_precision": {
+        "types": {
+          "str": 53885
+        },
+        "missing": 0,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "minutes",
+            18527
+          ],
+          [
+            "seconds",
+            13121
+          ],
+          [
+            "3",
+            8044
+          ],
+          [
+            "2",
+            5316
+          ],
+          [
+            "4",
+            3106
+          ]
+        ]
+      },
+      "geogscale": {
+        "types": {
+          "str": 46615
+        },
+        "missing": 7270,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "outcrop",
+            21765
+          ],
+          [
+            "small collection",
+            13339
+          ],
+          [
+            "local area",
+            8283
+          ],
+          [
+            "hand sample",
+            2400
+          ],
+          [
+            "basin",
+            828
+          ]
+        ]
+      },
+      "geogcomments": {
+        "types": {
+          "str": 35972
+        },
+        "missing": 17913,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "Coordinates 847,075; 245.82; 620 - 848,375; 246,3; 630",
+            1626
+          ],
+          [
+            "Coordinates 936,775; 3190,5, 890",
+            616
+          ],
+          [
+            "Ferques, in the Bas-Boulonnais",
+            518
+          ],
+          [
+            "SPECIFIC LOCATION: Baron, France. LAT/LONG: estimated based on Baron, France.",
+            362
+          ],
+          [
+            "lat/long for the region of the Paris Basin",
+            344
+          ]
+        ]
+      },
+      "primary_reference": {
+        "types": {
+          "str": 53885
+        },
+        "missing": 0,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "F. T. Fürsich. 1999. Unpublished data.",
+            909
+          ],
+          [
+            "F. Papier. 2001. Die Gundershoffener Klamm. Fossilien 6/01:368-374",
+            107
+          ],
+          [
+            "L. Rulleau. 2008. Les Nautiles du Lias et du Dogger de la Région Lyonnaise",
+            78
+          ],
+          [
+            "F. T. Fursich. 1990. Unpublished data on Jurassic paleoecology.",
+            67
+          ],
+          [
+            "H. J. O'Regan. 2003. Reidentifications and synonomies of European mammals.",
+            44
+          ]
+        ]
+      },
+      "phylum": {
+        "types": {
+          "str": 53018
+        },
+        "missing": 867,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "Mollusca",
+            21177
+          ],
+          [
+            "Chordata",
+            12578
+          ],
+          [
+            "Arthropoda",
+            4792
+          ],
+          [
+            "Brachiopoda",
+            4286
+          ],
+          [
+            "Cnidaria",
+            2967
+          ]
+        ]
+      },
+      "phylum_no": {
+        "types": {
+          "str": 53018
+        },
+        "missing": 867,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "7805",
+            21177
+          ],
+          [
+            "33815",
+            12578
+          ],
+          [
+            "18891",
+            4792
+          ],
+          [
+            "26322",
+            4286
+          ],
+          [
+            "4524",
+            2967
+          ]
+        ]
+      },
+      "class": {
+        "types": {
+          "str": 52853
+        },
+        "missing": 1032,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "Cephalopoda",
+            10426
+          ],
+          [
+            "Bivalvia",
+            5560
+          ],
+          [
+            "Gastropoda",
+            5093
+          ],
+          [
+            "Mammalia",
+            4806
+          ],
+          [
+            "Rhynchonellata",
+            3761
+          ]
+        ]
+      },
+      "class_no": {
+        "types": {
+          "str": 52853
+        },
+        "missing": 1032,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "12315",
+            10426
+          ],
+          [
+            "16005",
+            5560
+          ],
+          [
+            "8304",
+            5093
+          ],
+          [
+            "36651",
+            4806
+          ],
+          [
+            "82921",
+            3761
+          ]
+        ]
+      },
+      "order": {
+        "types": {
+          "str": 52095
+        },
+        "missing": 1790,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "Ammonitida",
+            9073
+          ],
+          [
+            "NO_ORDER_SPECIFIED",
+            4646
+          ],
+          [
+            "Scleractinia",
+            2720
+          ],
+          [
+            "Terebratulida",
+            1731
+          ],
+          [
+            "Sorbeoconcha",
+            1498
+          ]
+        ]
+      },
+      "order_no": {
+        "types": {
+          "str": 52095
+        },
+        "missing": 1790,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "84931",
+            9073
+          ],
+          [
+            "NO",
+            4646
+          ],
+          [
+            "6108",
+            2720
+          ],
+          [
+            "29979",
+            1731
+          ],
+          [
+            "62297",
+            1498
+          ]
+        ]
+      },
+      "family": {
+        "types": {
+          "str": 51185
+        },
+        "missing": 2700,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "NO_FAMILY_SPECIFIED",
+            2504
+          ],
+          [
+            "Neocomitidae",
+            985
+          ],
+          [
+            "Hildoceratidae",
+            908
+          ],
+          [
+            "Phylloceratidae",
+            583
+          ],
+          [
+            "Tetrarhynchiidae",
+            478
+          ]
+        ]
+      },
+      "family_no": {
+        "types": {
+          "str": 51185
+        },
+        "missing": 2700,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "NF",
+            2504
+          ],
+          [
+            "64671",
+            985
+          ],
+          [
+            "184513",
+            908
+          ],
+          [
+            "86842",
+            583
+          ],
+          [
+            "81036",
+            478
+          ]
+        ]
+      },
+      "genus": {
+        "types": {
+          "str": 49587
+        },
+        "missing": 4298,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "Lytoceras",
+            429
+          ],
+          [
+            "Neolissoceras",
+            340
+          ],
+          [
+            "Phyllopachyceras",
+            244
+          ],
+          [
+            "Neocomites (Teschenites)",
+            221
+          ],
+          [
+            "Neocomites",
+            216
+          ]
+        ]
+      },
+      "genus_no": {
+        "types": {
+          "str": 49587
+        },
+        "missing": 4298,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "15232",
+            470
+          ],
+          [
+            "15143",
+            447
+          ],
+          [
+            "15244",
+            340
+          ],
+          [
+            "15281",
+            318
+          ],
+          [
+            "14493",
+            244
+          ]
+        ]
+      },
+      "subgenus_no": {
+        "types": {
+          "str": 3383
+        },
+        "missing": 50502,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "86594",
+            221
+          ],
+          [
+            "297620",
+            94
+          ],
+          [
+            "352644",
+            83
+          ],
+          [
+            "311749",
+            77
+          ],
+          [
+            "129217",
+            49
+          ]
+        ]
+      },
+      "identified_no": {
+        "types": {
+          "str": 17901
+        },
+        "missing": 35984,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "0",
+            855
+          ],
+          [
+            "348280",
+            269
+          ],
+          [
+            "386167",
+            174
+          ],
+          [
+            "129964",
+            164
+          ],
+          [
+            "386162",
+            146
+          ]
+        ]
+      },
+      "state": {
+        "types": {
+          "str": 23194
+        },
+        "missing": 30691,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "Essonne",
+            1784
+          ],
+          [
+            "Picardie",
+            832
+          ],
+          [
+            "Poitou-Charentes",
+            779
+          ],
+          [
+            "Oise",
+            767
+          ],
+          [
+            "Normandy",
+            723
+          ]
+        ]
+      },
+      "environment": {
+        "types": {
+          "str": 51734
+        },
+        "missing": 2151,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "marine indet.",
+            11023
+          ],
+          [
+            "carbonate indet.",
+            9819
+          ],
+          [
+            "terrestrial indet.",
+            4887
+          ],
+          [
+            "reef, buildup or bioherm",
+            3217
+          ],
+          [
+            "open shallow subtidal",
+            2542
+          ]
+        ]
+      },
+      "flags": {
+        "types": {
+          "str": 1026
+        },
+        "missing": 52859,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "F",
+            647
+          ],
+          [
+            "IF",
+            261
+          ],
+          [
+            "I",
+            118
+          ]
+        ]
+      },
+      "reid_no": {
+        "types": {
+          "str": 830
+        },
+        "missing": 53055,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "31489",
+            1
+          ],
+          [
+            "23479",
+            1
+          ],
+          [
+            "23480",
+            1
+          ],
+          [
+            "23481",
+            1
+          ],
+          [
+            "23482",
+            1
+          ]
+        ]
+      },
+      "latlng_basis": {
+        "types": {
+          "str": 50055
+        },
+        "missing": 3830,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "based on nearby landmark",
+            25940
+          ],
+          [
+            "estimated from map",
+            13462
+          ],
+          [
+            "stated in text",
+            5845
+          ],
+          [
+            "based on political unit",
+            4659
+          ],
+          [
+            "unpublished field data",
+            149
+          ]
+        ]
+      },
+      "late_interval": {
+        "types": {
+          "str": 4139
+        },
+        "missing": 49746,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "Late Oxfordian",
+            373
+          ],
+          [
+            "Late Bathonian",
+            275
+          ],
+          [
+            "Tortonian",
+            237
+          ],
+          [
+            "Serravallian",
+            229
+          ],
+          [
+            "Ladinian",
+            169
+          ]
+        ]
+      },
+      "county": {
+        "types": {
+          "str": 12543
+        },
+        "missing": 41342,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "Charente-Maritime",
+            682
+          ],
+          [
+            "Aisne",
+            586
+          ],
+          [
+            "Lot Departement",
+            579
+          ],
+          [
+            "Saint-Ambroix",
+            440
+          ],
+          [
+            "Landes",
+            412
+          ]
+        ]
+      },
+      "altitude_value": {
+        "types": {
+          "str": 5378
+        },
+        "missing": 48507,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "0",
+            468
+          ],
+          [
+            "154",
+            426
+          ],
+          [
+            "10",
+            228
+          ],
+          [
+            "770",
+            169
+          ],
+          [
+            "2405",
+            144
+          ]
+        ]
+      },
+      "altitude_unit": {
+        "types": {
+          "str": 5379
+        },
+        "missing": 48506,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "meters",
+            5362
+          ],
+          [
+            "feet",
+            17
+          ]
+        ]
+      }
+    }
+  },
+  "climate_entities": {
+    "rows": 36181,
+    "columns": 33,
+    "duplicate_business_keys": 0,
+    "fields": {
+      "identifiant_insee": {
+        "types": {
+          "str": 36181
+        },
+        "missing": 0,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "01001",
+            1
+          ],
+          [
+            "01002",
+            1
+          ],
+          [
+            "01004",
+            1
+          ],
+          [
+            "01005",
+            1
+          ],
+          [
+            "01006",
+            1
+          ]
+        ]
+      },
+      "code_recherche": {
+        "types": {
+          "str": 36181
+        },
+        "missing": 0,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "51300",
+            46
+          ],
+          [
+            "51800",
+            44
+          ],
+          [
+            "70000",
+            42
+          ],
+          [
+            "88500",
+            42
+          ],
+          [
+            "80140",
+            40
+          ]
+        ]
+      },
+      "nom": {
+        "types": {
+          "str": 36181
+        },
+        "missing": 0,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "Sainte-Colombe",
+            12
+          ],
+          [
+            "Saint-Sauveur",
+            11
+          ],
+          [
+            "Saint-Aubin",
+            10
+          ],
+          [
+            "Beaulieu",
+            10
+          ],
+          [
+            "Saint-Marcel",
+            9
+          ]
+        ]
+      },
+      "type": {
+        "types": {
+          "str": 36181
+        },
+        "missing": 0,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "commune",
+            34938
+          ],
+          [
+            "epci",
+            1243
+          ]
+        ]
+      },
+      "population": {
+        "types": {
+          "int": 36181
+        },
+        "missing": 0,
+        "min": 0,
+        "max": 7115576,
+        "modalities": []
+      },
+      "alt_minimum": {
+        "types": {
+          "int": 36181
+        },
+        "missing": 0,
+        "min": -119,
+        "max": 1782,
+        "modalities": []
+      },
+      "alt_moyenne": {
+        "types": {
+          "int": 35402,
+          "float": 587
+        },
+        "missing": 192,
+        "min": -39,
+        "max": 2884,
+        "modalities": []
+      },
+      "alt_maximum": {
+        "types": {
+          "int": 36181
+        },
+        "missing": 0,
+        "min": 4,
+        "max": 4777,
+        "modalities": []
+      },
+      "nom_departement": {
+        "types": {
+          "str": 36181
+        },
+        "missing": 0,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "Pas-de-Calais",
+            906
+          ],
+          [
+            "Aisne",
+            817
+          ],
+          [
+            "Somme",
+            784
+          ],
+          [
+            "Moselle",
+            746
+          ],
+          [
+            "Seine-Maritime",
+            724
+          ]
+        ]
+      },
+      "commune_littorale": {
+        "types": {
+          "bool": 35989
+        },
+        "missing": 192,
+        "min": null,
+        "max": null,
+        "modalities": []
+      },
+      "nombre_communes": {
+        "types": {
+          "int": 35985
+        },
+        "missing": 196,
+        "min": 3,
+        "max": 158,
+        "modalities": []
+      },
+      "identifiant_epci_parent": {
+        "types": {
+          "str": 34746
+        },
+        "missing": 1435,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "200067106",
+            158
+          ],
+          [
+            "200067213",
+            143
+          ],
+          [
+            "200041523",
+            129
+          ],
+          [
+            "200067205",
+            129
+          ],
+          [
+            "245701206",
+            128
+          ]
+        ]
+      },
+      "nom_epci_parent": {
+        "types": {
+          "str": 34742
+        },
+        "missing": 1439,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "CA du Pays Basque",
+            158
+          ],
+          [
+            "CU du Grand Reims",
+            143
+          ],
+          [
+            "CC de la Haute Saintonge",
+            129
+          ],
+          [
+            "CA du Cotentin",
+            129
+          ],
+          [
+            "CC du Saulnois",
+            128
+          ]
+        ]
+      },
+      "grand_paris": {
+        "types": {
+          "str": 34746
+        },
+        "missing": 1435,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "Non",
+            34616
+          ],
+          [
+            "Oui",
+            130
+          ]
+        ]
+      },
+      "risques": {
+        "types": {
+          "list": 36181
+        },
+        "missing": 0,
+        "min": null,
+        "max": null,
+        "modalities": []
+      },
+      "icu": {
+        "types": {
+          "int": 1214
+        },
+        "missing": 34967,
+        "min": 1,
+        "max": 6,
+        "modalities": []
+      },
+      "opp_ref_index": {
+        "types": {
+          "int": 3433
+        },
+        "missing": 32748,
+        "min": 1,
+        "max": 497,
+        "modalities": []
+      },
+      "tranche_alt_max": {
+        "types": {
+          "int": 3433
+        },
+        "missing": 32748,
+        "min": 300,
+        "max": 4800,
+        "modalities": []
+      },
+      "tranche_alt_min": {
+        "types": {
+          "int": 3433
+        },
+        "missing": 32748,
+        "min": 0,
+        "max": 1800,
+        "modalities": []
+      },
+      "massif_rattachement": {
+        "types": {
+          "str": 3433
+        },
+        "missing": 32748,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "Hautes-Vosges",
+            175
+          ],
+          [
+            "Réverotte",
+            167
+          ],
+          [
+            "Monts-du-Forez",
+            108
+          ],
+          [
+            "Mont-dOr",
+            100
+          ],
+          [
+            "couseran",
+            94
+          ]
+        ]
+      },
+      "port_rattachement": {
+        "types": {
+          "str": 10351
+        },
+        "missing": 25830,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "Calais",
+            2305
+          ],
+          [
+            "Le Havre",
+            1818
+          ],
+          [
+            "Saint-Jean-de-Luz",
+            1406
+          ],
+          [
+            "Saint-Malo",
+            1121
+          ],
+          [
+            "La Rochelle",
+            922
+          ]
+        ]
+      },
+      "aff_nivmer": {
+        "types": {
+          "int": 192
+        },
+        "missing": 35989,
+        "min": 0,
+        "max": 1,
+        "modalities": []
+      },
+      "points": {
+        "types": {
+          "dict": 192
+        },
+        "missing": 35989,
+        "min": null,
+        "max": null,
+        "modalities": []
+      },
+      "domaine": {
+        "types": {
+          "str": 192
+        },
+        "missing": 35989,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "Martinique",
+            34
+          ],
+          [
+            "Nouvelle-Calédonie",
+            33
+          ],
+          [
+            "Guadeloupe",
+            32
+          ],
+          [
+            "Réunion",
+            24
+          ],
+          [
+            "Guyane",
+            22
+          ]
+        ]
+      },
+      "horizon": {
+        "types": {
+          "str": 192
+        },
+        "missing": 35989,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "['RWL14', 'RWL19', 'RWL27']",
+            68
+          ],
+          [
+            "['RWL15', 'RWL20', 'RWL30']",
+            50
+          ],
+          [
+            "['RWL12', 'RWL16', 'RWL23']",
+            28
+          ],
+          [
+            "['RWL15', 'RWL20', 'RWL29']",
+            24
+          ],
+          [
+            "['RWL17', 'RWL23', 'RWL35']",
+            22
+          ]
+        ]
+      },
+      "Point Agro Identifiant": {
+        "types": {
+          "int": 101
+        },
+        "missing": 36080,
+        "min": 213,
+        "max": 26207,
+        "modalities": []
+      },
+      "Point Agro Latitude": {
+        "types": {
+          "float": 99,
+          "int": 2
+        },
+        "missing": 36080,
+        "min": -22.65,
+        "max": 18.075,
+        "modalities": []
+      },
+      "Point Agro Longitude": {
+        "types": {
+          "float": 98,
+          "int": 3
+        },
+        "missing": 36080,
+        "min": -63.075,
+        "max": 167.875,
+        "modalities": []
+      },
+      "Point Agro Altitude": {
+        "types": {
+          "int": 101
+        },
+        "missing": 36080,
+        "min": 0,
+        "max": 598,
+        "modalities": []
+      },
+      "alt_mairie": {
+        "types": {
+          "int": 96
+        },
+        "missing": 36085,
+        "min": 2,
+        "max": 1200,
+        "modalities": []
+      },
+      "agro_alt_basse": {
+        "types": {
+          "int": 24
+        },
+        "missing": 36157,
+        "min": 0,
+        "max": 1118,
+        "modalities": []
+      },
+      "agro_alt_haute": {
+        "types": {
+          "int": 20
+        },
+        "missing": 36161,
+        "min": 242,
+        "max": 968,
+        "modalities": []
+      },
+      "Risques Littoraux": {
+        "types": {
+          "int": 33
+        },
+        "missing": 36148,
+        "min": 0,
+        "max": 1,
+        "modalities": []
+      }
+    }
+  },
+  "climate_values": {
+    "rows": 3137217,
+    "columns": 11,
+    "duplicate_business_keys": 0,
+    "fields": {
+      "indicator": {
+        "types": {
+          "str": 3137217
+        },
+        "missing": 0,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "G1",
+            419157
+          ],
+          [
+            "G3",
+            419157
+          ],
+          [
+            "AG1",
+            419157
+          ],
+          [
+            "G4",
+            416952
+          ],
+          [
+            "R1",
+            416952
+          ]
+        ]
+      },
+      "period": {
+        "types": {
+          "str": 3137217
+        },
+        "missing": 0,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "2030",
+            1045739
+          ],
+          [
+            "2050",
+            1045739
+          ],
+          [
+            "2100",
+            1045739
+          ]
+        ]
+      },
+      "season": {
+        "types": {
+          "str": 3137217
+        },
+        "missing": 0,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "annuel",
+            628890
+          ],
+          [
+            "hiver",
+            625428
+          ],
+          [
+            "printemps",
+            625428
+          ],
+          [
+            "été",
+            625428
+          ],
+          [
+            "automne",
+            625428
+          ]
+        ]
+      },
+      "type_ind": {
+        "types": {
+          "str": 3137217
+        },
+        "missing": 0,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "saisonnier",
+            2508327
+          ],
+          [
+            "annuel",
+            628890
+          ]
+        ]
+      },
+      "label": {
+        "types": {
+          "str": 2508327,
+          "NoneType": 625428
+        },
+        "missing": 628890,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "hiver",
+            625428
+          ],
+          [
+            "printemps",
+            625428
+          ],
+          [
+            "été",
+            625428
+          ],
+          [
+            "automne",
+            625428
+          ],
+          [
+            "Saison sèche",
+            1476
+          ]
+        ]
+      },
+      "ref": {
+        "types": {
+          "float": 2998623,
+          "int": 138594
+        },
+        "missing": 0,
+        "min": -5.74,
+        "max": 2358.6,
+        "modalities": []
+      },
+      "min": {
+        "types": {
+          "float": 3010343,
+          "int": 126874
+        },
+        "missing": 0,
+        "min": -5.02,
+        "max": 2002.8,
+        "modalities": []
+      },
+      "mean": {
+        "types": {
+          "float": 2986906,
+          "int": 150311
+        },
+        "missing": 0,
+        "min": -4.45,
+        "max": 2560,
+        "modalities": []
+      },
+      "max": {
+        "types": {
+          "float": 3102253,
+          "int": 34964
+        },
+        "missing": 0,
+        "min": -3.89,
+        "max": 2935.8,
+        "modalities": []
+      },
+      "seas": {
+        "types": {
+          "str": 6615
+        },
+        "missing": 3130602,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "JASON",
+            810
+          ],
+          [
+            "AM",
+            621
+          ],
+          [
+            "DJ",
+            612
+          ],
+          [
+            "FMA",
+            612
+          ],
+          [
+            "MJ",
+            612
+          ]
+        ]
+      },
+      "months_name": {
+        "types": {
+          "str": 6615
+        },
+        "missing": 3130602,
+        "min": null,
+        "max": null,
+        "modalities": [
+          [
+            "Juillet, Août, Septembre, Octobre, Novembre",
+            810
+          ],
+          [
+            "Avril, Mai",
+            621
+          ],
+          [
+            "Décembre, Janvier",
+            612
+          ],
+          [
+            "Février, Mars, Avril",
+            612
+          ],
+          [
+            "Mai, Juin",
+            612
+          ]
+        ]
+      }
+    }
+  }
+}

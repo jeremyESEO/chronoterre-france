@@ -1,0 +1,17 @@
+{
+  "raw": "flood_toulouse",
+  "repairs": [
+    {
+      "feature": 0,
+      "reason": "Too few points in geometry component[1.32409939847351 43.7374373870222]",
+      "method": "GEOS make_valid; composantes polygonales conservées",
+      "original_raw": "flood_toulouse"
+    },
+    {
+      "feature": 1,
+      "reason": "Self-intersection[1.35770401440925 43.6945613118509]",
+      "method": "GEOS make_valid; composantes polygonales conservées",
+      "original_raw": "flood_toulouse"
+    }
+  ]
+}

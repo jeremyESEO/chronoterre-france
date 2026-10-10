@@ -1,0 +1,16 @@
+erDiagram
+ SOURCE ||--o{ DATASET_VERSION : publie
+ DATASET_VERSION ||--o{ RAW_FILE : conserve
+ COMMUNE ||--o{ CLIMATE_VALUE : situe
+ INDICATOR ||--o{ CLIMATE_VALUE : definit
+ PERIOD ||--o{ CLIMATE_VALUE : borne
+ COMMUNE ||--o{ COMMUNE_HAZARD : recense
+ HAZARD ||--o{ COMMUNE_HAZARD : qualifie
+ FOSSIL_SITE ||--o{ FOSSIL_OCCURRENCE : regroupe
+ TAXON ||--o{ FOSSIL_OCCURRENCE : identifie
+ BIBLIOGRAPHY ||--o{ FOSSIL_OCCURRENCE : documente
+ TAXON ||--o{ TAXON_MEDIA : illustre
+ MEDIA ||--o{ TAXON_MEDIA : associe
+ PARCEL ||--o{ PARCEL_ZONE : intersecte
+ URBAN_ZONE ||--o{ PARCEL_ZONE : intersecte
+ URBAN_DOCUMENT ||--o{ URBAN_ZONE : definit

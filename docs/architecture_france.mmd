@@ -1,0 +1,11 @@
+flowchart TD
+ A["Producteurs : MF, PBDB, IGN, DREAL, BRGM"] --> B["Collecteurs Python : délais et reprises bornées"]
+ B --> C["Raw horodaté + manifeste + SHA-256"]
+ C --> D["Profilage puis contrôles versionnés"]
+ D --> E["Rejets motivés et journal des réparations"]
+ D --> F["SQLite : contraintes et index RTree"]
+ F --> G["Instantanés par département"]
+ F --> H["API locale Python"]
+ G --> I["Carte MapLibre et fiches"]
+ I --> J["Services publics IGN au clic"]
+ F --> K["18 analyses SQL et rapport académique"]

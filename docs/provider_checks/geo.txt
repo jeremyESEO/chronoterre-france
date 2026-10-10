@@ -1,0 +1,1 @@
+{"nom":"La Rochelle","code":"17300","codeDepartement":"17","siren":"211703004","codeEpci":"241700434","codeRegion":"75","codesPostaux":["17000"],"population":79851}

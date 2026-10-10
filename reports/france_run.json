@@ -1,0 +1,137 @@
+{
+  "executed_at": "2026-10-10T21:14:49.827779+00:00",
+  "duration_seconds": 131.81,
+  "status": "PASS_WITH_LIMITS",
+  "counts": {
+    "bibliography": 2487,
+    "climate_model": 2,
+    "climate_place": 34938,
+    "climate_value": 4182956,
+    "commune": 34969,
+    "commune_hazard": 128237,
+    "dataset_version": 58,
+    "department": 109,
+    "fossil_occurrence": 48126,
+    "fossil_site": 7885,
+    "geological_interval": 432,
+    "hazard": 15,
+    "hazard_zone": 129,
+    "indicator": 13,
+    "media": 5,
+    "parcel": 3,
+    "parcel_zone": 4,
+    "period": 4,
+    "postal_code": 35493,
+    "prescription": 98,
+    "raw_file": 58,
+    "scenario": 2,
+    "source": 10,
+    "spatial_intersection": 1161,
+    "taxon": 15537,
+    "taxon_media": 13,
+    "test_place": 9,
+    "urban_document": 26,
+    "urban_zone": 10
+  },
+  "fossil_input": 53885,
+  "fossil_accepted": 48126,
+  "rejected": 5761,
+  "failures": {
+    "F03": 4683,
+    "F02": 1079,
+    "G01": 2
+  },
+  "climate_outside_scope": {
+    "EPCI_ou_code_absent_du_COG": 1243
+  },
+  "rules": [
+    {
+      "id": "F01",
+      "name": "Identifiant et taxon",
+      "condition": "Identifiants PBDB numériques positifs, nom non vide",
+      "action": "rejet",
+      "failures": 0
+    },
+    {
+      "id": "F02",
+      "name": "Coordonnées",
+      "condition": "WGS84 fini, point dans un contour départemental français",
+      "action": "rejet",
+      "failures": 1079
+    },
+    {
+      "id": "F03",
+      "name": "Provenance",
+      "condition": "Pas de coordonnées politiques ou de contradiction déjà connue",
+      "action": "rejet",
+      "failures": 4683
+    },
+    {
+      "id": "F04",
+      "name": "Âges",
+      "condition": "0 ≤ min_ma ≤ max_ma ≤ 4600 Ma",
+      "action": "rejet",
+      "failures": 0
+    },
+    {
+      "id": "F05",
+      "name": "Référence",
+      "condition": "Identifiant et citation présents",
+      "action": "rejet",
+      "failures": 0
+    },
+    {
+      "id": "U01",
+      "name": "Unicité",
+      "condition": "Clé métier unique",
+      "action": "déduplication et comptage",
+      "failures": 0
+    },
+    {
+      "id": "C01",
+      "name": "Valeur climatique",
+      "condition": "Nombre fini dans les bornes physiques de son unité",
+      "action": "rejet",
+      "failures": 0
+    },
+    {
+      "id": "C02",
+      "name": "Fourchette",
+      "condition": "Borne basse ≤ médiane ≤ borne haute",
+      "action": "rejet",
+      "failures": 0
+    },
+    {
+      "id": "C03",
+      "name": "Série",
+      "condition": "Indicateur connu, commune jointe par code INSEE, horizon publié",
+      "action": "rejet",
+      "failures": 0
+    },
+    {
+      "id": "G01",
+      "name": "Géométrie",
+      "condition": "Valide et non vide, référence connue",
+      "action": "rejet",
+      "failures": 2
+    },
+    {
+      "id": "P01",
+      "name": "Raw",
+      "condition": "SHA-256 identique aux octets collectés",
+      "action": "arrêt du pipeline",
+      "failures": 0
+    },
+    {
+      "id": "M01",
+      "name": "Média",
+      "condition": "Auteur, licence, page source et correspondance taxonomique",
+      "action": "exclusion de la galerie",
+      "failures": 0
+    }
+  ],
+  "semantic_sha256": "fcc5c10ab1bc4ee1d63f98ffddd73898fd112e25adc0f2a26364f9d19d769f59",
+  "foreign_keys": "ok",
+  "integrity": "ok",
+  "raw_verified": 58
+}

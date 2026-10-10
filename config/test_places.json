@@ -1,0 +1,317 @@
+[
+  {
+    "id": "paris",
+    "label": "Paris - Hôtel de Ville",
+    "code": "75056",
+    "lon": 2.3518,
+    "lat": 48.8566,
+    "kind": "urbain dense",
+    "resources": {
+      "parcelle": {
+        "raw": "urban_paris_parcelle",
+        "status": "ok",
+        "count": 0
+      },
+      "document": {
+        "raw": "urban_paris_document",
+        "status": "ok",
+        "count": 1
+      },
+      "zone-urba": {
+        "raw": "urban_paris_zone-urba",
+        "status": "ok",
+        "count": 1
+      },
+      "prescription-surf": {
+        "raw": "urban_paris_prescription-surf",
+        "status": "ok",
+        "count": 2
+      },
+      "assiette-sup-s": {
+        "raw": "urban_paris_assiette-sup-s",
+        "status": "ok",
+        "count": 3
+      }
+    }
+  },
+  {
+    "id": "larochelle",
+    "label": "La Rochelle - mairie",
+    "code": "17300",
+    "lon": -1.152,
+    "lat": 46.16,
+    "kind": "littoral atlantique",
+    "resources": {
+      "parcelle": {
+        "raw": "urban_larochelle_parcelle",
+        "status": "ok",
+        "count": 0
+      },
+      "document": {
+        "raw": "urban_larochelle_document",
+        "status": "ok",
+        "count": 1
+      },
+      "zone-urba": {
+        "raw": "urban_larochelle_zone-urba",
+        "status": "ok",
+        "count": 1
+      },
+      "prescription-surf": {
+        "raw": "urban_larochelle_prescription-surf",
+        "status": "ok",
+        "count": 2
+      },
+      "assiette-sup-s": {
+        "raw": "urban_larochelle_assiette-sup-s",
+        "status": "ok",
+        "count": 1
+      }
+    }
+  },
+  {
+    "id": "arles",
+    "label": "Arles - centre",
+    "code": "13004",
+    "lon": 4.627,
+    "lat": 43.677,
+    "kind": "vallée inondable / Méditerranée",
+    "resources": {
+      "parcelle": {
+        "raw": "urban_arles_parcelle",
+        "status": "ok",
+        "count": 1
+      },
+      "document": {
+        "raw": "urban_arles_document",
+        "status": "ok",
+        "count": 2
+      },
+      "zone-urba": {
+        "raw": "urban_arles_zone-urba",
+        "status": "ok",
+        "count": 2
+      },
+      "prescription-surf": {
+        "raw": "urban_arles_prescription-surf",
+        "status": "ok",
+        "count": 9
+      },
+      "assiette-sup-s": {
+        "raw": "urban_arles_assiette-sup-s",
+        "status": "ok",
+        "count": 2
+      }
+    }
+  },
+  {
+    "id": "tours",
+    "label": "Tours - Loire",
+    "code": "37261",
+    "lon": 0.691,
+    "lat": 47.398,
+    "kind": "vallée inondable",
+    "resources": {
+      "parcelle": {
+        "raw": "urban_tours_parcelle",
+        "status": "ok",
+        "count": 0
+      },
+      "document": {
+        "raw": "urban_tours_document",
+        "status": "ok",
+        "count": 1
+      },
+      "zone-urba": {
+        "raw": "urban_tours_zone-urba",
+        "status": "ok",
+        "count": 1
+      },
+      "prescription-surf": {
+        "raw": "urban_tours_prescription-surf",
+        "status": "ok",
+        "count": 4
+      },
+      "assiette-sup-s": {
+        "raw": "urban_tours_assiette-sup-s",
+        "status": "ok",
+        "count": 47
+      }
+    }
+  },
+  {
+    "id": "chamonix",
+    "label": "Chamonix - centre",
+    "code": "74056",
+    "lon": 6.869,
+    "lat": 45.9237,
+    "kind": "montagne",
+    "resources": {
+      "parcelle": {
+        "raw": "urban_chamonix_parcelle",
+        "status": "ok",
+        "count": 0
+      },
+      "document": {
+        "raw": "urban_chamonix_document",
+        "status": "ok",
+        "count": 1
+      },
+      "zone-urba": {
+        "raw": "urban_chamonix_zone-urba",
+        "status": "ok",
+        "count": 1
+      },
+      "prescription-surf": {
+        "raw": "urban_chamonix_prescription-surf",
+        "status": "ok",
+        "count": 1
+      },
+      "assiette-sup-s": {
+        "raw": "urban_chamonix_assiette-sup-s",
+        "status": "ok",
+        "count": 1
+      }
+    }
+  },
+  {
+    "id": "gueret",
+    "label": "Guéret - centre",
+    "code": "23096",
+    "lon": 1.871,
+    "lat": 46.17,
+    "kind": "commune rurale / centralité",
+    "resources": {
+      "parcelle": {
+        "raw": "urban_gueret_parcelle",
+        "status": "ok",
+        "count": 0
+      },
+      "document": {
+        "raw": "urban_gueret_document",
+        "status": "ok",
+        "count": 1
+      },
+      "zone-urba": {
+        "raw": "urban_gueret_zone-urba",
+        "status": "ok",
+        "count": 1
+      },
+      "prescription-surf": {
+        "raw": "urban_gueret_prescription-surf",
+        "status": "ok",
+        "count": 0
+      },
+      "assiette-sup-s": {
+        "raw": "urban_gueret_assiette-sup-s",
+        "status": "ok",
+        "count": 2
+      }
+    }
+  },
+  {
+    "id": "ajaccio",
+    "label": "Ajaccio - mairie",
+    "code": "2A004",
+    "lon": 8.7384,
+    "lat": 41.9192,
+    "kind": "Corse",
+    "resources": {
+      "parcelle": {
+        "raw": "urban_ajaccio_parcelle",
+        "status": "ok",
+        "count": 1
+      },
+      "document": {
+        "raw": "urban_ajaccio_document",
+        "status": "ok",
+        "count": 1
+      },
+      "zone-urba": {
+        "raw": "urban_ajaccio_zone-urba",
+        "status": "ok",
+        "count": 1
+      },
+      "prescription-surf": {
+        "raw": "urban_ajaccio_prescription-surf",
+        "status": "ok",
+        "count": 1
+      },
+      "assiette-sup-s": {
+        "raw": "urban_ajaccio_assiette-sup-s",
+        "status": "ok",
+        "count": 3
+      }
+    }
+  },
+  {
+    "id": "reunion",
+    "label": "Saint-Denis de La Réunion - mairie",
+    "code": "97411",
+    "lon": 55.448,
+    "lat": -20.879,
+    "kind": "outre-mer",
+    "resources": {
+      "parcelle": {
+        "raw": "urban_reunion_parcelle",
+        "status": "ok",
+        "count": 1
+      },
+      "document": {
+        "raw": "urban_reunion_document",
+        "status": "ok",
+        "count": 1
+      },
+      "zone-urba": {
+        "raw": "urban_reunion_zone-urba",
+        "status": "ok",
+        "count": 1
+      },
+      "prescription-surf": {
+        "raw": "urban_reunion_prescription-surf",
+        "status": "ok",
+        "count": 6
+      },
+      "assiette-sup-s": {
+        "raw": "urban_reunion_assiette-sup-s",
+        "status": "ok",
+        "count": 2
+      }
+    }
+  },
+  {
+    "id": "rennes",
+    "label": "Rennes - exemple IGN",
+    "code": "35238",
+    "lon": -1.691634,
+    "lat": 48.104237,
+    "kind": "urbanisme",
+    "resources": {
+      "parcelle": {
+        "raw": "urban_rennes_parcelle",
+        "status": "ok",
+        "count": 0
+      },
+      "document": {
+        "raw": "urban_rennes_document",
+        "status": "ok",
+        "count": 1
+      },
+      "zone-urba": {
+        "raw": "urban_rennes_zone-urba",
+        "status": "ok",
+        "count": 1
+      },
+      "prescription-surf": {
+        "raw": "urban_rennes_prescription-surf",
+        "status": "ok",
+        "count": 12
+      },
+      "assiette-sup-s": {
+        "raw": "urban_rennes_assiette-sup-s",
+        "status": "ok",
+        "count": 1
+      }
+    }
+  }
+]

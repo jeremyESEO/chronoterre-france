@@ -1,0 +1,67 @@
+{
+  "version": 2,
+  "files": {
+    "flood_toulouse": {
+      "source": "dreal_occitanie",
+      "url": "https://catalogue.picto-occitanie.fr/api/data/7c91530f-6a26-41e5-9dee-19adec8af824?srs=EPSG:4326",
+      "request_headers": {},
+      "path": "data/raw/20260925T134013713360Z_flood_toulouse.raw",
+      "sha256": "cd7fe677077e545a76486a7a1de50514c3aa306ac77044a783e9f4fddf967498",
+      "bytes": 543545,
+      "fetched_at": "2026-09-25T13:40:21.931334+00:00",
+      "content_type": "application/json",
+      "status": 200,
+      "response_headers": {},
+      "coverage": "TRI Toulouse uniquement ; entrée 2013-07-18 ; ne pas confondre avec un PPRI",
+      "producer": "DREAL Occitanie",
+      "license": "Licence Ouverte 2.0"
+    },
+    "rga_bordeaux": {
+      "source": "bordeaux_metropole",
+      "url": "https://datahub.bordeaux-metropole.fr/api/explore/v2.1/catalog/datasets/ri_alearga_s/exports/geojson",
+      "request_headers": {},
+      "path": "data/raw/20260925T134021984519Z_rga_bordeaux.raw",
+      "sha256": "a431ae1d75cab36df1f60ec075b576ab8ef9ae2b09ed3969853cdc5a6c442fed",
+      "bytes": 1308593,
+      "fetched_at": "2026-09-25T13:40:30.263134+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {},
+      "coverage": "Bordeaux Métropole uniquement ; métadonnées du portail conservées, ne pas assimiler au zonage national révisé sans vérification",
+      "producer": "Bordeaux Métropole / BRGM",
+      "license": "Licence Ouverte 2.0"
+    },
+    "rga_metadata": {
+      "source": "bordeaux_metropole",
+      "url": "https://datahub.bordeaux-metropole.fr/api/explore/v2.1/catalog/datasets/ri_alearga_s",
+      "request_headers": {},
+      "path": "data/raw/20260925T134030440167Z_rga_metadata.raw",
+      "sha256": "92068f5227b0f652a7e2ae5bd2f34fc36c209bd4851273850a1f5b78bb679e21",
+      "bytes": 6297,
+      "fetched_at": "2026-09-25T13:40:38.341883+00:00",
+      "content_type": "application/json; charset=utf-8",
+      "status": 200,
+      "response_headers": {}
+    }
+  },
+  "attempts": [
+    {
+      "key": "flood_toulouse",
+      "at": "2026-09-25T13:40:21.938762+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "rga_bordeaux",
+      "at": "2026-09-25T13:40:30.275642+00:00",
+      "status": 200,
+      "attempt": 1
+    },
+    {
+      "key": "rga_metadata",
+      "at": "2026-09-25T13:40:38.341973+00:00",
+      "status": 200,
+      "attempt": 1
+    }
+  ]
+}

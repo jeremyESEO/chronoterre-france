@@ -1,0 +1,7 @@
+{
+  "path": "data/curated/france.sqlite.gz",
+  "bytes": 104447299,
+  "uncompressed_bytes": 527294464,
+  "uncompressed_sha256": "c6ea4c245e9672956d825079bff2699f01004fb8299e25d0f0ea1c4e712c3a55",
+  "compressed_sha256": "aa9c7b685d879a323eee0b67d519963ffceb9dada53c31cee3e2b08816e63019"
+}

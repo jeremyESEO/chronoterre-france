@@ -1,0 +1,29 @@
+[
+  {
+    "id": "toulouse-flood",
+    "raw": "flood_toulouse",
+    "source": "dreal_occitanie",
+    "producer": "DREAL Occitanie",
+    "label": "Surfaces inondables du TRI de Toulouse",
+    "hazard": "river_flood",
+    "nature": "enveloppe_aléa",
+    "url": "https://catalogue.picto-occitanie.fr/api/data/7c91530f-6a26-41e5-9dee-19adec8af824?srs=EPSG:4326",
+    "scenario_field": "scenario",
+    "label_field": "id_s_inond",
+    "coverage": "TRI Toulouse uniquement ; entrée 2013-07-18 ; ne pas confondre avec un PPRI",
+    "curated": "data/curated/flood_toulouse.geojson"
+  },
+  {
+    "id": "bordeaux-rga",
+    "raw": "rga_bordeaux",
+    "source": "bordeaux_metropole",
+    "producer": "Bordeaux Métropole / BRGM",
+    "label": "Retrait-gonflement des argiles, Bordeaux Métropole",
+    "hazard": "rga",
+    "nature": "exposition_cartographiée",
+    "url": "https://datahub.bordeaux-metropole.fr/api/explore/v2.1/catalog/datasets/ri_alearga_s/exports/geojson",
+    "label_field": "alea",
+    "coverage": "Bordeaux Métropole uniquement ; métadonnées du portail conservées, ne pas assimiler au zonage national révisé sans vérification",
+    "curated": "data/curated/rga_bordeaux.geojson"
+  }
+]
