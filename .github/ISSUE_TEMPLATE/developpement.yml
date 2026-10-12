@@ -1,0 +1,28 @@
+name: Développement ou intégration de données
+description: Suivre une fonctionnalité avec des critères vérifiables
+title: "[Développement] "
+body:
+  - type: textarea
+    id: besoin
+    attributes:
+      label: Besoin utilisateur
+      description: Quel problème concret doit être résolu ?
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources et couverture
+      description: Producteur, accès, licence, période, résolution et limitations.
+  - type: textarea
+    id: reception
+    attributes:
+      label: Critères de réception
+      description: Résultats qui devront être démontrés et tests à exécuter.
+    validations:
+      required: true
+  - type: textarea
+    id: preuves
+    attributes:
+      label: Preuves de livraison
+      description: À compléter avec fichiers, rapports, tests et captures réels.

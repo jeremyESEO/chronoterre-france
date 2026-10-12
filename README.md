@@ -87,3 +87,7 @@ Les deux plus grandes archives sont découpées en blocs pour la limite du dép�
 Depuis la carte, utilisez **Trouver mon lieu de vie**, réglez les maxima climatiques et cliquez sur **Explorer les résultats**. Le tri fonctionne dans les deux sens, à horizon constant, sur 34 746 communes de métropole et Corse. Les règles, exclusions, données récentes et limites sont dans [docs/parcours_installation.md](docs/parcours_installation.md).
 
 Les index sont inclus ; aucune collecte nationale ne s'exécute dans le navigateur. La fiche **Climat à travers le temps** distingue projections et réanalyse récente : 8 lieux validés, 29 224 journées de 2016 à 2025. Données manquantes visibles. Le classement ne certifie ni un logement, ni un risque à l'adresse, ni la qualité de vie globale.
+
+## Suivre l'avancement du projet
+
+Le statut réel des fonctionnalités et les preuves sont dans [AVANCEMENT.md](AVANCEMENT.md). Les développements prévus vers une plateforme de production sont dans [ROADMAP.md](ROADMAP.md). Les issues et pull requests serviront au suivi après création du dépôt GitHub. Les workflows présents ne sont pas déclarés réussis avant leur exécution distante.
