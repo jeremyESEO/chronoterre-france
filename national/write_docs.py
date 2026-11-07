@@ -120,7 +120,7 @@ Collecte nationale de référence : 25 septembre 2026. Reprise et tests : octobr
 | IGN Géoplateforme — https://data.geopf.fr/wmts ; https://data.geopf.fr/geocodage/search | fonds ouverts attribués IGN/DGFiP ; services publics sans clé pour les couches retenues | plan, ortho actuelle, pentes, cadastre, ortho 1950–1965 ; dates de prises de vue variables | couches issues du GetCapabilities ; pas de téléchargement massif des tuiles ; pas de SLA revendiqué |
 | IGN API Carto — https://apicarto.ign.fr/api/doc/gpu.yml et cadastre.yml | Licence Ouverte pour données géographiques publiques ; textes selon producteur ; sans clé | parcelle/document/zone-urba/prescription-surf/assiette-sup-s ; EPSG:4326 | 45 réponses réelles pour neuf points ; live au clic, cache livré ; quotas non établis |
 | Géorisques — https://www.georisques.gouv.fr/doc-api | données publiques selon jeu ; certaines API nécessitent jeton | inventaire communal via Climadiag ; pas d’enveloppes nationales intégrées | accès directs précédemment en échec 502/HTML ; aucun contournement ni jeton inventé |
-| DREAL Occitanie — https://catalogue.picto-occitanie.fr/api/data/7c91530f-6a26-41e5-9dee-19adec8af824?srs=EPSG:4326 | vérifier fiche originale : métadonnée de licence manquante sur la copie data.gouv | trois surfaces Toulouse, source 2013, scénarios codés | accès testé et raw conservé ; topologie réparée et journalisée ; conditions détaillées dans complément de licence |
+| DREAL Occitanie — https://catalogue.picto-occitanie.fr/api/data/7c91530f-6a26-41e5-9dee-19adec8af824?srs=EPSG:4326 | utilisation libre avec attribution du producteur et date de mise à jour ; [fiche originale et preuve](licence_dreal.md) | trois surfaces Toulouse, géométries 2013, révision déclarée 24/01/2017, scénarios codés | accès testé et raw conservé ; topologie réparée et journalisée ; conditions détaillées dans complément de licence |
 | Bordeaux Métropole/BRGM — https://datahub.bordeaux-metropole.fr/api/explore/v2.1/catalog/datasets/ri_alearga_s/exports/geojson | Licence Ouverte, lien exact conservé dans le raw ri_alearga_s metadata | 127 objets bruts (126 géométries retenues), secteur Bordeaux uniquement | export et métadonnées intégrés ; horodatage d’export ≠ nouvelle étude géologique |
 | Commons et auteurs — pages de chaque fichier dans media_registry.json | CC BY / CC BY-SA par fichier, auteurs conservés | cinq fichiers, même taxon ou genre | contrôles individuels ; pas le premier résultat automatique ; couverture calculée SQL 15 |
 | Open-Meteo — https://open-meteo.com/en/docs/climate-api | conditions Open-Meteo et attribution CMIP6 ; voir V1 | documentation jusqu’à 2050 | conservé dans V1 seulement ; exclu de +50 ans |
@@ -133,56 +133,7 @@ Collecte nationale de référence : 25 septembre 2026. Reprise et tests : octobr
 
 Climadiag : code public, métadonnées et réponse JSONL, repris pour séparation horizon/domaine et lecture par indicateur. GPU : documentation API et vraies réponses spatiales, repris pour la fiche de parcelle. PBDB : API paginée et collections/références, repris pour filtres spatiaux/taxonomiques. IGN : documentation et capabilities, repris pour fonds et attribution. Géorisques : documentation et essais en échec, pas d’inspection complète d’un parcours authentifié. Panoramax et Remonter le temps : pages/documentation seulement ; aucune prétention d’audit visuel approfondi.
 ''')
-write('soutenance_france.md','''# Démonstration de 3 à 5 minutes
-
-0:00–0:30 : question, usagers, deux parcours reliés par le territoire. Dire que la plateforme nationale est une extension du socle TP.
-
-0:30–1:00 : ouvrir un manifeste, montrer URL, date, SHA et fichier raw d’origine. Expliquer que le ZIP climatique est une compression sans perte.
-
-1:00–2:00 : exécuter `python -m national.demo`. Montrer la page PBDB réelle, le rejet `TEST_INVALIDE_ISOLE`, les effectifs et l’égalité des deux empreintes. Ouvrir `data/curated/demo_tp.sqlite`. La donnée invalide ne touche jamais la production.
-
-2:00–3:15 : application : rechercher La Rochelle, passer 2030 → 2100, afficher les preuves. Comparer Ajaccio. Signaler la maille climatique, le +50 ans désactivé et l’absence de score d’habitabilité. Cette partie doit être répétée dans un navigateur avant la soutenance, la QA visuelle n’ayant pas été possible dans la session de livraison.
-
-3:15–4:15 : passer aux fossiles, filtre taxonomique, découvrir une publication. Présenter une image illustrative et sa licence ; montrer aussi le cas sans image.
-
-4:15–5:00 : SQL 15 couverture des médias, rapport de qualité et une limite : seulement deux couches locales d’aléas. Montrer la sauvegarde V1.
-
-## Réponses techniques
-
-- Décision : comparer des expositions documentées et préparer les vérifications, sans décider un achat.
-- Choix des sources : producteurs identifiés, accès public réellement essayé, identifiants stables et provenance conservée.
-- Clé métier : occurrence_no PBDB ; climat = commune + indicateur + période + saison dans ce corpus unique.
-- Rejeu : base reconstruite atomiquement ; empreinte canonique des lignes triées de toutes les tables applicatives. Identité des clés et du contenu.
-- Source en panne : cache existant et état d’erreur explicite ; aucune valeur fictive. Mise à jour manuelle.
-- Changement de schéma : arrêt sur champ indispensable manquant, examen du raw, nouvelle version de contrat. Pas de changement silencieux de sens.
-- Production nationale spatiale : PostgreSQL/PostGIS, jobs d’import, stockage de fichiers, supervision, quotas et revue de licences ; le serveur local n’est pas exposé tel quel.
-- Pourquoi pas 2076 : les données proposent des niveaux/horizons, pas une trajectoire annuelle interpolable.
-- Pourquoi pas un score : des manques, des échelles et des natures incompatibles ; un bon indicateur ne compense pas une restriction.
-- V1 : tests conservés, données archivées ; pas de mélange ERA5/DRIAS ni de recyclage des compteurs.
-''')
-write('matrice_academique.md','''# Exigence → fichier → preuve
-
-La matrice synthétise les 13 pages des consignes du cours. Aucun conflit de barème identifié. Le socle court est `national.demo`, l’extension nationale est explicitement un travail supplémentaire.
-
-| Barème | Fichiers | Preuve |
-|---|---|---|
-| Problème et cas d’usage, 3 points | README, dossier | question unique, trois cas et KPI ci-dessous |
-| Sources et conformité, 3 | sources_france.md, manifestes, registre médias | URLs, réponses réelles, licences, limites et échecs |
-| Modèle et architecture, 3 | dictionnaire, modèles .mmd, sql/france_schema.sql, config/france_contract.json | grains, PK/FK, relations N–N, contrôles |
-| Collecte reproductible, 3 | national/collect*.py, data/raw | réponses immuables datées, paramètres dans URL, empreintes |
-| Qualité et rejets, 3 | national/validate.py, reports/france_profile_before.json, france_run.json, data/rejected | 12 règles, compteurs et raisons ; avant nettoyage |
-| Transformation et curated, 2 | national/pipeline.py, france.sqlite, dist/data | colonnes typées, déduplication, conversion des unités |
-| Idempotence et rapport, 2 | france_idempotence.json, demo_tp.json | deux exécutions complètes, mêmes lignes triées et mêmes clés |
-| Documentation et démonstration, 1 | README, soutenance, tests | lancement Windows, démonstration invalide isolée, limites honnêtes |
-
-## Trois cas d’usage et trois KPI
-
-1. En tant que personne préparant un déménagement, comparer les mêmes indicateurs climatiques sur deux à quatre communes. **KPI couverture climatique** = communes avec au moins une fiche / communes recherchables ×100, calcul SQL 01. Ce KPI ne mesure pas la sécurité d’un lieu.
-2. En tant que famille examinant un terrain, retrouver les contraintes et les preuves connues. **KPI complétude documentaire** = documents avec date d’approbation renseignée / documents collectés ×100, SQL 11. Dénominateur limité à l’échantillon, pas à tous les PLU français.
-3. En tant que curieux, comprendre une découverte et son illustration. **KPI couverture des médias fossiles** = occurrences liées à au moins une image de catégorie fossil / occurrences retenues ×100, SQL 15 ; les relations de même genre restent explicitement qualifiées.
-
-Au moins 100 observations : le socle exploite une page PBDB de 10 000 enregistrements réels et sa sélection contrôlée. La fixture invalide est ajoutée en mémoire uniquement et marquée test_only. Elle est exclue du numérateur des observations réelles.
-''')
+# La matrice du guide final et le conducteur d’oral sont des documents éditoriaux.
 write('postgis_evaluation.md','''# PostgreSQL/PostGIS : cible de montée en charge
 
 PostGIS est adapté aux intersections nationales de parcelles et d’aléas, avec index GiST et requêtes spatiales en base. Documentation producteur : https://postgis.net/documentation/ . SQLite + RTree et GEOS sont retenus pour un ZIP académique sans serveur de base à installer et un hébergement statique réellement disponible. Les millions de valeurs climatiques ne nécessitent pas une intersection géométrique à chaque mouvement de carte.

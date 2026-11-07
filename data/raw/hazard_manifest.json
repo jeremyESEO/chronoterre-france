@@ -14,7 +14,9 @@
       "response_headers": {},
       "coverage": "TRI Toulouse uniquement ; entrée 2013-07-18 ; ne pas confondre avec un PPRI",
       "producer": "DREAL Occitanie",
-      "license": "Licence Ouverte 2.0"
+      "license": "Utilisation libre avec attribution du producteur et date de mise à jour (conditions Picto-Occitanie)",
+      "source_revision": "2017-01-24",
+      "license_evidence": "https://catalogue.picto-occitanie.fr/geonetwork/srv/api/records/7c91530f-6a26-41e5-9dee-19adec8af824/formatters/xml"
     },
     "rga_bordeaux": {
       "source": "bordeaux_metropole",

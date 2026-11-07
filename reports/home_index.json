@@ -48,7 +48,10 @@
       "ETag": "\"18185f05-65addcb56ce80\"",
       "Last-Modified": "Mon, 07 Sep 2026 05:21:46 GMT",
       "Content-Length": "404250373"
-    }
+    },
+    "license": null,
+    "source_revision": null,
+    "license_evidence": null
   },
   "producer": "Météo-France / Climadiag Commune / DRIAS",
   "license": "Licence Ouverte Etalab",

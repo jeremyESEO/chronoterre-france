@@ -1,0 +1,13 @@
+{
+  "review_basis": "Âge du plus ancien téléchargement présent dans le lot, comparé au seuil interne de révision",
+  "sources": {
+    "geoapi": {"review_after_days": 90, "review_trigger": "Avant un nouveau rendu et si le référentiel des communes change"},
+    "etalab": {"review_after_days": 365, "review_trigger": "À chaque millésime de contours exploité"},
+    "pbdb": {"review_after_days": 90, "review_trigger": "Avant un nouveau rendu si de nouvelles occurrences sont utiles"},
+    "climadiag": {"review_after_days": 90, "review_trigger": "À chaque nouvelle publication pertinente des indicateurs ou niveaux TRACC"},
+    "gpu": {"review_after_days": 30, "review_trigger": "Avant toute réutilisation documentaire de l’échantillon"},
+    "cadastre": {"review_after_days": 30, "review_trigger": "Avant toute réutilisation de l’échantillon de parcelles"},
+    "dreal_occitanie": {"review_after_days": 180, "review_trigger": "Vérifier la fiche et le millésime avant une publication de cette couche locale"},
+    "bordeaux_metropole": {"review_after_days": 180, "review_trigger": "Vérifier le millésime et la portée de la couche locale avant publication"}
+  }
+}

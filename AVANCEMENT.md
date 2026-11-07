@@ -1,6 +1,6 @@
 # Avancement de ChronoTerre — France
 
-État documenté le 12 octobre 2026. Ce document distingue les résultats livrés, leurs limites et les développements prévus. Le dépôt GitHub et ses workflows ne sont pas considérés comme publiés ou exécutés tant que leur création distante n'est pas confirmée.
+État mis à jour le 7 novembre 2026. Le dépôt GitHub est public. Pour le guide final ESEO, partir du [point d’entrée de remise](docs/rendu_final.md) : synthèse séparée, ADR, suivi des runs et oral de 6 minutes.
 
 ## Pour le professeur
 
@@ -41,7 +41,7 @@ Site actuel : https://chronoterre-idf.jeremyhercent.chatgpt.site ; accès réser
 
 ## Vérifications
 
-Rapports locaux : home_tests.json, home_delayed.json, home_replay.json, home_sensitivity.json et front_dom.json. Ils décrivent leurs limites. Les tests DOM ne sont pas une recette WebGL/mobile. Une exécution GitHub Actions reste à obtenir après publication du dépôt.
+Rapports locaux : home_tests.json, home_delayed.json, home_replay.json, home_sensitivity.json et front_dom.json. Ils décrivent leurs limites. Les tests DOM ne sont pas une recette WebGL/mobile. Les workflows sont consultables dans [GitHub Actions](https://github.com/jeremyESEO/chronoterre-france/actions). Les essais du rendu sont décrits dans [les preuves de vérification](reports/rendu_final_verification.json).
 
 ## Organisation du suivi
 

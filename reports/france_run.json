@@ -1,6 +1,41 @@
 {
-  "executed_at": "2026-10-10T21:14:49.827779+00:00",
-  "duration_seconds": 131.81,
+  "pipeline": "ChronoTerre France",
+  "run_id": "20261107T175334Z-50eb71f1312a",
+  "contract_version": "2.0.1",
+  "started_at": "2026-11-07T17:53:34.242094+00:00",
+  "executed_at": "2026-11-07T17:55:46.859259+00:00",
+  "duration_seconds": 132.62,
+  "stages": [
+    {
+      "name": "chargement_config_et_archives",
+      "elapsed_seconds": 0.0
+    },
+    {
+      "name": "verification_raw",
+      "elapsed_seconds": 0.0
+    },
+    {
+      "name": "profilage_et_transformation",
+      "elapsed_seconds": 0.89
+    },
+    {
+      "name": "enrichissement_et_integrite",
+      "elapsed_seconds": 81.15
+    },
+    {
+      "name": "ecriture_rejets_et_exports",
+      "elapsed_seconds": 105.48
+    },
+    {
+      "name": "remplacement_sqlite",
+      "elapsed_seconds": 132.45
+    },
+    {
+      "name": "rapport_final",
+      "elapsed_seconds": 132.62
+    }
+  ],
+  "raw_verified": 58,
   "status": "PASS_WITH_LIMITS",
   "counts": {
     "bibliography": 2487,
@@ -33,9 +68,110 @@
     "urban_document": 26,
     "urban_zone": 10
   },
+  "metric_scope": "occurrences PBDB",
+  "input_rows": 53885,
+  "accepted_rows": 48126,
+  "rejected_rows": 5759,
+  "duplicates_removed": 0,
   "fossil_input": 53885,
   "fossil_accepted": 48126,
   "rejected": 5761,
+  "rejected_by_domain": {
+    "fossil": 5759,
+    "assiette-sup-s": 1,
+    "hazard": 1
+  },
+  "source_metrics": {
+    "pbdb": {
+      "unit": "occurrences",
+      "input": 53885,
+      "accepted": 48126,
+      "rejected": 5759,
+      "duplicates_removed": 0
+    },
+    "climadiag": {
+      "input_unit": "entités du fichier JSONL",
+      "input": 36181,
+      "communes_loaded": 34938,
+      "entities_outside_scope": 1243,
+      "accepted_values": 4182956,
+      "rejected_values": 0
+    }
+  },
+  "freshness": {
+    "bordeaux_metropole": {
+      "raw_files": 2,
+      "oldest_acquired_at": "2026-09-25T13:40:30.263134+00:00",
+      "latest_acquired_at": "2026-09-25T13:40:38.341883+00:00",
+      "max_acquisition_age_days": 43,
+      "review_after_days": 180,
+      "invalid_raw_timestamps": [],
+      "status": "WITHIN_POLICY"
+    },
+    "cadastre": {
+      "raw_files": 9,
+      "oldest_acquired_at": "2026-09-25T13:38:01.853426+00:00",
+      "latest_acquired_at": "2026-09-25T13:44:27.471173+00:00",
+      "max_acquisition_age_days": 43,
+      "review_after_days": 30,
+      "invalid_raw_timestamps": [],
+      "status": "REVIEW_DUE"
+    },
+    "climadiag": {
+      "raw_files": 1,
+      "oldest_acquired_at": "2026-09-25T13:44:38.503615+00:00",
+      "latest_acquired_at": "2026-09-25T13:44:38.503615+00:00",
+      "max_acquisition_age_days": 43,
+      "review_after_days": 90,
+      "invalid_raw_timestamps": [],
+      "status": "WITHIN_POLICY"
+    },
+    "dreal_occitanie": {
+      "raw_files": 1,
+      "oldest_acquired_at": "2026-09-25T13:40:21.931334+00:00",
+      "latest_acquired_at": "2026-09-25T13:40:21.931334+00:00",
+      "max_acquisition_age_days": 43,
+      "review_after_days": 180,
+      "invalid_raw_timestamps": [],
+      "status": "WITHIN_POLICY"
+    },
+    "etalab": {
+      "raw_files": 1,
+      "oldest_acquired_at": "2026-09-25T13:28:49.125462+00:00",
+      "latest_acquired_at": "2026-09-25T13:28:49.125462+00:00",
+      "max_acquisition_age_days": 43,
+      "review_after_days": 365,
+      "invalid_raw_timestamps": [],
+      "status": "WITHIN_POLICY"
+    },
+    "geoapi": {
+      "raw_files": 1,
+      "oldest_acquired_at": "2026-09-25T13:28:35.333494+00:00",
+      "latest_acquired_at": "2026-09-25T13:28:35.333494+00:00",
+      "max_acquisition_age_days": 43,
+      "review_after_days": 90,
+      "invalid_raw_timestamps": [],
+      "status": "WITHIN_POLICY"
+    },
+    "gpu": {
+      "raw_files": 36,
+      "oldest_acquired_at": "2026-09-25T13:38:09.150925+00:00",
+      "latest_acquired_at": "2026-09-25T13:45:16.675736+00:00",
+      "max_acquisition_age_days": 43,
+      "review_after_days": 30,
+      "invalid_raw_timestamps": [],
+      "status": "REVIEW_DUE"
+    },
+    "pbdb": {
+      "raw_files": 7,
+      "oldest_acquired_at": "2026-09-25T13:31:00.380679+00:00",
+      "latest_acquired_at": "2026-09-25T13:32:04.964900+00:00",
+      "max_acquisition_age_days": 43,
+      "review_after_days": 90,
+      "invalid_raw_timestamps": [],
+      "status": "WITHIN_POLICY"
+    }
+  },
   "failures": {
     "F03": 4683,
     "F02": 1079,
@@ -132,6 +268,5 @@
   ],
   "semantic_sha256": "fcc5c10ab1bc4ee1d63f98ffddd73898fd112e25adc0f2a26364f9d19d769f59",
   "foreign_keys": "ok",
-  "integrity": "ok",
-  "raw_verified": 58
+  "integrity": "ok"
 }

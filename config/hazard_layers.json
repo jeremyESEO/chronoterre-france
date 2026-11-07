@@ -11,7 +11,10 @@
     "scenario_field": "scenario",
     "label_field": "id_s_inond",
     "coverage": "TRI Toulouse uniquement ; entrée 2013-07-18 ; ne pas confondre avec un PPRI",
-    "curated": "data/curated/flood_toulouse.geojson"
+    "curated": "data/curated/flood_toulouse.geojson",
+    "license": "Utilisation libre avec attribution du producteur et date de mise à jour (conditions Picto-Occitanie)",
+    "source_revision": "2017-01-24",
+    "license_evidence": "https://catalogue.picto-occitanie.fr/geonetwork/srv/api/records/7c91530f-6a26-41e5-9dee-19adec8af824/formatters/xml"
   },
   {
     "id": "bordeaux-rga",
@@ -24,6 +27,7 @@
     "url": "https://datahub.bordeaux-metropole.fr/api/explore/v2.1/catalog/datasets/ri_alearga_s/exports/geojson",
     "label_field": "alea",
     "coverage": "Bordeaux Métropole uniquement ; métadonnées du portail conservées, ne pas assimiler au zonage national révisé sans vérification",
-    "curated": "data/curated/rga_bordeaux.geojson"
+    "curated": "data/curated/rga_bordeaux.geojson",
+    "license": "Licence Ouverte 2.0"
   }
 ]

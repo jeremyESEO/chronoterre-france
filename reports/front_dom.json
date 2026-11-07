@@ -1,5 +1,5 @@
 {
-  "at": "2026-10-10T22:40:24.890Z",
+  "at": "2026-11-07T18:06:27.496Z",
   "status": "PASS",
   "tests": [
     "Initialisation avec vrais instantanés, GeoJSON servi en octet-stream et WebGL indisponible",

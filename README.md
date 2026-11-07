@@ -4,9 +4,13 @@ Quels territoires français correspondent à mon projet d’installation, compte
 
 Deux parcours partagent la carte : **Habiter demain** (climat, risques, urbanisme, comparaison) et **Explorer le passé** (collections, occurrences, références, illustrations). Les fossiles n’entrent jamais dans un classement environnemental.
 
+**Usager principal :** une personne préparant un déménagement. Elle compare trois indicateurs à horizon et source constants : jours très chauds, nuits chaudes et jours de gel. La comparaison aide à préparer des vérifications locales.
+
+**Pour la correction ESEO :** [point d’entrée du rendu](docs/rendu_final.md), [barème et preuves](docs/matrice_academique.md), [ADR](docs/ADR_001.md) et [oral de 6 minutes](docs/soutenance_france.md).
+
 ## Ouvrir sous Windows
 
-1. Extraire le ZIP entièrement dans un dossier local (pas dans la vue ZIP).
+1. Cloner le [dépôt public](https://github.com/jeremyESEO/chronoterre-france) ou télécharger le ZIP GitHub et l’extraire entièrement dans un dossier local.
 2. Installer Python 3.11 ou plus récent depuis python.org. Aucun compte fournisseur ni clé payante requis pour les données livrées.
 3. Ouvrir un terminal dans le dossier puis :
 
@@ -16,7 +20,7 @@ py -3 -m pip install -r requirements-france.txt
 py -3 -m national.serve --open
 ```
 
-Ensuite, double-cliquer **Lancer_ChronoTerre_France.bat**. Adresse locale : http://127.0.0.1:8000. Ctrl+C arrête le serveur. Aucun accès entrant depuis Internet n’est nécessaire.
+Autre option après installation des dépendances : double-cliquer **Lancer_ChronoTerre_France.bat**. Adresse locale : http://127.0.0.1:8000. Ctrl+C arrête le serveur. Aucun accès entrant depuis Internet n’est nécessaire.
 
 Linux/macOS : remplacer `py -3` par `python3` (environnement virtuel recommandé). Le démarrage et la consultation climatique/fossile utilisent la bibliothèque standard ; Shapely/PyProj servent au rejeu et aux intersections.
 
@@ -30,7 +34,7 @@ Le climat couvre les niveaux TRACC associés à 2030, 2050 et 2100. Date de réf
 
 Les enveloppes d’inondation couvrent Toulouse (source 2013), les argiles Bordeaux Métropole. L’inventaire communal d’aléas n’est pas une exposition à l’adresse. Les documents d’urbanisme sont consultés au clic ; trois parcelles et neuf lieux publics disposent d’un échantillon brut livré. Pas de verdict de constructibilité. Cinq images attribuées illustrent quelques taxons ; aucun spécimen exact local n’est revendiqué.
 
-Les tests navigateur, mobile, clavier et les captures de la nouvelle interface ne sont pas réalisés dans l’environnement de reprise : l’outil de pilotage requis est absent. Voir `docs/recette.md` pour les essais automatisés exécutés et le reste à vérifier.
+Le lancement de Chromium a échoué dans l’environnement de reprise. Le rendu visuel, les gestes en navigateur, le mobile et les captures restent à vérifier sur un autre poste. Voir `docs/recette.md` pour les essais automatisés exécutés et le reste à vérifier.
 
 ## Rejouer sans réseau
 
@@ -44,7 +48,7 @@ py -3 -m national.checks
 
 `demo` est le socle TP rapide : une vraie page PBDB (10 000 lignes brutes), contrôles, SQLite, rejet pédagogique isolé et deux exécutions comparées. Il ne modifie pas la base France. L’extension nationale dépasse le cadre des deux séances de trois heures.
 
-Le rejeu national vérifie les SHA-256 des 58 fichiers sources, reconstruit une base temporaire, contrôle son intégrité puis remplace la base France. **Ne pas lancer deux reconstructions simultanément.** La seconde reconstruction compare les clés et toutes les valeurs typées, pas seulement les effectifs. Une erreur conserve la dernière base stable.
+Le rejeu national vérifie les SHA-256 des 58 fichiers sources, reconstruit une base temporaire, contrôle son intégrité puis remplace la base France. **Ne pas lancer deux reconstructions simultanément.** La seconde reconstruction compare les clés et toutes les valeurs typées, pas seulement les effectifs. Une erreur détectée avant remplacement conserve la dernière base stable. Le remplacement de SQLite ne rend pas transactionnelle la publication de tous les fichiers Web.
 
 ## Nouvelle collecte (facultative, avec réseau)
 
@@ -90,4 +94,18 @@ Les index sont inclus ; aucune collecte nationale ne s'exécute dans le navigate
 
 ## Suivre l'avancement du projet
 
-Le statut réel des fonctionnalités et les preuves sont dans [AVANCEMENT.md](AVANCEMENT.md). Les développements prévus vers une plateforme de production sont dans [ROADMAP.md](ROADMAP.md). Les issues et pull requests serviront au suivi après création du dépôt GitHub. Les workflows présents ne sont pas déclarés réussis avant leur exécution distante.
+Le statut réel des fonctionnalités et les preuves sont dans [AVANCEMENT.md](AVANCEMENT.md). Les développements prévus vers une plateforme de production sont dans [ROADMAP.md](ROADMAP.md). Le [dépôt GitHub est public](https://github.com/jeremyESEO/chronoterre-france) et l’onglet [Actions](https://github.com/jeremyESEO/chronoterre-france/actions) permet de vérifier les derniers résultats.
+
+
+## Architecture, qualité et reprise
+
+[Architecture V1](docs/architecture.png) → [architecture V2](docs/architecture_v2.svg) → [trace d’une observation jusqu’à la fiche](docs/lineage.md). La décision SQLite et batch est argumentée dans [ADR 001](docs/ADR_001.md). Les règles sont dans le [contrat France 2.0.1](config/france_contract.json) et `national/validate.py` ; les enregistrements non acceptés sont conservés avec leurs motifs dans `data/rejected/`.
+
+Le [rapport d’incident](reports/rendu_final_incident.json) montre l’arrêt P01 sur raw altéré, l’empreinte de la base stable inchangée et la reprise après restitution du fichier original. À chaque exécution, le pipeline consigne l’identifiant, le contrat, les étapes et l’ancienneté des acquisitions ; voir la [gouvernance](docs/gouvernance.md). Les conditions originales de Toulouse sont [documentées avec l’attribution et la date](docs/licence_dreal.md).
+
+## Déclaration d’usage de l’IA
+
+- **Outil utilisé :** ChatGPT/Codex.
+- **Travaux assistés :** développement et revue du pipeline et de l’interface, diagnostic de la CI, documentation, synthèse et préparation de l’oral.
+- **Vérifications réalisées dans le projet :** collecte PBDB courte, restauration et rejeu, tests Python et DOM, incident P01 et résultats SQL. Les preuves et leurs limites figurent dans [le rapport de vérification](reports/rendu_final_verification.json).
+- **Apport personnel documenté :** Jérémy a défini le besoin et les critères du parcours d’installation, créé le dépôt public et signalé l’échec CI observé sur GitHub. Les développements et vérifications assistés sont distingués de ces contributions. La répétition et la défense sont personnelles.

@@ -1,0 +1,22 @@
+digraph ChronoTerre {
+  graph [rankdir=TB, bgcolor="white", pad=0.20, nodesep=0.22, ranksep=0.32, fontname="DejaVu Sans", labelloc=t, label="ChronoTerre France · chaîne de données exécutée"];
+  node [shape=box, style="rounded,filled", fillcolor="#e9f4f1", color="#24766a", fontcolor="#183845", fontname="DejaVu Sans", fontsize=10, margin="0.14,0.09"];
+  edge [color="#4a7180", arrowsize=0.65, fontname="DejaVu Sans", fontsize=9];
+  source [label="PBDB · Climadiag · référentiels"];
+  collect [label="Collecte Python\nDélais et reprises bornés"];
+  raw [label="Raw horodaté\nURL · SHA-256 · manifeste"];
+  control [label="Profilage et contrôle\nContrat · clés · unités"];
+  rejects [label="Rejets motivés", fillcolor="#fff2dd", color="#a86727"];
+  db [label="SQLite temporaire\nIntégrité puis remplacement"];
+  outputs [label="Exports par département\nCarte et fiches"];
+  api [label="API locale\nLecture seule"];
+  report [label="Rapports de run\nFraîcheur · mesures · erreurs", fillcolor="#edf1f5", color="#69808d"];
+  source -> collect -> raw -> control -> db;
+  control -> rejects;
+  db -> outputs;
+  db -> api;
+  control -> report [style=dashed];
+  db -> report [style=dashed];
+  {rank=same; rejects; db; report;}
+  {rank=same; outputs; api;}
+}

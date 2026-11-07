@@ -34,7 +34,7 @@ Cette feuille de route décrit du travail prévu, pas des fonctionnalités déj�
 - [ ] Exécuter des parcours réels au navigateur, clavier et mobile.
 - [ ] Mesurer la performance sur un périmètre annoncé.
 - [ ] Tester des lieux contrastés, les pannes fournisseurs et la restauration.
-- [ ] Publier le dépôt GitHub et obtenir une première CI réussie.
+- [x] Publier le dépôt GitHub et obtenir une première CI réussie.
 - [ ] Déployer le backend et la base sur une infrastructure compatible.
 - [ ] Confirmer URL, disponibilité, mises à jour et procédure de retour arrière.
 

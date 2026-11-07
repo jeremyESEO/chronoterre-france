@@ -1,0 +1,15 @@
+{
+  "producer": "DREAL Occitanie",
+  "dataset": "Surfaces inondables du TRI de Toulouse",
+  "metadata_record": "7c91530f-6a26-41e5-9dee-19adec8af824",
+  "url": "https://catalogue.picto-occitanie.fr/geonetwork/srv/api/records/7c91530f-6a26-41e5-9dee-19adec8af824/formatters/xml",
+  "accessed_at": "2026-11-07T17:46:07.654855+00:00",
+  "http_status": 200,
+  "metadata_sha256": "a4c8cff89da63af7dcaa562b97c49022a0418f370fb5c8e15668055d89fee491",
+  "metadata_modified_at": "2017-06-07T07:06:52",
+  "dataset_revision": "2017-01-24",
+  "access": "Pas de restriction publique indiquée dans la fiche originale",
+  "reuse_conditions": "Utilisation libre avec attribution du producteur et date de mise à jour (conditions Picto-Occitanie)",
+  "standard_license_identifier": null,
+  "secondary_catalog_note": "data.gouv.fr : licence non renseignée ; utiliser la fiche originale"
+}

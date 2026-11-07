@@ -1,6 +1,6 @@
 # Recette de livraison et statuts
 
-Reprise du 10 octobre 2026. Les rapports JSON sont les preuves d’exécution. Une vérification automatique ne remplace pas une vérification visuelle.
+Recette complétée le 7 novembre 2026. Les rapports JSON sont les preuves d’exécution. Une vérification automatique ne remplace pas une vérification visuelle.
 
 | Critère demandé | État effectivement vérifié | Reste à vérifier |
 |---|---|---|
@@ -21,7 +21,7 @@ Reprise du 10 octobre 2026. Les rapports JSON sont les preuves d’exécution. U
 
 - `reports/france_tests.json` : 14 tests France, zéro échec et zéro erreur.
 - Neuf tests V1 (`python -m unittest discover -s tests -p test_quality.py -v`) : réussis.
-- `reports/front_dom.json` : sept parcours de logique DOM, réussis ; jsdom, pas navigateur.
+- `reports/front_dom.json` : parcours de logique DOM réussis ; jsdom, pas navigateur.
 - `reports/france_idempotence.json` : mêmes tables applicatives, mêmes clés et valeurs, même provenance.
 - `reports/demo_tp.json` : socle rapide, 10 000 enregistrements réels en entrée, fixture invalide isolée, double rejeu.
 - `reports/france_analyses.json` : 18 requêtes exécutées.
@@ -43,4 +43,4 @@ Carte nationale d’exposition infra-communale multi-aléas, hydrologie Explore2
 
 Installer Node.js et `npm install --no-save jsdom@26.1.0`, puis `node tests/front_dom.cjs`. Le test utilise les vrais instantanés embarqués et simule explicitement l’indisponibilité WebGL et du fournisseur d’adresses.
 
-Un workflow CI est fourni pour un éventuel dépôt GitHub ; il n’a pas été exécuté par une plateforme CI pendant cette livraison.
+Les deux workflows s’exécutent sur [GitHub Actions](https://github.com/jeremyESEO/chronoterre-france/actions). Le [rapport du 7 novembre](../reports/rendu_final_verification.json) couvre 25 tests Python, la recette HTTP locale et les contrôles JavaScript. Chromium ne démarre pas dans cet environnement (socket système refusé) ; les gestes et le rendu visuel restent à vérifier dans un navigateur sur une autre machine.

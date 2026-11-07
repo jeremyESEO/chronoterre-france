@@ -1,6 +1,6 @@
 {
   "first": {
-    "at": "2026-10-10T21:05:43.802964+00:00",
+    "at": "2026-11-07T17:55:52.074598+00:00",
     "real_input": 10000,
     "test_only_input": 1,
     "accepted_real": 7971,
@@ -13,7 +13,7 @@
       "F05": 1
     },
     "sha256": "14d3d06f75f3828770a3cb1fcd6f2372544d574149ac5963c035b32726caca17",
-    "seconds": 0.91,
+    "seconds": 0.54,
     "raw": {
       "source": "pbdb",
       "url": "https://paleobiodb.org/data1.2/occs/list.json?cc=FR&vocab=pbdb&show=coords%2Cloc%2Cenv%2Cref%2Cclassext&limit=10000&offset=0",
@@ -28,7 +28,7 @@
     }
   },
   "second": {
-    "at": "2026-10-10T21:05:44.538124+00:00",
+    "at": "2026-11-07T17:55:52.609087+00:00",
     "real_input": 10000,
     "test_only_input": 1,
     "accepted_real": 7971,
@@ -41,7 +41,7 @@
       "F05": 1
     },
     "sha256": "14d3d06f75f3828770a3cb1fcd6f2372544d574149ac5963c035b32726caca17",
-    "seconds": 0.71,
+    "seconds": 0.51,
     "raw": {
       "source": "pbdb",
       "url": "https://paleobiodb.org/data1.2/occs/list.json?cc=FR&vocab=pbdb&show=coords%2Cloc%2Cenv%2Cref%2Cclassext&limit=10000&offset=0",

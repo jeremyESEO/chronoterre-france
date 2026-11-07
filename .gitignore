@@ -13,3 +13,6 @@ output/
 
 data/curated/france.sqlite.gz
 data/raw/20260925T133023111105Z_climadiag.jsonl.gz
+
+# Exécutions locales ; les preuves sélectionnées sont dans reports/rendu_final_*.json.
+reports/runs/

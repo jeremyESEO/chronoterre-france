@@ -1,12 +1,12 @@
 """Reconstruit SQLite et les fichiers Web à partir des seuls raw. Pas de collecte implicite."""
-import argparse,csv,gzip,hashlib,json,os,sqlite3,time
-from collections import Counter,defaultdict
-from datetime import datetime,timezone
+import argparse,gzip,hashlib,json,os,sqlite3
+from collections import Counter
 from pathlib import Path
 from shapely.geometry import Point,shape
 from shapely.strtree import STRtree
-from national.collect import ROOT,dump,now
+from national.collect import ROOT,dump
 from national.metadata import SOURCES,INDICATORS,HAZARDS
+from national.observability import Run,acquisition_freshness
 from national.validate import *
 def packed(p,x):
  p=Path(p);p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(x,ensure_ascii=False,separators=(',',':'),allow_nan=False),encoding='utf-8')
@@ -20,23 +20,29 @@ def fingerprint(db):
    h.update(json.dumps(list(row),ensure_ascii=False,separators=(',',':')).encode());h.update(b'\n');n+=1
   counts[name]=n
  return h.hexdigest(),counts
-def main():
+def build(run):
  from national.materialize import materialize
+ run.step('chargement_config_et_archives')
+ run.contract_version=json.loads((ROOT/'config/france_contract.json').read_text())['version']
+ policies=json.loads((ROOT/'config/governance.json').read_text())['sources']
  materialize()
- parser=argparse.ArgumentParser();parser.add_argument('--verify-replay',action='store_true');args=parser.parse_args();start=time.monotonic();cfg=json.loads((ROOT/'config/france.json').read_text());files={}
+ cfg=json.loads((ROOT/'config/france.json').read_text());files={}
  for name in ['national_manifest.json','climate_manifest.json','urban_manifest.json','hazard_manifest.json']:
   p=ROOT/'data/raw'/name
   if p.exists():files.update(json.loads(p.read_text())['files'])
  if 'climadiag' not in files:raise RuntimeError('Collecte climatique absente ; lancer python -m national.collect_climate')
+ run.step('verification_raw')
  for key,e in files.items():
   h=hashlib.sha256()
   with openraw(e) as f:
    for chunk in iter(lambda:f.read(1048576),b''):h.update(chunk)
   if h.hexdigest()!=e['sha256']:raise ValueError('P01 '+key)
+  run.raw_verified+=1
+ run.step('profilage_et_transformation')
  path=ROOT/'data/curated/france.sqlite';tmp=path.with_suffix('.tmp');tmp.unlink(missing_ok=True);db=sqlite3.connect(tmp);db.row_factory=sqlite3.Row;db.executescript((ROOT/'sql/france_schema.sql').read_text());db.execute('PRAGMA journal_mode=OFF');db.execute('PRAGMA synchronous=OFF')
  db.executemany('INSERT INTO source VALUES(?,?,?,?,?)',SOURCES)
  for key,e in files.items():
-  if not db.execute('SELECT 1 FROM source WHERE source_id=?',(e['source'],)).fetchone():db.execute('INSERT INTO source VALUES(?,?,?,?,?)',(e['source'],e.get('producer',e['source']),e['url'],e.get('license','Licence Ouverte 2.0'),e.get('limits','Voir manifeste')))
+  if not db.execute('SELECT 1 FROM source WHERE source_id=?',(e['source'],)).fetchone():db.execute('INSERT INTO source VALUES(?,?,?,?,?)',(e['source'],e.get('producer',e['source']),e['url'],e.get('license','Non renseignée : vérifier auprès du producteur'),e.get('limits','Voir manifeste')))
   db.execute('INSERT INTO dataset_version VALUES(?,?,?,?,?)',(key,e['source'],key,e['fetched_at'],e.get('coverage','Voir source et registre de couverture')))
   db.execute('INSERT INTO raw_file VALUES(?,?,?,?,?,?,?)',(key,key,e['path'],e['url'],e['sha256'],e['bytes'],e['fetched_at']))
  def read(k):
@@ -115,23 +121,70 @@ def main():
    db.execute('INSERT INTO fossil_occurrence VALUES(?,?,?,?,?,?,?)',(int(oid),int(sid),tid,ref,iid,r['identified_name'],k));nocc+=1
  print('Fossiles acceptés',nocc,flush=True)
  # Urbanisme, géométries et médias ne sont importés que s’ils ont réellement été collectés.
+ run.step('enrichissement_et_integrite')
  from national.enrich import enrich
  enrich(db,files,read,rejects,fails)
  db.commit();fk=list(db.execute('PRAGMA foreign_key_check'));integrity=db.execute('PRAGMA integrity_check').fetchone()[0]
  if fk or integrity!='ok':raise RuntimeError('Intégrité SQLite: '+str(fk))
- digest,counts=fingerprint(db);report={'executed_at':now(),'duration_seconds':round(time.monotonic()-start,2),'status':'PASS_WITH_LIMITS','counts':counts,'fossil_input':profile.n,'fossil_accepted':nocc,'rejected':len(rejects),'failures':dict(fails),'climate_outside_scope':dict(skipped),'rules':[{ 'id':k,'name':v[0],'condition':v[1],'action':v[2],'failures':fails[k]} for k,v in RULES.items()],'semantic_sha256':digest,'foreign_keys':'ok','integrity':integrity,'raw_verified':len(files)}
+ digest,counts=fingerprint(db)
+ fossil_rejects=[r for r in rejects if r['domain']=='fossil']
+ duplicate_rows=sum('U01' in r['reasons'] for r in fossil_rejects)
+ report={
+  **run.metadata(),'status':'PASS_WITH_LIMITS','counts':counts,
+  'metric_scope':'occurrences PBDB',
+  'input_rows':profile.n,'accepted_rows':nocc,'rejected_rows':len(fossil_rejects)-duplicate_rows,
+  'duplicates_removed':duplicate_rows,
+  'fossil_input':profile.n,'fossil_accepted':nocc,'rejected':len(rejects),
+  'rejected_by_domain':dict(Counter(r['domain'] for r in rejects)),
+  'source_metrics':{
+   'pbdb':{'unit':'occurrences','input':profile.n,'accepted':nocc,
+           'rejected':len(fossil_rejects)-duplicate_rows,'duplicates_removed':duplicate_rows},
+   'climadiag':{'input_unit':'entités du fichier JSONL','input':entity_profile.n,
+                'communes_loaded':counts['climate_place'],'entities_outside_scope':sum(skipped.values()),
+                'accepted_values':nclimate,'rejected_values':sum(r['domain']=='climate' for r in rejects)},
+  },
+  'freshness':acquisition_freshness(files,policies,run.started),
+  'failures':dict(fails),'climate_outside_scope':dict(skipped),
+  'rules':[{'id':k,'name':v[0],'condition':v[1],'action':v[2],'failures':fails[k]} for k,v in RULES.items()],
+  'semantic_sha256':digest,'foreign_keys':'ok','integrity':integrity,
+ }
+ if report['input_rows']!=report['accepted_rows']+report['rejected_rows']+report['duplicates_removed']:
+  raise RuntimeError('Bilan PBDB incohérent')
+ run.step('ecriture_rejets_et_exports')
  dump(ROOT/'reports/france_profile_before.json',{'communes':city_profile.result(),'fossils':profile.result(),'climate_entities':entity_profile.result(),'climate_values':climate_profile.result()})
  with (ROOT/'data/rejected/france_rejects.jsonl').open('w') as f:
   for r in rejects:f.write(json.dumps(r,ensure_ascii=False)+'\n')
- dump(ROOT/'reports/france_run.json',report)
  from national.export import export
  export(db,report,files)
- db.close();tmp.replace(path)
+ db.close()
+ run.step('remplacement_sqlite')
+ tmp.replace(path)
+ run.step('rapport_final')
+ report.update(run.metadata())
+ packed(ROOT/'dist/data/quality.json',report)
+ run.save(report)
+ dump(ROOT/'reports/france_run.json',report)
+ return report
+
+def main():
+ parser=argparse.ArgumentParser();parser.add_argument('--verify-replay',action='store_true');args=parser.parse_args()
+ run=Run(ROOT)
+ try:
+  report=build(run)
+ except Exception as error:
+  run.failure(error)
+  raise
  if args.verify_replay:
-  # Deuxième vraie reconstruction depuis les mêmes raw, puis comparaison de contenu typé.
+  # Seconde reconstruction dans un autre processus ; l'identifiant de run n'entre pas dans le hash métier.
   import subprocess
   subprocess.run([os.sys.executable,'-m','national.pipeline'],cwd=ROOT,check=True)
-  second=json.loads((ROOT/'reports/france_run.json').read_text());ok=digest==second['semantic_sha256'] and counts==second['counts'];dump(ROOT/'reports/france_idempotence.json',{'first':digest,'second':second['semantic_sha256'],'equal':ok,'counts_equal':counts==second['counts'],'method':'Deux reconstructions complètes ; SHA-256 des lignes triées de toutes les tables applicatives, provenance incluse'})
+  second=json.loads((ROOT/'reports/france_run.json').read_text())
+  ok=report['semantic_sha256']==second['semantic_sha256'] and report['counts']==second['counts']
+  dump(ROOT/'reports/france_idempotence.json',{
+   'first':report['semantic_sha256'],'second':second['semantic_sha256'],'equal':ok,
+   'counts_equal':report['counts']==second['counts'],'first_run_id':report['run_id'],'second_run_id':second['run_id'],
+   'method':'Deux reconstructions complètes ; SHA-256 des lignes triées de toutes les tables applicatives, provenance incluse',
+  })
   if not ok:raise ValueError('Rejeu différent')
- print(json.dumps(report,ensure_ascii=False),flush=True)
+ print(json.dumps({k:report[k] for k in ['run_id','status','duration_seconds','raw_verified','semantic_sha256']},ensure_ascii=False),flush=True)
 if __name__=='__main__':main()
