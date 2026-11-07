@@ -45,4 +45,4 @@ Rapports locaux : home_tests.json, home_delayed.json, home_replay.json, home_sen
 
 ## Organisation du suivi
 
-Chaque développement doit avoir une issue décrivant le besoin, les sources et les critères de réception. Les PR indiqueront les changements, tests exécutés, couverture réelle et limitations. Les fonctionnalités futures ne sont cochées qu'après livraison et preuve. L'historique existant est conservé ; les commits de préparation GitHub sont identifiés séparément.
+Chaque développement doit avoir une issue décrivant le besoin, les sources et les critères de réception. Les PR indiqueront les changements, tests exécutés, couverture réelle et limitations. Les fonctionnalités futures ne sont cochées qu'après livraison et preuve. L'historique des développements est repris sur GitHub. Les identifiants ci-dessus désignent les commits des publications Sites d'origine ; la copie publique exclut le texte intégral du support de cours, ce qui change certains identifiants Git.

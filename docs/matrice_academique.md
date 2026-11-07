@@ -1,6 +1,6 @@
 # Exigence → fichier → preuve
 
-Les 13 pages des consignes ont été lues ; extraction conservée dans `docs/consignes_professeur_extraction.txt`. Aucun conflit de barème identifié. Le socle court est `national.demo`, l’extension nationale est explicitement un travail supplémentaire.
+La matrice synthétise les 13 pages des consignes du cours. Aucun conflit de barème identifié. Le socle court est `national.demo`, l’extension nationale est explicitement un travail supplémentaire.
 
 | Barème | Fichiers | Preuve |
 |---|---|---|
