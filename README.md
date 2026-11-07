@@ -10,19 +10,39 @@ Deux parcours partagent la carte : **Habiter demain** (climat, risques, urbanism
 
 ## Ouvrir sous Windows
 
-1. Cloner le [dépôt public](https://github.com/jeremyESEO/chronoterre-france) ou télécharger le ZIP GitHub et l’extraire entièrement dans un dossier local.
-2. Installer Python 3.11 ou plus récent depuis python.org. Aucun compte fournisseur ni clé payante requis pour les données livrées.
-3. Ouvrir un terminal dans le dossier puis :
+1. [Télécharger le ZIP complet](https://github.com/jeremyESEO/chronoterre-france/archive/refs/heads/main.zip) et choisir **Extraire tout**, ou cloner le dépôt. Python 3.11 ou 3.12 est recommandé.
+2. Dans l’Explorateur, ouvrir le **dossier extrait qui contient ensemble** `requirements-france.txt`, `README.md` et `national/`. Si l’extraction a créé deux dossiers imbriqués, ouvrir le dossier intérieur.
+3. Taper `powershell` dans la **barre d’adresse de l’Explorateur**, puis Entrée. Dans ce terminal, `Test-Path .\requirements-france.txt` doit afficher `True`. Exécuter ensuite ces trois commandes, une par une :
 
 ```powershell
+py -3 -m pip install -r .\requirements-france.txt
 py -3 -m national.restore
-py -3 -m pip install -r requirements-france.txt
 py -3 -m national.serve --open
 ```
 
-Autre option après installation des dépendances : double-cliquer **Lancer_ChronoTerre_France.bat**. Adresse locale : http://127.0.0.1:8000. Ctrl+C arrête le serveur. Aucun accès entrant depuis Internet n’est nécessaire.
+Ouvrir [http://127.0.0.1:8000](http://127.0.0.1:8000) si le navigateur ne s’ouvre pas automatiquement. Garder le terminal ouvert ; **Ctrl+C** arrête le serveur. Les données livrées ne nécessitent ni compte ni clé fournisseur. Pour une utilisation suivante, relancer la dernière commande ou double-cliquer sur **Lancer_ChronoTerre_France.bat** depuis le dossier extrait.
 
-Linux/macOS : remplacer `py -3` par `python3` (environnement virtuel recommandé). Le démarrage et la consultation climatique/fossile utilisent la bibliothèque standard ; Shapely/PyProj servent au rejeu et aux intersections.
+Si pip indique **Could not open requirements file**, vérifier le dossier courant avec `Get-Location`. Pour retrouver le bon dossier dans Téléchargements, chercher le fichier extrait :
+
+```powershell
+Get-ChildItem "$env:USERPROFILE\Downloads" -Filter requirements-france.txt -File -Recurse
+```
+
+Ouvrir le dossier affiché, reprendre à l’étape 3. Si aucun résultat n’apparaît, vérifier que le ZIP complet a bien été extrait.
+
+### Linux et macOS
+
+Depuis la racine du clone ou du ZIP extrait :
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements-france.txt
+python -m national.restore
+python -m national.serve --open
+```
+
+L’installation initiale des dépendances requiert une connexion. Shapely et PyProj servent notamment au rejeu et aux intersections.
 
 ## Ce qui est livré et ses limites
 
@@ -99,7 +119,7 @@ Le statut réel des fonctionnalités et les preuves sont dans [AVANCEMENT.md](AV
 
 ## Architecture, qualité et reprise
 
-[Architecture V1](docs/architecture.png) → [architecture V2](docs/architecture_v2.svg) → [trace d’une observation jusqu’à la fiche](docs/lineage.md). La décision SQLite et batch est argumentée dans [ADR 001](docs/ADR_001.md). Les règles sont dans le [contrat France 2.0.1](config/france_contract.json) et `national/validate.py` ; les enregistrements non acceptés sont conservés avec leurs motifs dans `data/rejected/`.
+[Architecture V1](docs/architecture.png) → [architecture V2](docs/architecture_v2.svg) → [trace d’une observation jusqu’à la fiche](docs/lineage.md). La décision SQLite et batch est argumentée dans [ADR 001](docs/ADR_001.md). Les règles sont dans le [contrat France 2.0.1](docs/contrat_france.md) et `national/validate.py` ; les enregistrements non acceptés sont conservés avec leurs motifs dans `data/rejected/`.
 
 Le [rapport d’incident](reports/rendu_final_incident.json) montre l’arrêt P01 sur raw altéré, l’empreinte de la base stable inchangée et la reprise après restitution du fichier original. À chaque exécution, le pipeline consigne l’identifiant, le contrat, les étapes et l’ancienneté des acquisitions ; voir la [gouvernance](docs/gouvernance.md). Les conditions originales de Toulouse sont [documentées avec l’attribution et la date](docs/licence_dreal.md).
 

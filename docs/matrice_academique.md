@@ -35,7 +35,7 @@ Les preuves décrivent le périmètre remis ; la validation du barème appartien
 - [x] **03 — Secrets et données sensibles.** Sources publiques, essai invalide isolé, aucun secret requis ; le [contrôle de motifs](../reports/rendu_final_verification.json) n’a rien détecté dans le code, la configuration et la documentation texte examinés.
 - [x] **04 — Grain et clé métier.** [Dictionnaire](dictionnaire_france.md) et [schéma SQL](../sql/france_schema.sql).
 - [x] **05 — Raw original.** [Manifeste](../data/raw/national_manifest.json) ; `pbdb_occs_0` contient la page PBDB de 10 000 enregistrements, conservée avec URL et SHA-256.
-- [x] **06 — Contrat versionné.** [France 2.0.1](../config/france_contract.json) et [YAML de la V1](../config/data_contract.yaml).
+- [x] **06 — Contrat versionné.** [France 2.0.1 en Markdown](contrat_france.md), [contrat de référence](../config/france_contract.json) et [YAML de la V1](../config/data_contract.yaml).
 - [x] **07 — Règles automatiques.** 12 règles consignées dans le [rapport national](../reports/france_run.json), avec action et nombre d’échecs.
 - [x] **08 — Rejets conservés et expliqués.** `data/rejected/france_rejects.jsonl` : 5 761 rejets motivés, toutes familles confondues ; le test invalide reste à part.
 - [x] **09 — Rejeu sans doublons incorrects.** [Deux reconstructions](../reports/france_idempotence.json), mêmes clés et contenu métier.
